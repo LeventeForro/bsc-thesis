@@ -1,0 +1,173 @@
+[
+  {
+    "id": "a1",
+    "type": "multiple_choice",
+    "question": "A valós számok halmazán mit jelent egy felülről korlátos halmaz szuprémuma (supremum)?",
+    "order": 1,
+    "options": ["A halmaz legnagyobb eleme.", "A halmaz legkisebb felső korlátja.", "A halmaz elemeinek átlaga.", "A halmaz legkisebb eleme."],
+    "correct_index": 1
+  },
+  {
+    "id": "a2",
+    "type": "short_answer",
+    "question": "Mennyi a lim (n -> ∞) (1 + 1/n)^n nevezetes sorozathatárérték pontos értéke?",
+    "order": 2,
+    "answers": ["e", "Euler-szám", "E"]
+  },
+  {
+    "id": "a3",
+    "type": "multiple_select",
+    "question": "Mely állítások igazak minden konvergens valós számsorozatra?",
+    "order": 3,
+    "options": ["A sorozat korlátos.", "A sorozat szigorúan monoton növekvő.", "Minden részsorozata is konvergens, és ugyanoda tart.", "A sorozatnak végtelen sok határértéke lehet."],
+    "correct": [0, 2]
+  },
+  {
+    "id": "a4",
+    "type": "matching",
+    "question": "Párosítsd a nevezetes sorozatok határértékét (n -> ∞ esetén)!",
+    "order": 4,
+    "pairs": {
+      "n-edik gyök alatt n": "1",
+      "q^n, ha |q| < 1": "0",
+      "n! / n^n": "0",
+      "(1 - 1/n)^n": "1/e"
+    }
+  },
+  {
+    "id": "a5",
+    "type": "multiple_choice",
+    "question": "Mit mond ki a monoton és korlátos sorozatok tétele?",
+    "order": 5,
+    "options": ["Minden monoton sorozat korlátos.", "Minden korlátos sorozat monoton.", "Minden monoton és korlátos sorozat konvergens.", "Minden konvergens sorozat monoton."],
+    "correct_index": 2
+  },
+  {
+    "id": "a6",
+    "type": "multiple_choice",
+    "question": "Mikor mondjuk, hogy a szumma(a_n) végtelen sor konvergens?",
+    "order": 6,
+    "options": ["Ha a sorozat tagjai (a_n) nullához tartanak.", "Ha az (a_n) sorozat korlátos.", "Ha a sor részletösszeg-sorozata (S_n) konvergens.", "Ha a sor tagjai pozitívak."],
+    "correct_index": 2
+  },
+  {
+    "id": "a7",
+    "type": "multiple_select",
+    "question": "Melyek a pozitív tagú végtelen sorok konvergenciájának eldöntésére szolgáló ismert kritériumok?",
+    "order": 7,
+    "options": ["Hányadoskritérium (D'Alembert-féle)", "Gyökkritérium (Cauchy-féle)", "Majoránskritérium", "Rolle-féle kritérium"],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "a8",
+    "type": "multiple_choice",
+    "question": "Konvergens vagy divergens a harmonikus sor (szumma 1/n, ahol n=1-től végtelenig)?",
+    "order": 8,
+    "options": ["Konvergens, összege pi^2/6.", "Konvergens, összege 1.", "Feltételesen konvergens.", "Divergens (+végtelenhez tart)."],
+    "correct_index": 3
+  },
+  {
+    "id": "a9",
+    "type": "short_answer",
+    "question": "Melyik nevezetes tétel mondja ki azt a függvényekre, hogy ha f(x) folytonos az [a,b] zárt intervallumon, akkor ott felveszi a minimumát és a maximumát is?",
+    "order": 9,
+    "answers": ["Weierstrass-tétel", "Weierstrass", "Weierstrass tétel"]
+  },
+  {
+    "id": "a10",
+    "type": "matching",
+    "question": "Párosítsd a függvények szakadási helyeinek típusait!",
+    "order": 10,
+    "pairs": {
+      "Megszüntethető szakadás": "A jobb és bal oldali határérték létezik és egyenlő, de a függvényérték itt nincs értelmezve vagy más.",
+      "Elsőfokú (ugráshely) szakadás": "A jobb és bal oldali határérték létezik (véges), de nem egyenlő egymással.",
+      "Másodfokú (lényeges) szakadás": "Legalább az egyik oldali határérték nem létezik, vagy végtelen."
+    }
+  },
+  {
+    "id": "a11",
+    "type": "multiple_choice",
+    "question": "Melyik definíció írja le a függvény folytonosságát egy adott 'a' pontban (Heine-féle megfogalmazás)?",
+    "order": 11,
+    "options": ["Minden 'a'-hoz tartó x_n sorozatra az f(x_n) függvényértékek sorozata f(a)-hoz tart.", "Létezik a függvénynek deriváltja az 'a' pontban.", "A függvény monoton növekvő az 'a' pont környezetében.", "A bal oldali határérték megegyezik a jobb oldali határértékkel, függetlenül a függvényértéktől."],
+    "correct_index": 0
+  },
+  {
+    "id": "a12",
+    "type": "short_answer",
+    "question": "Mennyi a lim (x -> 0) (sin x) / x nevezetes határérték?",
+    "order": 12,
+    "answers": ["1", "egy"]
+  },
+  {
+    "id": "a13",
+    "type": "multiple_choice",
+    "question": "Mi a derivált (differenciálhányados) geometriai jelentése egy egyváltozós valós függvény adott pontjában?",
+    "order": 13,
+    "options": ["A függvény görbéje alatti terület nagysága.", "A ponthoz húzott érintőegyenes meredeksége (iránytangense).", "A pont távolsága az origótól.", "A függvény ívhossza a pontig."],
+    "correct_index": 1
+  },
+  {
+    "id": "a14",
+    "type": "multiple_select",
+    "question": "Melyek a helyes deriválási szabályok két differenciálható függvény (f és g) esetén?",
+    "order": 14,
+    "options": ["(f * g)' = f' * g + f * g'", "(f + g)' = f' + g'", "(f / g)' = (f' * g - f * g') / g^2", "(f(g(x)))' = f'(g(x)) + g'(x)"],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "a15",
+    "type": "matching",
+    "question": "Párosítsd az elemi függvényeket a deriváltjukkal!",
+    "order": 15,
+    "pairs": {
+      "sin(x)": "cos(x)",
+      "cos(x)": "-sin(x)",
+      "e^x": "e^x",
+      "ln(x)": "1/x"
+    }
+  },
+  {
+    "id": "a16",
+    "type": "multiple_choice",
+    "question": "Mikor alkalmazható a L'Hospital-szabály egy határérték kiszámítására?",
+    "order": 16,
+    "options": ["Bármilyen két függvény hányadosának határértékénél.", "Kizárólag trigonometrikus függvények esetén.", "Kritikus, '0/0' vagy 'végtelen/végtelen' alakú határozatlan kifejezések esetén.", "Ha a nevező deriváltja nulla."],
+    "correct_index": 2
+  },
+  {
+    "id": "a17",
+    "type": "multiple_choice",
+    "question": "Mit mond ki a Rolle-féle középértéktétel?",
+    "order": 17,
+    "options": ["Ha f folytonos [a,b]-n, differenciálható (a,b)-n, és f(a) = f(b), akkor létezik legalább egy 'c' pont (a,b)-ben, ahol f'(c) = 0.", "Minden deriválható függvény szigorúan monoton.", "Ha f''(x) > 0, akkor a függvény konvex.", "Egy integrál értéke megegyezik a primitív függvény megváltozásával."],
+    "correct_index": 0
+  },
+  {
+    "id": "a18",
+    "type": "multiple_select",
+    "question": "Mely állítások igazak a függvényvizsgálat során a konvexitás és a deriváltak kapcsolatára (ha f kétszer differenciálható)?",
+    "order": 18,
+    "options": ["Ha f''(x) > 0 az adott intervallumon, akkor ott a függvény szigorúan konvex.", "Ha f''(x) < 0 az adott intervallumon, akkor ott a függvény szigorúan konkáv.", "Ahol f'(x) = 0, ott a függvénynek biztosan inflexiós pontja van.", "Az inflexiós pontban (ahol konvexből konkávba vált vagy fordítva) a második derivált értéke 0 (f''(x)=0)."],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "a19",
+    "type": "short_answer",
+    "question": "Mi a deriváltja az f(x) = x^n (hatványfüggvény) függvénynek?",
+    "order": 19,
+    "answers": ["n*x^(n-1)", "n * x^(n-1)", "nx^(n-1)"]
+  },
+  {
+    "id": "a20",
+    "type": "matching",
+    "question": "Párosítsd a differenciálszámítás alkalmazásait a jelentésükkel!",
+    "order": 20,
+    "pairs": {
+      "Lokális szélsőérték keresése": "Az első derivált gyökeinek (f'(x) = 0) megkeresése és vizsgálata.",
+      "Monotonitás vizsgálata": "Az első derivált előjelének (f'(x) > 0 vagy f'(x) < 0) ellenőrzése.",
+      "Taylor-polinom": "Egy függvény közelítése polinomokkal az adott pontbeli deriváltak segítségével.",
+      "Érintő egyenletének felírása": "Az y - f(x0) = f'(x0) * (x - x0) képlet használata."
+    }
+  }
+]

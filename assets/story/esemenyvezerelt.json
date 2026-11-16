@@ -1,0 +1,173 @@
+[
+  {
+    "id": "ev1",
+    "type": "multiple_choice",
+    "question": "Mi az eseményvezérelt programozás (event-driven programming) alapvető sajátossága a hagyományos, szekvenciális programozással szemben?",
+    "order": 1,
+    "options": ["A program futását elsősorban a felhasználói interakciók vagy rendszerüzenetek (események) határozzák meg, nem pedig egy előre rögzített lineáris utasítássorozat.", "A program mindig szerveroldalon fut.", "Nincs szükség változók deklarálására.", "A program végrehajtása mindig determinisztikus és előre pontosan kiszámítható."],
+    "correct_index": 0
+  },
+  {
+    "id": "ev2",
+    "type": "short_answer",
+    "question": "Melyik C# nyelvi elem (típus) szolgál a metódusokra (függvényekre) való biztonságos hivatkozások tárolására, amely a C#-os eseménykezelés (event) mechanizmusának alapját is képezi?",
+    "order": 2,
+    "answers": ["delegate", "delegált", "delegatum"]
+  },
+  {
+    "id": "ev3",
+    "type": "matching",
+    "question": "Párosítsd a többrétegű szoftverarchitektúrák (pl. MVC, MVVM) elemeit a feladatukkal!",
+    "order": 3,
+    "pairs": {
+      "Model (Modell)": "Az alkalmazás állapotát, adatait és a független üzleti logikát tartalmazza.",
+      "View (Nézet)": "A grafikus felhasználói felület (GUI), ami megjeleníti az adatokat és fogadja a bemenetet.",
+      "Controller / Presenter": "Közvetít a Nézet és a Modell között, feldolgozza a UI eseményeket és frissíti a modellt.",
+      "ViewModel (Nézetmodell)": "A Nézet logikai reprezentációja, amellyel a View adatkötés (Data Binding) segítségével automatikusan szinkronizál."
+    }
+  },
+  {
+    "id": "ev4",
+    "type": "multiple_select",
+    "question": "Mely állítások igazak a C++ nyelvű Qt keretrendszer eseménykezelésére?",
+    "order": 4,
+    "options": ["A 'Signal-Slot' (Szignál-Nyílás) mechanizmust használja a komponensek közti kommunikációra.", "Kizárólag Windows operációs rendszeren futtatható.", "A Qt saját előfordítója, a MOC (Meta-Object Compiler) generálja le az eseménykezeléshez szükséges C++ háttérkódot.", "Az eseményeket küldő és fogadó osztályokat a QObject ősosztályból kell származtatni."],
+    "correct": [0, 2, 3]
+  },
+  {
+    "id": "ev5",
+    "type": "multiple_choice",
+    "question": "A háromrétegű architektúrák esetén a felületfüggetlen fejlesztés érdekében jellemzően melyik rétegre írjuk a legtöbb automatizált egységtesztet (Unit Test)?",
+    "order": 5,
+    "options": ["A View (Nézet) rétegre.", "A Model (Modell / Üzleti logika) rétegre.", "A grafikus elemek pozicionálására.", "Az adatbázis fizikai motorjára."],
+    "correct_index": 1
+  },
+  {
+    "id": "ev6",
+    "type": "short_answer",
+    "question": "Melyik C# interfészt (interface) KELL megvalósítania egy osztálynak a WPF/MVVM környezetben ahhoz, hogy a grafikus felület automatikusan értesüljön a tulajdonságok (property-k) értékének megváltozásáról?",
+    "order": 6,
+    "answers": ["INotifyPropertyChanged", "inotifypropertychanged"]
+  },
+  {
+    "id": "ev7",
+    "type": "multiple_select",
+    "question": "Hogyan kommunikál tipikusan a Model (Modell) réteg a felette lévő rétegekkel (Presenter vagy ViewModel) egy helyesen megtervezett többrétegű asztali alkalmazásban?",
+    "order": 7,
+    "options": ["Közvetlenül módosítja a grafikus felület gombjait és szövegmezőit.", "Eseményeket (events / signals) vált ki, amelyekre a felsőbb rétegek feliratkoznak.", "A Modell nem ismeri (nem hivatkozik rá) a felületi réteget, így elkerülhető a körkörös függőség.", "Kizárólag globális változókon keresztül."],
+    "correct": [1, 2]
+  },
+  {
+    "id": "ev8",
+    "type": "matching",
+    "question": "Párosítsd a C# eseménykezeléssel kapcsolatos operátorokat és kulcsszavakat a szerepükkel!",
+    "order": 8,
+    "pairs": {
+      "event": "Esemény deklarálására szolgáló kulcsszó egy osztályon belül.",
+      "EventHandler": "A .NET keretrendszer beépített delegált típusa a leggyakoribb eseményekhez.",
+      "+= (operátor)": "Eseménykezelő metódus (feliratkozás) hozzáadása az eseményhez.",
+      "-= (operátor)": "Eseménykezelő metódus eltávolítása (leiratkozás) az eseményről."
+    }
+  },
+  {
+    "id": "ev9",
+    "type": "multiple_choice",
+    "question": "Melyik a legfontosabb alapszabály a grafikus felhasználói felületek (GUI) programozásánál a többszálúság (multithreading) esetén?",
+    "order": 9,
+    "options": ["A UI elemeket (gombok, szövegek) kizárólag a fő (UI) szálról szabad módosítani.", "Bármelyik háttérszál közvetlenül átírhatja a gombok feliratát.", "A főszálat (UI thread) bátran blokkolhatjuk (pl. Thread.Sleep) hosszú számításokkal.", "A grafikus felületnek mindig külön processzben kell futnia."],
+    "correct_index": 0
+  },
+  {
+    "id": "ev10",
+    "type": "short_answer",
+    "question": "C#-ban melyik két kulcsszó együttes használatával lehet a legkényelmesebben aszinkron (nem blokkoló) metódusokat írni, ami megakadályozza, hogy a GUI 'lefagyjon' egy hosszú hálózati kérés vagy I/O művelet alatt?",
+    "order": 10,
+    "answers": ["async és await", "async await", "async, await"]
+  },
+  {
+    "id": "ev11",
+    "type": "multiple_choice",
+    "question": "A .NET eseménykezelőinek szabványos szignatúrája két paramétert vár: `void MyHandler(object sender, EventArgs e)`. Mit tartalmaz a 'sender' paraméter?",
+    "order": 11,
+    "options": ["Az esemény pontos időpontját.", "Egy referenciát arra az objektumra (pl. gombra), amelyik az eseményt kiváltotta.", "A hibaüzenet szövegét.", "Az egér koordinátáit."],
+    "correct_index": 1
+  },
+  {
+    "id": "ev12",
+    "type": "multiple_select",
+    "question": "Mely állítások igazak az ORM (Objektum-Relációs Leképezés / Entity Framework) technológiára az adatbázis-kezelésben?",
+    "order": 12,
+    "options": ["Lehetővé teszi, hogy az adatbázis tábláira osztályokként, a rekordokra objektumokként hivatkozzunk.", "Teljesen feleslegessé teszi, hogy az adatbázisnak struktúrája (sémája) legyen.", "A fejlesztők a programozási nyelvük szintaktikájával (pl. LINQ C#-ban) írhatnak lekérdezéseket a nyers SQL helyett.", "Jelentősen csökkenti a boilerplate (ismétlődő) adatelérési kódok mennyiségét."],
+    "correct": [0, 2, 3]
+  },
+  {
+    "id": "ev13",
+    "type": "matching",
+    "question": "Párosítsd a Qt (C++) eseménykezelési mechanizmusának elemeit!",
+    "order": 13,
+    "pairs": {
+      "Signal (Szignál)": "A komponens által kibocsátott jelzés/üzenet egy esemény bekövetkeztekor.",
+      "Slot (Nyílás)": "Egy C++ tagfüggvény, amely feliratkozik egy szignálra, és az esemény bekövetkeztekor lefut.",
+      "connect()": "Az a függvény, amellyel összekötünk egy szignált a megfelelő slottal.",
+      "emit": "Ezzel a kulcsszóval/makróval lehet egy saját szignált manuálisan kiváltani (elsütni)."
+    }
+  },
+  {
+    "id": "ev14",
+    "type": "multiple_choice",
+    "question": "Mit jelent az 'Adatkötés' (Data Binding) a WPF / MVVM keretrendszerben?",
+    "order": 14,
+    "options": ["Adatok titkosítását a memóriában.", "Egy olyan deklaratív mechanizmust, amely automatikusan szinkronizálja a felületi elemek (View) állapotát az alatta lévő adatmodell (ViewModel) tulajdonságaival.", "A gombok és az egér fizikai összekötését.", "Adatbázisok exportálását egy fájlba."],
+    "correct_index": 1
+  },
+  {
+    "id": "ev15",
+    "type": "short_answer",
+    "question": "Milyen XML-alapú leíró nyelvet használ a .NET WPF (Windows Presentation Foundation) a grafikus felhasználói felület (GUI) deklaratív felépítésére és a dizájn kialakítására?",
+    "order": 15,
+    "answers": ["XAML", "eXtensible Application Markup Language"]
+  },
+  {
+    "id": "ev16",
+    "type": "multiple_select",
+    "question": "Milyen módszerekkel érhetjük el (perzisztálhatjuk) egy relációs adatbázis adatait egy asztali alkalmazásból a tematika alapján?",
+    "order": 16,
+    "options": ["Natív kapcsolat (pl. ADO.NET, ahol parancsszövegként írjuk be az SQL-t).", "HTML canvas elem kirajzolásával.", "Egyszerű, kézzel írt objektumrelációs (DAO) modellel.", "Entitás alapú ORM keretrendszerrel (pl. Entity Framework)."],
+    "correct": [0, 2, 3]
+  },
+  {
+    "id": "ev17",
+    "type": "matching",
+    "question": "Párosítsd a szoftvertesztelési fogalmakat a jelentésükkel!",
+    "order": 17,
+    "pairs": {
+      "Unit Test (Egységteszt)": "Egyetlen kis kódrészlet (metódus vagy osztály) izolált, automatizált tesztelése.",
+      "Mocking (Mock objektum)": "A tesztelt komponens külső függőségeinek (pl. fájlrendszer, adatbázis, hálózat) szimulálása, 'hamisítása' a teszt alatt.",
+      "Assert (Állítás)": "A teszt végén szereplő kód, ami ellenőrzi, hogy a kapott eredmény megegyezik-e a várt eredménnyel.",
+      "Test-Driven Development (TDD)": "Módszertan, ahol a teszteket írják meg hamarabb, és csak utána az azokat teljesítő kódot."
+    }
+  },
+  {
+    "id": "ev18",
+    "type": "multiple_choice",
+    "question": "WPF-ben (MVVM mintát követve) mi a legszakszerűbb módja annak, hogy egy gomb (Button) kattintását lekezeljük a ViewModel-ben, elkerülve a View 'Code-Behind' (pl. Click) eseményeinek használatát?",
+    "order": 18,
+    "options": ["Globális változókat használunk.", "A gombhoz egy ICommand interfészt megvalósító 'Parancsot' (Command) kötünk (bindolunk).", "A ViewModel-ből megkeressük a gombot az ablakon a nevével (FindName), és onnan módosítjuk.", "Külső DLL-t hívunk meg a kattintásra."],
+    "correct_index": 1
+  },
+  {
+    "id": "ev19",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azt az operációs rendszerek által biztosított eseménykezelő hurkot, ami folyamatosan fut az asztali alkalmazások hátterében, figyeli az egérkattintásokat, billentyűzetleütéseket, majd kiosztja azokat az alkalmazás ablakainak?",
+    "order": 19,
+    "answers": ["Message Loop", "Event Loop", "Üzenethurok", "Eseményhurok"]
+  },
+  {
+    "id": "ev20",
+    "type": "multiple_choice",
+    "question": "Mi az előnye az asztali UI keretrendszerekben az elrendezéskezelők (Layout Managerek, pl. Grid, StackPanel, QVBoxLayout) használatának az abszolút (X, Y koordinátás) pozicionálással szemben?",
+    "order": 20,
+    "options": ["Gyorsabbá teszik az alkalmazás számítási teljesítményét.", "Automatikusan, dinamikusan átrendezik és méretezik az elemeket az ablak méretének változásakor vagy különböző felbontások esetén.", "Kevesebb memóriát használnak.", "Automatikusan létrehozzák az adatbázis-kapcsolatot."],
+    "correct_index": 1
+  }
+]

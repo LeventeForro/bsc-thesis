@@ -1,0 +1,173 @@
+[
+  {
+    "id": "oep1",
+    "type": "multiple_choice",
+    "question": "Mi az objektumorientált programozás (OOP) három legfőbb alappillére?",
+    "order": 1,
+    "options": ["Adatstruktúrák, Algoritmusok, Ciklusok", "Tokozás (Encapsulation), Öröklődés (Inheritance), Polimorfizmus (Polymorphism)", "Osztályok, Metódusok, Változók", "Mutatók (Pointers), Referenciák, Értékadás"],
+    "correct_index": 1
+  },
+  {
+    "id": "oep2",
+    "type": "short_answer",
+    "question": "Az UML osztálydiagramon milyen szimbólum jelöli a 'private' (privát) láthatóságot?",
+    "order": 2,
+    "answers": ["-", "mínusz", "kötőjel"]
+  },
+  {
+    "id": "oep3",
+    "type": "multiple_select",
+    "question": "Mely állítások igazak a konstruktorra C++ nyelvben?",
+    "order": 3,
+    "options": ["A neve mindig megegyezik az osztály nevével.", "Lehet visszatérési értéke (pl. int).", "Akkor hívódik meg automatikusan, amikor az objektum példányosítása (létrehozása) megtörténik.", "Egy osztálynak csak egyetlen konstruktora lehet."],
+    "correct": [0, 2]
+  },
+  {
+    "id": "oep4",
+    "type": "matching",
+    "question": "Párosítsd a kapcsolat (asszociáció) típusokat a definíciójukkal az UML tervezésben!",
+    "order": 4,
+    "pairs": {
+      "Asszociáció (Általános)": "Két osztály közötti egyszerű 'ismeri'/'használja' kapcsolat.",
+      "Aggregáció": "Rész-egész kapcsolat, de a rész önállóan is létezhet a befoglaló nélkül (pl. Autó - Utas).",
+      "Kompozíció": "Erős rész-egész kapcsolat, a rész nem létezhet a befoglaló egész nélkül (pl. Épület - Szoba).",
+      "Öröklődés (Generalizáció)": "'Is a' (ez egy) kapcsolat, az egyik osztály a másik speciális esete."
+    }
+  },
+  {
+    "id": "oep5",
+    "type": "multiple_choice",
+    "question": "Mikor kötelező a C++ nyelvben inicializáló listát (initializer list) használni a konstruktorban?",
+    "order": 5,
+    "options": ["Minden esetben, mert gyorsabb.", "Ha 'const' adattagot vagy referencia (&) adattagot akarunk inicializálni.", "Ha az adattag típusa pointer.", "Ha statikus adattagot kap értéket."],
+    "correct_index": 1
+  },
+  {
+    "id": "oep6",
+    "type": "short_answer",
+    "question": "Melyik kulcsszót kell használni C++-ban egy tagfüggvény (metódus) deklarációja után, hogy az a függvény garantáltan ne módosíthassa az objektum (a 'this') adattagjait?",
+    "order": 6,
+    "answers": ["const", "const kulcsszó"]
+  },
+  {
+    "id": "oep7",
+    "type": "multiple_select",
+    "question": "Melyek az 'Állapotgép' (State Machine) alapvető fogalmai az OEP tervezés során?",
+    "order": 7,
+    "options": ["Állapotok (States)", "Átmenetek (Transitions)", "Események (Events) amik kiváltják az átmenetet", "SQL lekérdezések"],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "oep8",
+    "type": "matching",
+    "question": "Párosítsd a SOLID elvek betűit a jelentésükkel!",
+    "order": 8,
+    "pairs": {
+      "S (Single Responsibility Principle)": "Egy osztálynak csak egyetlen oka lehet a változásra (egy feladatért felelős).",
+      "O (Open/Closed Principle)": "Nyitott a kiterjesztésre, de zárt a módosításra.",
+      "L (Liskov Substitution Principle)": "A gyermek osztály példányai behelyettesíthetőek kell legyenek a szülő osztály példányai helyett a program helyes működésének megváltozása nélkül.",
+      "D (Dependency Inversion Principle)": "A magas szintű modulok ne függjenek az alacsony szintű moduloktól. Mindkettő absztrakcióktól (interfészektől) függjön."
+    }
+  },
+  {
+    "id": "oep9",
+    "type": "multiple_choice",
+    "question": "Mi a különbség C++-ban a statikus (fordítási idejű) és a dinamikus (futási idejű) kötés (binding) között?",
+    "order": 9,
+    "options": ["A statikus binding csak az int típusokra vonatkozik.", "Dinamikus kötésnél a meghívott metódus implementációja futásidőben dől el az objektum TÉNYLEGES típusa alapján (ehhez 'virtual' kulcsszó és mutató/referencia kell). Statikusnál a fordító a FORMAI típus alapján dönt.", "Nincs különbség, csak más C++ verziókban használják.", "A statikus kötés a heapen, a dinamikus a vermen történik."],
+    "correct_index": 1
+  },
+  {
+    "id": "oep10",
+    "type": "short_answer",
+    "question": "C++ nyelvben hogyan jelöljük a tisztán virtuális (pure virtual) függvényt, amelyik az osztályt absztrakttá teszi?",
+    "order": 10,
+    "answers": ["= 0", "=0", "egyenlő nulla"]
+  },
+  {
+    "id": "oep11",
+    "type": "multiple_choice",
+    "question": "Miért javasolt (szinte mindig kötelező) C++-ban a destruktort virtuálissá (virtual) tenni egy olyan ősosztályban, amelyből származtatni fogunk?",
+    "order": 11,
+    "options": ["Hogy a fordító ne dobjon warningot.", "Mert csak így lehet a destruktornak paramétert adni.", "Hogy ha az ősosztály típusú mutatóval (pointer) törlünk (delete) egy leszármazott objektumot, akkor a leszármazott destruktora is megfelelően meghívódjon, elkerülve a memóriaszivárgást.", "Hogy felgyorsítsa a memóriafelszabadítást."],
+    "correct_index": 2
+  },
+  {
+    "id": "oep12",
+    "type": "multiple_select",
+    "question": "A Gregorics-féle osztálytervezésben mely 'felsoroló' (Enumerator / Iterator) operátorok/metódusok biztosítják a kollekciókon való végighaladást?",
+    "order": 12,
+    "options": ["First() (Első elemre állás)", "Next() (Léptetés)", "End() vagy IsEnd() (Vége van-e vizsgálat)", "Current() (Aktuális elem lekérdezése)"],
+    "correct": [0, 1, 2, 3]
+  },
+  {
+    "id": "oep13",
+    "type": "matching",
+    "question": "Párosítsd a kivételkezelés (Exceptions) elemeit a feladatukkal C++-ban!",
+    "order": 13,
+    "pairs": {
+      "throw": "A hibaobjektum / kivétel 'eldobása', amikor a hibás állapot fellép.",
+      "try": "A kódblokk, amelyet 'megfigyelünk', és ahol esetleg kivétel keletkezhet.",
+      "catch": "A blokk, amely 'elkapja' és lekezeli a specifikus típusú kivételt.",
+      "<stdexcept>": "A szabványos C++ kivételosztályokat (pl. out_of_range, invalid_argument) tartalmazó könyvtár."
+    }
+  },
+  {
+    "id": "oep14",
+    "type": "multiple_choice",
+    "question": "Melyik állítás igaz a C++ operátorok túlterhelésére (Operator Overloading)?",
+    "order": 14,
+    "options": ["Bármilyen új operátort kitalálhatunk (pl. '%%').", "Az operátorok precedenciája (kötési erőssége) megváltoztatható.", "Alapvető, primitív típusok (pl. int + int) beépített operátorai nem írhatók felül, csak a saját osztályainkra vonatkozók definiálhatók újra.", "Az operátorok csak paraméter nélküli metódusok lehetnek."],
+    "correct_index": 2
+  },
+  {
+    "id": "oep15",
+    "type": "short_answer",
+    "question": "C++ nyelvben mi a neve annak a speciális operátornak/metódusnak, amit általában `operator=(const OsztalyNev&)` szignatúrával definiálunk?",
+    "order": 15,
+    "answers": ["Értékadó operátor", "Assignment operator", "Másoló értékadás"]
+  },
+  {
+    "id": "oep16",
+    "type": "multiple_select",
+    "question": "Mely esetekben hívódik meg biztosan a 'másoló konstruktor' (Copy Constructor) C++-ban?",
+    "order": 16,
+    "options": ["Ha egy új objektumot deklarálunk, és azonnal egyenlővé tesszük egy már létező objektummal (pl. MyClass a = b;).", "Ha egy objektumot érték szerint (pass-by-value) adunk át egy függvény paramétereként.", "Ha egy függvényből egy objektummal térünk vissza (és a fordító nem optimalizálja ki).", "Ha egy mutatót (pointert) állítunk rá egy objektumra."],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "oep17",
+    "type": "matching",
+    "question": "Párosítsd a szoftveres tervmintákat (Design Patterns) a rövid definíciójukkal!",
+    "order": 17,
+    "pairs": {
+      "Singleton (Egyke)": "Garantálja, hogy egy osztályból csak egyetlen példány létezzen, és globális hozzáférést ad hozzá.",
+      "Factory (Gyár)": "Egy interfészt biztosít az objektumok létrehozásához, de a leszármazottakra bízza a pontos típus kiválasztását.",
+      "Observer (Megfigyelő)": "Egy-a-többhöz függőséget definiál; ha az egyik objektum állapota változik, a függők automatikusan értesülnek.",
+      "Strategy (Stratégia)": "Algoritmusok egy családját tokozza be és teszi őket cserélhetővé futásidőben az osztályon belül."
+    }
+  },
+  {
+    "id": "oep18",
+    "type": "multiple_choice",
+    "question": "Mit jelent a 'Hármas Szabály' (Rule of Three) a klasszikus C++-ban?",
+    "order": 18,
+    "options": ["Minden osztálynak legalább 3 adattagja kell legyen.", "Ha egy osztálynak szüksége van a Destruktor, a Másoló konstruktor vagy az Értékadó operátor EGYIKÉRE (általában a dinamikus memóriakezelés miatt), akkor valószínűleg MIND A HÁRMAT explicite meg kell írni.", "A kódnak 3 különböző fordítón is le kell fordulnia.", "Csak 3 szintű öröklődést szabad használni."],
+    "correct_index": 1
+  },
+  {
+    "id": "oep19",
+    "type": "multiple_select",
+    "question": "Egy std::vector<T> (szabványos C++ vektor) használata során mely műveletek O(1) konstans idejűek (legalább átlagosan)?",
+    "order": 19,
+    "options": ["Az i-edik elem lekérdezése (v[i]).", "Elem hozzáfűzése a vektor végéhez (push_back).", "Elem beszúrása a vektor legelejére.", "A vektor méretének lekérdezése (size())."],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "oep20",
+    "type": "short_answer",
+    "question": "Ha C++-ban dinamikusan tömböt (vektort) foglalunk a `new []` operátorral, melyik operátorral KÖTELEZŐ azt felszabadítani a memóriaszivárgás elkerülése érdekében?",
+    "order": 20,
+    "answers": ["delete[]", "delete []"]
+  }
+]

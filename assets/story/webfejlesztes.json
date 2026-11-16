@@ -1,0 +1,174 @@
+[
+  {
+    "id": "w1",
+    "type": "multiple_choice",
+    "question": "Melyik protokoll az alapja a világháló (WWW) adatkommunikációjának, és mi a legfőbb jellemzője az állapotosság tekintetében?",
+    "order": 1,
+    "options": ["FTP - Állapottartó (Stateful)", "HTTP - Állapotmentes (Stateless)", "SSH - Állapotmentes (Stateless)", "SMTP - Állapottartó (Stateful)"],
+    "correct_index": 1
+  },
+  {
+    "id": "w2",
+    "type": "multiple_select",
+    "question": "Melyek az HTML5 úgynevezett szemantikus (jelentéssel bíró) elemei az alábbiak közül?",
+    "order": 2,
+    "options": ["<article>", "<div>", "<nav>", "<section>", "<span>"],
+    "correct": [0, 2, 3]
+  },
+  {
+    "id": "w3",
+    "type": "matching",
+    "question": "Párosítsd a CSS szelektorokat a jelentésükkel!",
+    "order": 3,
+    "pairs": {
+      "#header": "Azonosító (ID) alapú szelektor, csak egyetlen ilyen elem lehet az oldalon.",
+      ".btn-primary": "Osztály (Class) alapú szelektor, több elem is megkaphatja.",
+      "p": "Címke (Elem) szelektor, az összes bekezdést kiválasztja.",
+      "*": "Univerzális szelektor, minden elemet kiválaszt."
+    }
+  },
+  {
+    "id": "w4",
+    "type": "short_answer",
+    "question": "Melyik CSS tulajdonsággal (property) tudjuk megváltoztatni egy elem háttérszínét?",
+    "order": 4,
+    "answers": ["background-color", "background"]
+  },
+  {
+    "id": "w5",
+    "type": "multiple_choice",
+    "question": "A CSS dobozmodellben (Box Model) melyik rész felel az elem tartalmának és a keretének (border) a BELSŐ távolságáért?",
+    "order": 5,
+    "options": ["Margin (margó)", "Padding (belső margó)", "Content (tartalom)", "Outline (körvonal)"],
+    "correct_index": 1
+  },
+  {
+    "id": "w6",
+    "type": "multiple_select",
+    "question": "Melyek a JavaScript (ES6+) érvényes változó- és konstansdeklarációs kulcsszavai?",
+    "order": 6,
+    "options": ["let", "var", "const", "int", "dim"],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "w7",
+    "type": "matching",
+    "question": "Párosítsd a modern JavaScript (ES6) tömbmetódusokat (Array methods) a funkciójukkal!",
+    "order": 7,
+    "pairs": {
+      "map()": "Végigmegy a tömbön, egy függvényt alkalmaz minden elemre, és visszaad egy új, módosított tömböt.",
+      "filter()": "Visszaad egy új tömböt, amely csak azokat az elemeket tartalmazza, amelyek megfelelnek egy adott feltételnek.",
+      "reduce()": "A tömb elemeit egyetlen értékké \"hajtogatja össze\" (pl. elemek összegzése).",
+      "forEach()": "Végrehajt egy adott függvényt a tömb minden elemén, de nem ad vissza új tömböt."
+    }
+  },
+  {
+    "id": "w8",
+    "type": "multiple_choice",
+    "question": "Mi a különbség a JavaScript '==' (dupla egyenlőség) és '===' (tripla egyenlőség) operátorai között?",
+    "order": 8,
+    "options": ["Nincs különbség, mindkettő ugyanazt teszi.", "A '==' csak referenciát vizsgál, a '===' értéket is.", "A '===' a szigorú egyenlőség: nem csak az értéket, hanem a típust is vizsgálja, míg a '==' végrehajt automatikus típuskonverziót.", "A '===' csak számoknál használható."],
+    "correct_index": 2
+  },
+  {
+    "id": "w9",
+    "type": "short_answer",
+    "question": "Melyik modern JavaScript DOM metódussal tudjuk lekérni a dokumentumból az ELSŐ olyan elemet, amely illeszkedik egy megadott CSS szelektorra (pl. '.osztalynev')?",
+    "order": 9,
+    "answers": ["querySelector", "querySelector()", "document.querySelector"]
+  },
+  {
+    "id": "w10",
+    "type": "multiple_choice",
+    "question": "Mit csinál a JavaScriptben a 'preventDefault()' metódus egy eseményobjektumon (Event)?",
+    "order": 10,
+    "options": ["Megállítja az esemény buborékolását a szülő elemek felé.", "Megakadályozza a böngésző alapértelmezett viselkedését (pl. megakadályozza, hogy egy űrlap elküldése újratöltse az oldalt).", "Törli az összes eseménykezelőt a DOM-ból.", "Elrejti a HTML elemet a képernyőről."],
+    "correct_index": 1
+  },
+  {
+    "id": "w11",
+    "type": "multiple_select",
+    "question": "Mely állítások igazak a PHP programozási nyelvre a webfejlesztés kontextusában?",
+    "order": 11,
+    "options": ["Kliensoldali nyelv, a felhasználó böngészője futtatja.", "Szerveroldali szkriptnyelv, a kódot a szerver hajtja végre.", "A kimenete jellemzően dinamikusan generált HTML, amit a kliens megkap.", "Erősen és statikusan típusos nyelv, kötelező típusdeklarációval."],
+    "correct": [1, 2]
+  },
+  {
+    "id": "w12",
+    "type": "matching",
+    "question": "Párosítsd a PHP szuperglobális tömbjeit a feladatukkal!",
+    "order": 12,
+    "pairs": {
+      "$_GET": "Az URL paraméterként (query string) érkező adatokat tárolja.",
+      "$_POST": "A HTTP kérés törzsében (body) küldött, rejtett űrlapadatokat tárolja.",
+      "$_SESSION": "Szerveroldalon tárolt, a böngészési munkamenet során megőrzött adatokat tartalmazza (pl. bejelentkezett felhasználó ID-ja).",
+      "$_COOKIE": "A felhasználó böngészőjében tárolt, minden kéréssel a szervernek visszaküldött kis adatfájlok tartalma."
+    }
+  },
+  {
+    "id": "w13",
+    "type": "multiple_choice",
+    "question": "Melyik PHP függvénnyel kell kötelezően elindítani (vagy folytatni) egy munkamenetet, mielőtt a $_SESSION tömböt használnánk?",
+    "order": 13,
+    "options": ["start_session()", "session_init()", "session_start()", "init_session()"],
+    "correct_index": 2
+  },
+  {
+    "id": "w14",
+    "type": "short_answer",
+    "question": "Milyen operátort használunk a PHP nyelvben két sztring (szöveg) összefűzésére (konkatenációjára)?",
+    "order": 14,
+    "answers": [".", "pont", "pont operátor"]
+  },
+  {
+    "id": "w15",
+    "type": "multiple_choice",
+    "question": "Mi a PDO (PHP Data Objects) elsődleges előnye a webfejlesztés során a hagyományos adatbázis-függvényekkel szemben?",
+    "order": 15,
+    "options": ["Gyorsabban fut le, mint bármely más megoldás.", "Automatikusan megtervezi az SQL adatbázis tábláit.", "Biztosít egy adatbázis-független absztrakciós réteget (ugyanazzal a kóddal csatlakozhatunk MySQL-hez, PostgreSQL-hez stb.), és támogatja a biztonságos prepared statementeket.", "Kizárólag kliensoldalon működik."],
+    "correct_index": 2
+  },
+  {
+    "id": "w16",
+    "type": "multiple_select",
+    "question": "Melyek elengedhetetlen lépései / technikái a biztonságos szerveroldali űrlapfeldolgozásnak (Form handling) PHP-ban?",
+    "order": 16,
+    "options": ["Az adatok validációja (formátum és tartalom ellenőrzése) a szerveroldalon is, nem csak JavaScripttel.", "XSS (Cross-Site Scripting) elleni védelem (pl. htmlspecialchars() használata kiíratáskor).", "SQL Injection elleni védelem paraméterezett lekérdezésekkel (Prepared Statements).", "A jelszavak egyszerű (plain text) mentése az adatbázisba a gyorsabb bejelentkezés érdekében."],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "w17",
+    "type": "matching",
+    "question": "Párosítsd a webes fogalmakat és architektúrákat a jelentésükkel!",
+    "order": 17,
+    "pairs": {
+      "Front-end": "Az alkalmazás felhasználói felülete, amely a böngészőben fut (HTML, CSS, JS).",
+      "Back-end": "A szerveren futó logika, adatbázis-kezelés és üzleti folyamatok.",
+      "MVC": "Szoftvertervezési minta, amely különválasztja az Adatot (Model), a Megjelenítést (View) és a Logikát (Controller).",
+      "API": "Alkalmazásprogramozási felület, amelyen keresztül a különböző szoftverkomponensek kommunikálnak egymással (pl. a kliens JSON adatokat kér a szervertől)."
+    }
+  },
+  {
+    "id": "w18",
+    "type": "multiple_choice",
+    "question": "A HTML <form> elem esetén mi a legfontosabb különbség a GET és a POST HTTP metódusok között?",
+    "order": 18,
+    "options": ["A GET gyorsabb, a POST lassabb.", "A GET az URL-ben, jól láthatóan küldi az adatokat (nem biztonságos jelszavaknál), a POST pedig a HTTP kérés törzsében (body) rejtve.", "A GET csak szöveget, a POST csak fájlokat tud küldeni.", "A GET-et adatbázis-módosításra használjuk, a POST-ot keresésre."],
+    "correct_index": 1
+  },
+  {
+    "id": "w19",
+    "type": "short_answer",
+    "question": "Melyik HTML attribútum kötelező az <img> tag használatakor az akadálymentesítés (a11y) és a SEO érdekében (amely helyettesítő szöveget ad a képnek, ha az nem töltődik be)?",
+    "order": 19,
+    "answers": ["alt", "alt=\"\"", "alt attribútum"]
+  },
+  {
+    "id": "w20",
+    "type": "multiple_choice",
+    "question": "Hogyan működik az eseménybuborékolás (Event Bubbling) a DOM-ban?",
+    "order": 20,
+    "options": ["Az esemény a legkülső (HTML/Document) elemtől halad befelé a cél elem felé.", "Az esemény mindig csak egyetlen elemen fut le, és nem terjed tovább.", "Egy elemen kiváltott esemény (pl. kattintás) először a cél elemen fut le, majd 'felfelé' terjed a DOM fában a szülő elemek felé.", "Az esemény csak a testvérelemek között terjed szét."],
+    "correct_index": 2
+  }
+]

@@ -1,0 +1,229 @@
+[
+  {
+    "id": "cad1",
+    "type": "multiple_choice",
+    "question": "Mit jelent a CAD mozaikszó a mérnöki tervezésben?",
+    "order": 1,
+    "options": [
+      "Computer-Aided Documentation (Számítógéppel támogatott dokumentálás)",
+      "Computer-Aided Design (Számítógéppel támogatott tervezés)",
+      "Central Advanced Design (Központi fejlett tervezés)",
+      "Computer Algorithm Design (Számítógépes algoritmus tervezés)"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "cad2",
+    "type": "multiple_select",
+    "question": "Melyek az alapszintű 3D-s testmodellezési műveletek (alaksajátosságok) közé tartozó eljárások?",
+    "order": 2,
+    "options": [
+      "Kihúzás (Extrude)",
+      "Megforgatás (Revolve)",
+      "Kiosztás / Mintázat (Pattern)",
+      "Renderelés",
+      "Pásztázás (Sweep)"
+    ],
+    "correct": [0, 1, 2, 4]
+  },
+  {
+    "id": "cad3",
+    "type": "matching",
+    "question": "Párosítsd a CAD tervezés során használt kényszereket a jelentésükkel!",
+    "order": 3,
+    "pairs": {
+      "Geometriai kényszer": "Két elem közötti viszonyt határoz meg (pl. párhuzamosság, merőlegesség).",
+      "Méretezési kényszer": "Egy elem méretét vagy két elem távolságát rögzíti számszerűen.",
+      "Kényszerítés (Mate/Constraint)": "Összeállításoknál az alkatrészek egymáshoz viszonyított helyzetét és szabadságfokát korlátozza.",
+      "Fixálás": "Az alkatrész minden szabadságfokának teljes rögzítése a térben."
+    }
+  },
+  {
+    "id": "cad4",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azt a rajzi dokumentumot, amely egy szerkezetet alkotóelemeire szétbontva, 'lebegve' ábrázol, segítve az összeszerelhetőség megértését?",
+    "order": 4,
+    "answers": ["Robbantott ábra", "robbantott nézet", "exploded view"]
+  },
+  {
+    "id": "cad5",
+    "type": "multiple_choice",
+    "question": "Mi a parametrikus modellezés lényege?",
+    "order": 5,
+    "options": [
+      "A modellnek nincsenek fix méretei.",
+      "A modell geometriáját paraméterek és összefüggések vezérlik, így egy érték módosításakor a modell automatikusan frissül.",
+      "Csak parancssorból lehet tervezni.",
+      "A modell csak 2D-ben létezik."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "cad6",
+    "type": "multiple_select",
+    "question": "Milyen elemeket tartalmaz kötelezően egy szabványos műhelyrajz?",
+    "order": 6,
+    "options": [
+      "Nézetek és metszetek",
+      "Méretháló",
+      "Szövegmező (rajzfej)",
+      "Alkatrész 3D-s fotórealisztikus képe",
+      "Tűrések és felületi érdesség jelei"
+    ],
+    "correct": [0, 1, 2, 4]
+  },
+  {
+    "id": "cad7",
+    "type": "matching",
+    "question": "Párosítsd a vázlatkészítés (Sketch) elemeit a funkciójukkal!",
+    "order": 7,
+    "pairs": {
+      "Vázlatsík": "Az a 2D-s sík, amelyen a rajzolást megkezdjük.",
+      "Profil": "Zárt vázlatrész, amelyből a 3D-s test kihúzható.",
+      "Segédvonal": "A szerkesztést segíti, de a 3D-s test létrehozásában közvetlenül nem vesz részt.",
+      "Vetítés (Project Geometry)": "Egy már meglévő test élének vagy felületének átvétele az aktuális vázlatba."
+    }
+  },
+  {
+    "id": "cad8",
+    "type": "short_answer",
+    "question": "Melyik modulban készítjük el a több különálló alkatrészből álló gépi berendezések modelljét CAD rendszerekben?",
+    "order": 8,
+    "answers": ["Összeállítás", "Assembly", "Összeállítási modul"]
+  },
+  {
+    "id": "cad9",
+    "type": "multiple_choice",
+    "question": "Mire szolgál a 'Héj' (Shell) parancs a modellezés során?",
+    "order": 9,
+    "options": [
+      "A modell külső felületének kiszínezésére.",
+      "A tömör test belsejének kiürítésére, vékony falú alkatrész létrehozására a megadott falvastagsággal.",
+      "A modell védelmére jelszóval.",
+      "Két test összehegesztésére."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "cad10",
+    "type": "multiple_select",
+    "question": "Milyen típusú összeállítási technikákat (Assembly techniques) ismerünk a tematika alapján?",
+    "order": 10,
+    "options": [
+      "Bottom-up (Alulról felfelé építkező)",
+      "Top-down (Fentről lefelé építkező)",
+      "Random (Véletlenszerű)",
+      "Asszociatív"
+    ],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "cad11",
+    "type": "matching",
+    "question": "Párosítsd a finommegmunkálási műveleteket a hatásukkal!",
+    "order": 11,
+    "pairs": {
+      "Lekerekítés (Fillet)": "Az élek íves lekerekítése.",
+      "Letörés (Chamfer)": "Az élek ferde síkkal való lemetszése.",
+      "Menet készítése": "Csavarmenet ábrázolása vagy modellezése a furaton/csapon.",
+      "Oldalferdeség (Draft)": "Oldalfalak megdöntése az önthetőség érdekében."
+    }
+  },
+  {
+    "id": "cad12",
+    "type": "short_answer",
+    "question": "Hogy nevezzük az összeállítási rajzok mellett szereplő táblázatot, amely felsorolja az összes alkatrészt, azok darabszámát és megnevezését?",
+    "order": 12,
+    "answers": ["Darabjegyzék", "BOM", "Bill of Materials"]
+  },
+  {
+    "id": "cad13",
+    "type": "multiple_choice",
+    "question": "Mi a különbség a 'Vágás' (Cut) és a 'Metszet' (Section) között a műszaki rajzon?",
+    "order": 13,
+    "options": [
+      "Nincs különbség.",
+      "A vágás csak a vágósíkkal érintkező felületet mutatja, a metszet a mögöttes látható éleket is ábrázolja.",
+      "A metszet csak 3D-ben létezik.",
+      "A vágás csak vázlatoknál használható."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "cad14",
+    "type": "multiple_select",
+    "question": "Milyen speciális tervezési környezeteket említ a tematika?",
+    "order": 14,
+    "options": [
+      "Lemezalkatrész tervezés",
+      "Hegesztett szerkezetek",
+      "Szabványos alkatrésztár",
+      "Építészeti látványtervezés"
+    ],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "cad15",
+    "type": "matching",
+    "question": "Párosítsd a CAD elemeket az ábrázolásukkal!",
+    "order": 15,
+    "pairs": {
+      "Tengelyvonal": "Pontvonal (Hosszú vonal - pont - hosszú vonal).",
+      "Látható él": "Folytonos vastag vonal.",
+      "Takart él": "Szaggatott vonal.",
+      "Méretháló": "Folytonos vékony vonal."
+    }
+  },
+  {
+    "id": "cad16",
+    "type": "short_answer",
+    "question": "Hogy hívjuk a 3D-s CAD programokban a képernyő szélén található listát, amely időrendben mutatja a modell felépítéséhez használt összes vázlatot és műveletet?",
+    "order": 16,
+    "answers": ["Modellfa", "Feature Tree", "Történet", "Műveleti fa"]
+  },
+  {
+    "id": "cad17",
+    "type": "multiple_choice",
+    "question": "Mit jelent az 'asszociativitás' a 3D-s CAD rendszerekben?",
+    "order": 17,
+    "options": [
+      "A fájlok jelszavas védelmét.",
+      "Kényszerített kapcsolat az alkatrészmodell és a belőle készült műszaki rajz között: ha a modellt módosítjuk, a rajz automatikusan frissül.",
+      "Az alkatrészek véletlenszerű elhelyezését.",
+      "A felhőalapú mentést."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "cad18",
+    "type": "multiple_select",
+    "question": "Mely műveletekhez szükséges legalább két különálló vázlat (pálya és keresztmetszet)?",
+    "order": 18,
+    "options": [
+      "Pásztázás (Sweep)",
+      "Átmenet (Loft)",
+      "Kihúzás (Extrude)",
+      "Lekerekítés"
+    ],
+    "correct": [0, 1]
+  },
+  {
+    "id": "cad19",
+    "type": "matching",
+    "question": "Párosítsd a CAD szoftverek fájltípusait (általános funkciójuk alapján)!",
+    "order": 19,
+    "pairs": {
+      "Part (.ipt / .prt)": "Egyetlen alkatrész modellje.",
+      "Assembly (.iam / .asm)": "Több alkatrészből álló összeállítás.",
+      "Drawing (.idw / .dwg)": "2D-s műszaki rajz dokumentáció.",
+      "Presentation (.ipn)": "Robbantott nézetek és animációk készítése."
+    }
+  },
+  {
+    "id": "cad20",
+    "type": "short_answer",
+    "question": "Melyik geometriai test jön létre, ha egy téglalap profilját megforgatjuk az egyik oldala körül a Revolve (megforgatás) paranccsal?",
+    "order": 20,
+    "answers": ["Henger", "henger-test"]
+  }
+]

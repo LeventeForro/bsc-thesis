@@ -1,0 +1,227 @@
+[
+  {
+    "id": "szta1",
+    "type": "multiple_choice",
+    "question": "Melyik Chomsky-típusba tartoznak a környezetfüggetlen (context-free) nyelvek?",
+    "order": 1,
+    "options": [
+      "0. típus",
+      "1. típus",
+      "2. típus",
+      "3. típus"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "szta2",
+    "type": "multiple_select",
+    "question": "Milyen alapfogalmakat tárgyal a formális nyelvek elmélete a tematika szerint?",
+    "order": 2,
+    "options": [
+      "Ábécé",
+      "Szó",
+      "Nyelvcsalád",
+      "Műveletek szavakon és nyelveken"
+    ],
+    "correct": [0, 1, 2, 3]
+  },
+  {
+    "id": "szta3",
+    "type": "matching",
+    "question": "Párosítsd a Chomsky-féle osztályokat a hozzájuk kapcsolódó matematikai gépekkel!",
+    "order": 3,
+    "pairs": {
+      "3. típus (Reguláris)": "Véges automata",
+      "2. típus (Környezetfüggetlen)": "Vermes automata",
+      "1. típus (Környezetfüggő)": "Lineárisan korlátos automata",
+      "0. típus (Frázisstruktúra)": "Turing-gép"
+    }
+  },
+  {
+    "id": "szta4",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azt a tézist, amely szerint minden algoritmus-fogalom ekvivalens a Turing-géppel?",
+    "order": 4,
+    "answers": ["Church-tézis", "Church-Turing-tézis", "Church-Turing tézis"]
+  },
+  {
+    "id": "szta5",
+    "type": "multiple_choice",
+    "question": "Mit jelent a 'szóprobléma' a formális nyelvekben?",
+    "order": 5,
+    "options": [
+      "Annak eldöntése, hogy egy adott szó benne van-e az adott nyelvben.",
+      "A nyelv összes szavának felsorolása abc-sorrendben.",
+      "Két nyelv metszetének kiszámítása.",
+      "Egy szó karaktereinek megfordítása."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "szta6",
+    "type": "multiple_select",
+    "question": "Mely technikák használatosak a környezetfüggetlen nyelvek leírására a gyakorlatban?",
+    "order": 6,
+    "options": [
+      "BNF (Backus-Naur Form)",
+      "EBNF (Extended BNF)",
+      "Szintaxis-gráf",
+      "SQL lekérdezések"
+    ],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "szta7",
+    "type": "matching",
+    "question": "Párosítsd a Turing-gépekkel kapcsolatos fogalmakat!",
+    "order": 7,
+    "pairs": {
+      "Rekurzívan felsorolható": "Turing-gép által felismert nyelv.",
+      "Rekurzív": "Turing-gép által eldöntött nyelv.",
+      "Univerzális nyelv": "Eldönthetetlen nyelv példája.",
+      "Diagonális nyelv": "Nem rekurzívan felsorolható nyelv példája."
+    }
+  },
+  {
+    "id": "szta8",
+    "type": "short_answer",
+    "question": "Melyik bonyolultsági osztályba tartoznak azok a problémák, amelyek determinisztikus Turing-géppel polinom időben megoldhatóak?",
+    "order": 8,
+    "answers": ["P", "P osztály"]
+  },
+  {
+    "id": "szta9",
+    "type": "multiple_choice",
+    "question": "Mit állíthatunk a nemdeterminisztikus Turing-gépek (NTG) és a determinisztikus Turing-gépek (TG) számítási kapacitásáról?",
+    "order": 9,
+    "options": [
+      "Az NTG sokkal több nyelvet tud felismerni, mint a TG.",
+      "A TG és az NTG által felismert nyelvcsalád megegyezik (ekvivalensek).",
+      "Az NTG nem alkalmas algoritmusok modellezésére.",
+      "A TG gyorsabb minden probléma esetén."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "szta10",
+    "type": "multiple_select",
+    "question": "Melyek az NP-teljes problémák az alábbiak közül a tematika alapján?",
+    "order": 10,
+    "options": [
+      "SAT (Kielégíthetőségi probléma)",
+      "Hamilton út",
+      "Halmazelméleti problémák",
+      "Összeadás elvégzése"
+    ],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "szta11",
+    "type": "matching",
+    "question": "Párosítsd a bonyolultsági elmélet fogalmait a jelentésükkel!",
+    "order": 11,
+    "pairs": {
+      "NP": "Nemdeterminisztikus polinom időben megoldható problémák.",
+      "NP-teljesség": "A legnehezebb problémák az NP osztályban.",
+      "Visszavezetés": "Egy probléma megoldásának felhasználása egy másik megoldásához.",
+      "PSPACE": "Polinomiális tárkapacitást igénylő problémák."
+    }
+  },
+  {
+    "id": "szta12",
+    "type": "short_answer",
+    "question": "Mi a rövidítése a Post-féle megfelelési problémának?",
+    "order": 12,
+    "answers": ["PMP", "PCP"]
+  },
+  {
+    "id": "szta13",
+    "type": "multiple_choice",
+    "question": "Melyik probléma NP-teljességét bizonyítják a tananyagban elsőként?",
+    "order": 13,
+    "options": [
+      "Legrövidebb út",
+      "SAT",
+      "Rendezés",
+      "Prímtesztelés"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "szta14",
+    "type": "multiple_select",
+    "question": "Milyen típusú Turing-gépeket említ a tematika?",
+    "order": 14,
+    "options": [
+      "Többszalagos Turing-gépek",
+      "Nemdeterminisztikus Turing-gépek",
+      "Szófüggvényeket kiszámító Turing-gépek",
+      "Vezeték nélküli Turing-gépek"
+    ],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "szta15",
+    "type": "matching",
+    "question": "Párosítsd a formális nyelvekhez kapcsolódó feladatokat a típusukkal!",
+    "order": 15,
+    "pairs": {
+      "Elemzési módszerek": "Programnyelvi alkalmazások és fordítóprogramok alapja.",
+      "Normálformák": "Nyelvtanok megszorított formára hozása.",
+      "Generatív nyelvtan": "Nyelv leírása szabályok segítségével.",
+      "Eldönthetetlen": "Olyan probléma, amire nincs általános megoldó algoritmus."
+    }
+  },
+  {
+    "id": "szta16",
+    "type": "short_answer",
+    "question": "Hogy hívjuk azt a problémát, amelynek eldönthetetlensége a környezetfüggetlen nyelvtanok egyértelműségére is vonatkozik?",
+    "order": 16,
+    "answers": ["PMP", "Post-féle megfelelési probléma"]
+  },
+  {
+    "id": "szta17",
+    "type": "multiple_choice",
+    "question": "Melyik állítás igaz a rekurzív nyelvekre?",
+    "order": 17,
+    "options": [
+      "Minden rekurzív nyelv eldönthető.",
+      "A rekurzív nyelvek nem ismerhetők fel Turing-géppel.",
+      "Csak véges nyelvek lehetnek rekurzívak.",
+      "Minden rekurzívan felsorolható nyelv rekurzív is egyben."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "szta18",
+    "type": "multiple_select",
+    "question": "Milyen megszorítások szerepelhetnek a nyelvtani típusoknál?",
+    "order": 18,
+    "options": [
+      "Szabályok alakja (bal vagy jobb oldal kötöttsége)",
+      "Normálformák alkalmazása",
+      "Terminális és nemterminális jelek száma",
+      "A papír színe, amire írják"
+    ],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "szta19",
+    "type": "matching",
+    "question": "Párosítsd a halmazelméleti műveleteket a nyelvekkel!",
+    "order": 19,
+    "pairs": {
+      "Konkatenáció": "Szavak egymás után fűzése.",
+      "Iteráció (Star)": "Egy nyelv szavainak tetszőleges számú ismétlése.",
+      "Unió": "Két nyelv összes szavának egyesítése.",
+      "Metszet": "Csak a mindkét nyelvben szereplő szavak megtartása."
+    }
+  },
+  {
+    "id": "szta20",
+    "type": "short_answer",
+    "question": "Hogy nevezzük a Turing-gépek elkódolását bináris szavakban?",
+    "order": 20,
+    "answers": ["Kódolás", "Gődel-számozás", "Turing-gép kódolása"]
+  }
+]

@@ -1,0 +1,171 @@
+[
+  {
+    "id": "dm2_1",
+    "type": "multiple_choice",
+    "question": "Mit jelent az, hogy egy G = (V, E) gráf összefüggő?",
+    "order": 1,
+    "options": ["Minden csúcsának azonos a foka.", "A gráfban minden csúcspárhoz létezik köztük futó út (séta).", "A gráf nem tartalmaz köröket.", "Minden csúcs össze van kötve minden másik csúccsal (teljes gráf)."],
+    "correct_index": 1
+  },
+  {
+    "id": "dm2_2",
+    "type": "short_answer",
+    "question": "Mennyi a fokszámok összege egy olyan véges gráfban, amelynek pontosan 'e' darab éle van?",
+    "order": 2,
+    "answers": ["2e", "2*e", "kétszer e"]
+  },
+  {
+    "id": "dm2_3",
+    "type": "multiple_select",
+    "question": "Mely állítások igazak egy páros gráfra (Bipartite graph)?",
+    "order": 3,
+    "options": ["A csúcshalmaza két diszjunkt halmazra bontható úgy, hogy minden él a két halmaz között fut.", "Nem tartalmazhat páratlan hosszúságú kört.", "Minden foka páros szám.", "Megfelelően színezhető pontosan 2 színnel."],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "dm2_4",
+    "type": "matching",
+    "question": "Párosítsd a gráfelméleti bejárásokat (sétákat) a definíciójukkal!",
+    "order": 4,
+    "pairs": {
+      "Euler-vonal (nyílt)": "A gráf minden élén pontosan egyszer halad végig.",
+      "Euler-kör (zárt vonal)": "A gráf minden élén pontosan egyszer halad végig, és a kiindulópontba tér vissza.",
+      "Hamilton-út": "A gráf minden csúcsát pontosan egyszer érinti.",
+      "Hamilton-kör": "A gráf minden csúcsát pontosan egyszer érinti, és a kiindulópontba tér vissza."
+    }
+  },
+  {
+    "id": "dm2_5",
+    "type": "multiple_choice",
+    "question": "Mi az Euler-kör létezésének szükséges és elégséges feltétele egy véges, összefüggő, irányítatlan gráfban (Euler tétele)?",
+    "order": 5,
+    "options": ["Minden csúcs foka páros szám legyen.", "Maximum két csúcs foka lehet páratlan.", "A gráf páros gráf legyen.", "Minden csúcs foka nagyobb legyen a csúcsok számának felénél."],
+    "correct_index": 0
+  },
+  {
+    "id": "dm2_6",
+    "type": "short_answer",
+    "question": "Hány éle van egy 'n' csúcsú teljes gráfnak (Kn)?",
+    "order": 6,
+    "answers": ["n(n-1)/2", "(n*(n-1))/2", "n alatt a 2"]
+  },
+  {
+    "id": "dm2_7",
+    "type": "multiple_select",
+    "question": "Mely állítások definiálnak pontosan egy FÁT (n csúcs esetén)?",
+    "order": 7,
+    "options": ["Összefüggő gráf, amely nem tartalmaz kört.", "Körmentes gráf, amelynek pontosan n-1 éle van.", "Összefüggő gráf, amelynek n-1 éle van.", "Olyan gráf, amiben minden csúcs foka 2."],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "dm2_8",
+    "type": "matching",
+    "question": "Párosítsd a gráfok izomorfiájával kapcsolatos fogalmakat!",
+    "order": 8,
+    "pairs": {
+      "Izomorf gráfok": "Két gráf, amelyek 'szerkezetileg megegyeznek' (bijekció van a csúcsaik között, ami éltartó).",
+      "Szükséges feltétel (de nem elégséges)": "Azonos csúcsszám, élszám és fokszámsorozat.",
+      "Síkgráf (Planar graph)": "Lerajzolható a síkba úgy, hogy élei csak a végpontjaikban (csúcsokban) metsszék egymást.",
+      "Kuratowski-tétel": "Egy gráf akkor és csak akkor síkgráf, ha nem tartalmaz a K5-tel vagy a K3,3-mal topologikusan izomorf részgráfot."
+    }
+  },
+  {
+    "id": "dm2_9",
+    "type": "multiple_choice",
+    "question": "Mit fejez ki a kromatikus szám (χ(G)) egy gráf esetében?",
+    "order": 9,
+    "options": ["A gráfban lévő leghosszabb út hosszát.", "Azt a minimális színszámot, amellyel a gráf csúcsai kiszínezhetők úgy, hogy szomszédos csúcsok ne legyenek azonos színűek.", "A maximális független csúcshalmaz méretét.", "A gráf éleinek számát."],
+    "correct_index": 1
+  },
+  {
+    "id": "dm2_10",
+    "type": "multiple_choice",
+    "question": "Mit állít az Euler-féle poliédertétel összefüggő síkgráfokra (ahol V a csúcsok, E az élek, F a tartományok száma, beleszámítva a külső tartományt is)?",
+    "order": 10,
+    "options": ["V - E + F = 2", "V + E - F = 2", "E - V + F = 2", "V - E - F = 0"],
+    "correct_index": 0
+  },
+  {
+    "id": "dm2_11",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azt az élt egy összefüggő gráfban, amelynek elhagyása esetén a gráf elveszíti az összefüggőségét (szétesik több komponensre)?",
+    "order": 11,
+    "answers": ["elvágó él", "híd", "hídél"]
+  },
+  {
+    "id": "dm2_12",
+    "type": "multiple_select",
+    "question": "Melyek a legrövidebb utak keresésére használt ismert algoritmusok gráfelméletben?",
+    "order": 12,
+    "options": ["Dijkstra-algoritmus", "Kruskal-algoritmus", "Bellman-Ford-algoritmus", "Floyd-Warshall-algoritmus"],
+    "correct": [0, 2, 3]
+  },
+  {
+    "id": "dm2_13",
+    "type": "matching",
+    "question": "Párosítsd a minimális feszítőfa keresésére szolgáló algoritmusokat a működésükkel!",
+    "order": 13,
+    "pairs": {
+      "Kruskal-algoritmus": "A legkisebb súlyú éleket veszi be folyamatosan, vigyázva, hogy ne alakuljon ki kör.",
+      "Prim-algoritmus": "Egyetlen kezdőcsúcsból indítva építi a fát, mindig a már kész fához legközelebb eső új csúcsot csatolva.",
+      "Feszítőfa definíciója": "A gráf egy olyan részgráfja, amely fa, és tartalmazza az eredeti gráf összes csúcsát."
+    }
+  },
+  {
+    "id": "dm2_14",
+    "type": "multiple_choice",
+    "question": "A kriptográfiában (pl. RSA algoritmus) miért nehéz visszafejteni az üzenetet a nyilvános kulcs alapján?",
+    "order": 14,
+    "options": ["Mert az üzenet hash-elve van.", "Mert a szimmetrikus kulcs nagyon hosszú.", "Mert két nagyon nagy prímszám szorzatának prímtényezős felbontása (faktorizációja) jelenleg számításigényes (nehéz) probléma.", "Mert az adatokat kvantumtérben tárolják."],
+    "correct_index": 2
+  },
+  {
+    "id": "dm2_15",
+    "type": "short_answer",
+    "question": "Mit fejez ki Euler-féle phi-függvénye (φ(n)) egy 'n' pozitív egész számra?",
+    "order": 15,
+    "answers": ["Az n-nél kisebb (vagy egyenlő) és n-hez relatív prím pozitív egészek számát.", "relatív prímek száma", "az n-hez relatív prím számok számát"]
+  },
+  {
+    "id": "dm2_16",
+    "type": "multiple_select",
+    "question": "Mely állítások igazak a párosításokra (matching) egy gráfban?",
+    "order": 16,
+    "options": ["A párosítás egy olyan élhalmaz, amelyben semelyik két élnek nincs közös végpontja.", "Egy párosítás akkor teljes (tökéletes), ha a gráf minden csúcsát lefedi.", "A Hall-tétel (házasság-tétel) megadja a feltételét a teljes párosítás létezésének páros gráfokban.", "A maximális párosítás mérete egyenlő a független csúcshalmaz méretével minden gráfban."],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "dm2_17",
+    "type": "matching",
+    "question": "Párosítsd a mátrix reprezentációkat a gráfelméletben!",
+    "order": 17,
+    "pairs": {
+      "Szomszédsági mátrix (Adjacency matrix)": "Az (i,j) elem megadja, hogy az i-edik és j-edik csúcs között hány él fut.",
+      "Illeszkedési mátrix (Incidence matrix)": "Az (i,j) elem megmutatja, hogy az i-edik csúcs végpontja-e a j-edik élnek.",
+      "Szimmetrikus mátrix": "Irányítatlan gráfok szomszédsági mátrixának tulajdonsága."
+    }
+  },
+  {
+    "id": "dm2_18",
+    "type": "multiple_choice",
+    "question": "Mit jelent a Ford-Fulkerson algoritmus által keresett 'maximális folyam' (maximum flow) hálózatokban?",
+    "order": 18,
+    "options": ["A legrövidebb út hossza a forrás és a nyelő között.", "A hálózatban a forrásból (source) a nyelőbe (sink) áramoltatható maximális mennyiség (élkapacitásokat figyelembe véve).", "A gráf köreinek maximális száma.", "A minimális vágás éleinek száma."],
+    "correct_index": 1
+  },
+  {
+    "id": "dm2_19",
+    "type": "multiple_choice",
+    "question": "Mi a különbség egy irányított gráf 'erősen összefüggő' és 'gyengén összefüggő' állapota között?",
+    "order": 19,
+    "options": ["Erősen összefüggő: van irányított út minden A-ból B-be ÉS B-ből A-ba. Gyengén: csak akkor összefüggő, ha az élek irányítását figyelmen kívül hagyjuk.", "Nincs különbség.", "Gyengén összefüggő az, amelyik fává alakítható.", "Az erősen összefüggőben csak páros fokú csúcsok vannak."],
+    "correct_index": 0
+  },
+  {
+    "id": "dm2_20",
+    "type": "short_answer",
+    "question": "Hogy nevezik a gráfelméletben azt az 'n' csúcsú fát (különleges gráfot), amelyben egyetlen központi csúcs össze van kötve a többi n-1 csúccsal, de azok egymással nincsenek összekötve?",
+    "order": 20,
+    "answers": ["csillag", "csillaggráf", "K1,n-1"]
+  }
+]

@@ -1,0 +1,173 @@
+[
+  {
+    "id": "m1",
+    "type": "multiple_choice",
+    "question": "Melyik a jól ismert trigonometrikus Pitagorasz-tétel?",
+    "order": 1,
+    "options": ["sin(x) + cos(x) = 1", "sin^2(x) + cos^2(x) = 1", "sin(x^2) + cos(x^2) = 1", "tan^2(x) + cot^2(x) = 1"],
+    "correct_index": 1
+  },
+  {
+    "id": "m2",
+    "type": "multiple_select",
+    "question": "Melyek a matematikai logika kvantorai az alábbiak közül?",
+    "order": 2,
+    "options": ["Univerzális kvantor (∀)", "Egzisztenciális kvantor (∃)", "Negáció (¬)", "Implikáció (⇒)"],
+    "correct": [0, 1]
+  },
+  {
+    "id": "m3",
+    "type": "matching",
+    "question": "Párosítsd a logikai műveleteket a nevükkel!",
+    "order": 3,
+    "pairs": {
+      "∧": "Konjunkció (ÉS)",
+      "∨": "Diszjunkció (VAGY)",
+      "¬": "Negáció (NEM)",
+      "⇒": "Implikáció (KÖVETKEZTETÉS)"
+    }
+  },
+  {
+    "id": "m4",
+    "type": "short_answer",
+    "question": "Oldd meg a következő algebrai egyenletet a valós számok halmazán: √(x - 2) = 3. Mennyi x?",
+    "order": 4,
+    "answers": ["11", "x=11", "tizenegy"]
+  },
+  {
+    "id": "m5",
+    "type": "multiple_choice",
+    "question": "Mi a teljes indukciós bizonyítás első lépése?",
+    "order": 5,
+    "options": ["Indukciós feltevés megfogalmazása", "Az állítás bizonyítása n+1-re", "Az állítás ellenőrzése a kezdőértékre (pl. n=1)", "A tétel tagadása"],
+    "correct_index": 2
+  },
+  {
+    "id": "m6",
+    "type": "multiple_choice",
+    "question": "Mit állíthatunk egy mátrixról, ha a determinánsa 0?",
+    "order": 6,
+    "options": ["A mátrix invertálható.", "A mátrix szinguláris (nem invertálható).", "A mátrix identitásmátrix.", "A mátrix rangja maximális."],
+    "correct_index": 1
+  },
+  {
+    "id": "m7",
+    "type": "multiple_select",
+    "question": "Melyek egy vektortér bázisának elengedhetetlen tulajdonságai?",
+    "order": 7,
+    "options": ["Lineárisan független vektorokból áll", "Ortogonális vektorokból áll", "Generátorrendszert alkot", "Csak nullvektort tartalmazhat"],
+    "correct": [0, 2]
+  },
+  {
+    "id": "m8",
+    "type": "matching",
+    "question": "Párosítsd a lineáris algebrai jelöléseket a jelentésükkel!",
+    "order": 8,
+    "pairs": {
+      "A^T": "Transzponált mátrix",
+      "A^(-1)": "Inverz mátrix",
+      "det(A)": "Determináns",
+      "I": "Egységmátrix"
+    }
+  },
+  {
+    "id": "m9",
+    "type": "short_answer",
+    "question": "Mennyi a skaláris szorzata két egymásra merőleges, nem nulla vektornak az Euklideszi térben?",
+    "order": 9,
+    "answers": ["0", "nulla", "zéró"]
+  },
+  {
+    "id": "m10",
+    "type": "multiple_choice",
+    "question": "Mikor nevezünk egy λ számot az A mátrix sajátértékének (ahol v egy nem nullvektor)?",
+    "order": 10,
+    "options": ["Ha A * v = 0", "Ha A * v = λ * v", "Ha det(A - λ) = 1", "Ha A^T = λ * I"],
+    "correct_index": 1
+  },
+  {
+    "id": "m11",
+    "type": "multiple_select",
+    "question": "Mely állítások igazak egy valós szimmetrikus mátrixra?",
+    "order": 11,
+    "options": ["Megegyezik a transzponáltjával (A = A^T).", "Csak téglalap alakú (nem négyzetes) lehet.", "Minden sajátértéke valós szám.", "A determinánsa mindig 0."],
+    "correct": [0, 2]
+  },
+  {
+    "id": "m12",
+    "type": "short_answer",
+    "question": "Mi az f(x) = 1 / x függvény értelmezési tartománya a valós számok halmazán?",
+    "order": 12,
+    "answers": ["x!=0", "R\\{0}", "minden valós szám, kivéve a 0", "x nem 0"]
+  },
+  {
+    "id": "m13",
+    "type": "multiple_choice",
+    "question": "Milyen relációt nevezünk ekvivalenciarelációnak?",
+    "order": 13,
+    "options": ["Ami csak reflexív.", "Ami reflexív, antiszimmetrikus és tranzitív.", "Ami reflexív, szimmetrikus és tranzitív.", "Ami irreflexív és aszimmetrikus."],
+    "correct_index": 2
+  },
+  {
+    "id": "m14",
+    "type": "matching",
+    "question": "Párosítsd a relációk és függvények fogalmait a jelentésükkel!",
+    "order": 14,
+    "pairs": {
+      "Injektív": "Különböző elemekhez különböző képeket rendel.",
+      "Szürjektív": "Az érkezési halmaz minden eleme előáll képként.",
+      "Bijektív": "Injektív és szürjektív is egyszerre.",
+      "Inverz függvény": "Csak bijektív függvények esetén létezik."
+    }
+  },
+  {
+    "id": "m15",
+    "type": "short_answer",
+    "question": "Bontsd tényezőkre az alábbi algebrai azonosságot: a^2 - b^2 = ?",
+    "order": 15,
+    "answers": ["(a-b)(a+b)", "(a+b)(a-b)"]
+  },
+  {
+    "id": "m16",
+    "type": "multiple_select",
+    "question": "Melyek a De Morgan azonosságok a logikában és halmazelméletben?",
+    "order": 16,
+    "options": ["¬(A ∧ B) = ¬A ∨ ¬B", "¬(A ∨ B) = ¬A ∧ ¬B", "A ∨ (B ∧ C) = (A ∨ B) ∧ (A ∨ C)", "A ∧ ¬A = Hamis"],
+    "correct": [0, 1]
+  },
+  {
+    "id": "m17",
+    "type": "multiple_choice",
+    "question": "Egy sorozat konvergens. Mit jelent ez a határértékére nézve?",
+    "order": 17,
+    "options": ["A határértéke végtelen.", "A határértéke egy véges valós szám.", "Nincs határértéke.", "A sorozat elemei folyamatosan növekednek."],
+    "correct_index": 1
+  },
+  {
+    "id": "m18",
+    "type": "matching",
+    "question": "Párosítsd a sorozatok tulajdonságait!",
+    "order": 18,
+    "pairs": {
+      "Monoton növekvő": "Minden n-re a(n+1) ≥ a(n)",
+      "Szigorúan monoton csökkenő": "Minden n-re a(n+1) < a(n)",
+      "Korlátos": "Létezik alsó és felső korlátja is.",
+      "Divergens": "Nem rendelkezik véges határértékkel."
+    }
+  },
+  {
+    "id": "m19",
+    "type": "multiple_choice",
+    "question": "Hogyan oldható meg egy lineáris egyenletrendszer mátrixok segítségével, ha az együtthatómátrix (A) invertálható és az egyenlet Ax = b alakú?",
+    "order": 19,
+    "options": ["x = b * A", "x = A^(-1) * b", "x = b / det(A)", "Nincs megoldása."],
+    "correct_index": 1
+  },
+  {
+    "id": "m20",
+    "type": "short_answer",
+    "question": "Mennyi a log_2(8) kifejezés értéke?",
+    "order": 20,
+    "answers": ["3", "három"]
+  }
+]

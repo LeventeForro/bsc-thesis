@@ -1,0 +1,226 @@
+[
+  {
+    "id": "p1",
+    "type": "multiple_choice",
+    "question": "A programkészítés folyamatában mi a specifikáció célja az előadásanyag alapján?",
+    "order": 1,
+    "options": [
+      "Az algoritmus leírása struktogrammal.",
+      "Annak rögzítése, hogy 'miből, mit?' akarunk elérni.",
+      "A kódolás során felmerülő szintaktikai hibák javítása.",
+      "A memóriahasználat minimalizálása."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "p2",
+    "type": "matching",
+    "question": "Párosítsd a programkészítés fázisait a feladatukkal!",
+    "order": 2,
+    "pairs": {
+      "Tervezés": "Mivel és hogyan oldjuk meg? (Adat- és algoritmus-leírás)",
+      "Kódolás": "Hogyan csinálja a gép? (Reprezentáció + implementáció)",
+      "Tesztelés": "Hibás-e a program? (Hibalista előállítása)",
+      "Hibakeresés (Debugging)": "Hol van a hiba és mi az oka?"
+    }
+  },
+  {
+    "id": "p3",
+    "type": "multiple_select",
+    "question": "Melyek a specifikáció fő részei a módszeres feladatmegoldásban?",
+    "order": 3,
+    "options": [
+      "Előfeltétel (Pre)",
+      "Utófeltétel (Post)",
+      "Ciklusinvariáns",
+      "Bemenő és kimenő adatok állapota"
+    ],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "p4",
+    "type": "short_answer",
+    "question": "Melyik programozási tétel célja, hogy meghatározza egy adott T tulajdonságú elemek számát a sorozatban?",
+    "order": 4,
+    "answers": ["Megszámlálás", "megszámlálás tétel", "megszámlálás tétele"]
+  },
+  {
+    "id": "p5",
+    "type": "multiple_choice",
+    "question": "Melyik kezdeti érték a helyes az 'Összegzés' (Sorozatszámítás) programozási tétel kezdetekor (ha összeadást végzünk)?",
+    "order": 5,
+    "options": [
+      "1",
+      "0",
+      "-1",
+      "A sorozat első eleme"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "p6",
+    "type": "multiple_select",
+    "question": "Milyen programozási alapstruktúrákat (vezérlési szerkezeteket) ismerünk az algoritmusok tervezésénél?",
+    "order": 6,
+    "options": [
+      "Szekvencia (sorrendiség)",
+      "Szelekció (elágazás)",
+      "Iteráció (ciklus)",
+      "Specifikáció"
+    ],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "p7",
+    "type": "matching",
+    "question": "Párosítsd a programozási tételeket a rövid definíciójukkal!",
+    "order": 7,
+    "pairs": {
+      "Keresés": "Egy adott tulajdonságú elem indexét vagy meglétét adja vissza.",
+      "Kiválasztás": "Egy biztosan létező T tulajdonságú elemet ad vissza.",
+      "Eldöntés": "Logikai (igaz/hamis) értéket ad, van-e T tulajdonságú elem.",
+      "Maximumkiválasztás": "Egy sorozat legnagyobb értékének indexét vagy értékét adja."
+    }
+  },
+  {
+    "id": "p8",
+    "type": "short_answer",
+    "question": "Mi a logaritmikus (bináris) keresés szigorú előfeltétele a sorozatra nézve?",
+    "order": 8,
+    "answers": ["rendezett", "rendezettnek kell lennie", "rendezettség"]
+  },
+  {
+    "id": "p9",
+    "type": "multiple_choice",
+    "question": "Mi a legfontosabb különbség az Eldöntés és a Lineáris Keresés tétele között?",
+    "order": 9,
+    "options": [
+      "Az eldöntés csak igaz/hamis eredményt ad, a keresés pedig megadja az elem helyét (indexét) is.",
+      "A keresés ciklus nélkül működik.",
+      "Az eldöntést csak rendezett sorozaton használjuk.",
+      "Nincs köztük különbség."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "p10",
+    "type": "multiple_select",
+    "question": "Mely tételek eredményeznek kimenetként egy teljesen új sorozatot (tömböt)?",
+    "order": 10,
+    "options": [
+      "Kiválogatás",
+      "Szétválogatás",
+      "Megszámlálás",
+      "Másolás"
+    ],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "p11",
+    "type": "matching",
+    "question": "Párosítsd az iterációk (ciklusok) típusait!",
+    "order": 11,
+    "pairs": {
+      "Elöltesztelő ciklus": "A ciklusmag végrehajtása előtt értékeli ki a feltételt.",
+      "Hátultesztelő ciklus": "A ciklusmag legalább egyszer lefut.",
+      "Számlálós (for) ciklus": "A lépésszám előre ismert, egy iterátor léptetésével működik."
+    }
+  },
+  {
+    "id": "p12",
+    "type": "short_answer",
+    "question": "Az egyetemi jegyzet alapján, ha az utófeltétel teljesül, akkor a program helyes. Mi az a másik halmaz (feltétel), aminek induláskor fenn kell állnia?",
+    "order": 12,
+    "answers": ["előfeltétel", "elofeltetel", "pre"]
+  },
+  {
+    "id": "p13",
+    "type": "multiple_choice",
+    "question": "Mit jelent az, ha egy algoritmus \"determinisztikus\"?",
+    "order": 13,
+    "options": [
+      "Véletlenszerű kimenetet ad.",
+      "Ugyanarra a bemenetre mindig ugyanazt a kimenetet és lépéssorozatot produkálja.",
+      "Csak egyetlen változót használ.",
+      "Soha nem áll meg (végtelen ciklus)."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "p14",
+    "type": "multiple_select",
+    "question": "Mely programozási tételekhez NEM szükséges végigjárni az egész sorozatot minden esetben?",
+    "order": 14,
+    "options": [
+      "Lineáris Keresés",
+      "Eldöntés",
+      "Maximumkiválasztás",
+      "Összegzés"
+    ],
+    "correct": [0, 1]
+  },
+  {
+    "id": "p15",
+    "type": "multiple_choice",
+    "question": "A Szétválogatás programozási tétel hány kimeneti sorozatot (tömböt) hoz létre alapesetben egy adott T tulajdonság alapján?",
+    "order": 15,
+    "options": [
+      "Egyet.",
+      "Kettőt (az egyikbe a tulajdonsággal rendelkezők, a másikba az azzal nem rendelkezők kerülnek).",
+      "Hármat.",
+      "Egyet sem, a helyben rendezi a tömböt."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "p16",
+    "type": "matching",
+    "question": "Párosítsd a halmaztételeket a logikájukkal!",
+    "order": 16,
+    "pairs": {
+      "Metszet tétel": "Két halmaz közös elemeit gyűjti ki egy harmadik halmazba.",
+      "Unió tétel": "Két halmaz összes elemét egy harmadik halmazba teszi ismétlődések nélkül.",
+      "Összefésülés": "Két rendezett sorozatból csinál egy harmadik rendezett sorozatot."
+    }
+  },
+  {
+    "id": "p17",
+    "type": "short_answer",
+    "question": "A programkészítés 9. lépése az anyag szerint az, amikor a program működik, de új igények lépnek fel, így fejleszteni kell. Mi ennek a fázisnak a neve?",
+    "order": 17,
+    "answers": ["Karbantartás", "karbantartas"]
+  },
+  {
+    "id": "p18",
+    "type": "multiple_select",
+    "question": "Mi jellemző a struktogramra (Nassi-Shneiderman diagram) mint algoritmus leíró eszközre?",
+    "order": 18,
+    "options": [
+      "Nem használ GOTO ugrásokat (csak strukturált elemeket).",
+      "Téglalapokba rajzolt blokkokból épül fel.",
+      "Nyilakkal köti össze az állapotokat.",
+      "Alkalmas a szekvencia, iteráció és szelekció ábrázolására."
+    ],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "p19",
+    "type": "multiple_choice",
+    "question": "A lineáris keresés algoritmusának feltétele egy \"while\" (elöltesztelő) ciklus. Mi a kilépési feltétel logikája?",
+    "order": 19,
+    "options": [
+      "Amíg el nem értük a tömb végét ÉS amíg nem találtuk meg a keresett elemet.",
+      "Amíg megtaláljuk az első 5 elemet.",
+      "Csak addig, amíg a tömb végéhez nem érünk (tulajdonságtól függetlenül).",
+      "Amíg a ciklusváltozó prím."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "p20",
+    "type": "short_answer",
+    "question": "Mit nevezünk reprezentációnak a programozás tervezési folyamatában?",
+    "order": 20,
+    "answers": ["adatok leírását a gép számára", "adatszerkezetek kiválasztását", "adatleírás", "adatszerkezet"]
+  }
+]

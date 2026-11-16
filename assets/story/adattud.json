@@ -1,0 +1,164 @@
+[
+  {
+    "id": "ad1",
+    "type": "multiple_choice",
+    "question": "Melyik mutató NEM tartozik a leíró statisztika helyzeti értékei (helyzeti mutatói) közé a tematika alapján? [cite: 1217]",
+    "order": 1,
+    "options": ["Átlag", "Módusz", "Tapasztalati szórás", "Kvartilisek"],
+    "correct_index": 2
+  },
+  {
+    "id": "ad2",
+    "type": "multiple_select",
+    "question": "Melyek a leíró statisztika szóródásos értékei (szóródási mutatói)? [cite: 1217]",
+    "order": 2,
+    "options": ["Kiterjedés", "Szórás", "Medián", "Tapasztalati szórás"],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "ad3",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azt az információelméleti alapfogalmat, amely a bizonytalanság vagy az információtartalom mértéke? [cite: 1221]",
+    "order": 3,
+    "answers": ["Entrópia", "entropy"]
+  },
+  {
+    "id": "ad4",
+    "type": "matching",
+    "question": "Párosítsa a korrelációs együtthatókat a típusukkal! [cite: 1217]",
+    "order": 4,
+    "pairs": {
+      "Pearson": "Lineáris korreláció mérésére szolgáló mutató.",
+      "Spearman": "Rangkorrelációs mutató."
+    }
+  },
+  {
+    "id": "ad5",
+    "type": "multiple_select",
+    "question": "Milyen témakörökben rendelkezik aktuális ismeretekkel egy adattudományi specializációt végzett hallgató a tudásanyag alapján? [cite: 1212]",
+    "order": 5,
+    "options": ["Statisztikai adatelemzés", "Lineáris algebrai módszerek", "Információelmélet", "Webes keretrendszerek"],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "ad6",
+    "type": "short_answer",
+    "question": "Melyik nevezetes lineáris algebrai felbontást (mozaikszó) említi a tematika a PCA mellett? [cite: 1220]",
+    "order": 6,
+    "answers": ["SVD", "Singular Value Decomposition"]
+  },
+  {
+    "id": "ad7",
+    "type": "multiple_choice",
+    "question": "Melyik fogalom tartozik a valószínűségszámítás alapjaihoz a dokumentum szerint? [cite: 1218]",
+    "order": 7,
+    "options": ["S-algebrák (szigma-algebrák)", "Hipersíkok", "Pearson-korreláció", "PCA"],
+    "correct_index": 0
+  },
+  {
+    "id": "ad8",
+    "type": "multiple_choice",
+    "question": "Mit vizsgál a kétváltozós leíró statisztika a felsoroltak közül? [cite: 1217]",
+    "order": 8,
+    "options": ["Kvartilisek", "Kovariancia és korreláció", "Módusz", "Minimum és maximum"],
+    "correct_index": 1
+  },
+  {
+    "id": "ad9",
+    "type": "matching",
+    "question": "Párosítsa a geometriai alapfogalmakat a leírásukkal! [cite: 1219]",
+    "order": 9,
+    "pairs": {
+      "Hipersíkok": "Olyan geometriai objektumok, amelyek egy dimenzióval kisebbek a befoglaló térnél.",
+      "Vektorok és pontok": "A tér alapvető elemei.",
+      "Távolságok és mértékek": "A térbeli elemek közötti kvantitatív viszonyok jellemzői."
+    }
+  },
+  {
+    "id": "ad10",
+    "type": "multiple_choice",
+    "question": "Melyik állítás igaz a valószínűségi változókra a tematika szerint? [cite: 1218]",
+    "order": 10,
+    "options": ["Csak diszkrét valószínűségi változók léteznek.", "A változók lehetnek diszkrétek és folytonosak is.", "A valószínűségi változókhoz nem tartozik sűrűségfüggvény.", "A függetlenség nem értelmezhető eseményekre."],
+    "correct_index": 1
+  },
+  {
+    "id": "ad11",
+    "type": "short_answer",
+    "question": "Ki a tárgy felelőse az adatlap szerint? [cite: 1209]",
+    "order": 11,
+    "answers": ["Farkas Gábor"]
+  },
+  {
+    "id": "ad12",
+    "type": "multiple_choice",
+    "question": "Melyik statisztikai eszköz szolgál kategorikus változók együttes eloszlásának ábrázolására? [cite: 1217]",
+    "order": 12,
+    "options": ["Hipersík", "Kontingenciatáblázat", "S-algebra", "PCA"],
+    "correct_index": 1
+  },
+  {
+    "id": "ad13",
+    "type": "multiple_select",
+    "question": "Melyek a lineáris algebrai témakörök az adattudomány alapjaiban? [cite: 1220]",
+    "order": 13,
+    "options": ["Transzformációk", "PCA (Főkomponens-elemzés)", "SVD (Szinguláris érték szerinti felbontás)", "Leibniz-sorok"],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "ad14",
+    "type": "short_answer",
+    "question": "Mi a neve az $x$ és $y$ valószínűségi változók közötti lineáris kapcsolat szorosságát mutató, leíró statisztikai mérőszámnak? [cite: 1217]",
+    "order": 14,
+    "answers": ["Korreláció", "correlation"]
+  },
+  {
+    "id": "ad15",
+    "type": "matching",
+    "question": "Párosítsa a valószínűségszámítás fogalmait a rájuk jellemző függvénnyel! [cite: 1218]",
+    "order": 15,
+    "pairs": {
+      "Eloszlásfüggvény": "Megadja annak valószínűségét, hogy a változó értéke kisebb vagy egyenlő egy adott számnál.",
+      "Sűrűségfüggvény": "Folytonos változók esetén a valószínűség eloszlását írja le az értékkészlet felett."
+    }
+  },
+  {
+    "id": "ad16",
+    "type": "multiple_choice",
+    "question": "Milyen folyamatokat írnak le a Markov-láncok az információelméletben? [cite: 1221]",
+    "order": 16,
+    "options": ["Csak determinisztikus folyamatokat.", "Olyan sztochasztikus folyamatokat, ahol a jövőbeli állapot csak a jelentől függ.", "Kizárólag lineáris regressziót.", "Geometriai transzformációkat."],
+    "correct_index": 1
+  },
+  {
+    "id": "ad17",
+    "type": "multiple_select",
+    "question": "Melyek a valószínűségszámítás alapfogalmai a dokumentum szerint? [cite: 1218]",
+    "order": 17,
+    "options": ["Feltételes valószínűség", "Események függetlensége", "Hipersíkok távolsága", "Halmazalgebrák"],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "ad18",
+    "type": "short_answer",
+    "question": "Milyen nyelven kell a hallgatónak magas szinten ismernie a szakterület szókincsét az anyanyelvén kívül? [cite: 1213]",
+    "order": 18,
+    "answers": ["Angol", "English"]
+  },
+  {
+    "id": "ad19",
+    "type": "multiple_choice",
+    "question": "Melyik terület NEM része az adattudomány alapjai kurzusnak a tematika alapján? [cite: 1216-1221]",
+    "order": 19,
+    "options": ["Leíró statisztika", "Geometriai alapfogalmak", "Számítógépes hálózatok", "Információelmélet"],
+    "correct_index": 2
+  },
+  {
+    "id": "ad20",
+    "type": "multiple_choice",
+    "question": "Hány heti óraszámban oktatják az Adattudomány alapjai Ea tárgyat? [cite: 1209]",
+    "order": 20,
+    "options": ["1/0/0", "2/0/0", "2/0/2", "1/0/1"],
+    "correct_index": 1
+  }
+]

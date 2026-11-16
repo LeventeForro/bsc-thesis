@@ -1,0 +1,174 @@
+[
+  {
+    "id": "sz1",
+    "type": "multiple_choice",
+    "question": "Melyik a Neumann-elvek egyike az alábbiak közül?",
+    "order": 1,
+    "options": ["A program és az adatok fizikailag külön memóriában tárolódnak.", "A számítógépnek analóg elven kell működnie.", "A programok és az adatok is ugyanabban a memóriában, belső tárban (memóriában) tárolódnak.", "A gépi utasítások nem változtathatóak futás közben."],
+    "correct_index": 2
+  },
+  {
+    "id": "sz2",
+    "type": "multiple_select",
+    "question": "Melyek egy modern CPU (Központi Feldolgozó Egység) fő funkcionális blokkjai?",
+    "order": 2,
+    "options": ["ALU (Aritmetikai és Logikai Egység)", "CU (Vezérlőegység)", "Regiszterek", "Merevlemez (HDD)"],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "sz3",
+    "type": "matching",
+    "question": "Párosítsd a memóriahierarchia szintjeit a jellemzőikkel!",
+    "order": 3,
+    "pairs": {
+      "Regiszterek": "A leggyorsabb és legkisebb kapacitású tároló, közvetlenül a processzorban.",
+      "Cache (Gyorsítótár)": "A CPU és a főmemória közötti sebességkülönbséget hidalja át.",
+      "RAM (Főmemória)": "Az aktuálisan futó programok és adataik átmeneti tárolója, kikapcsoláskor tartalma elvész.",
+      "SSD / HDD": "Nagy kapacitású, lassabb, de nem felejtő háttértároló."
+    }
+  },
+  {
+    "id": "sz4",
+    "type": "short_answer",
+    "question": "Hogyan írjuk le a tízes számrendszerbeli 13-at kettes számrendszerben (binárisan)?",
+    "order": 4,
+    "answers": ["1101", "0b1101"]
+  },
+  {
+    "id": "sz5",
+    "type": "multiple_choice",
+    "question": "A hexadecimális (16-os) számrendszerben mi a 'C' betű értéke decimálisan (10-es számrendszerben)?",
+    "order": 5,
+    "options": ["10", "11", "12", "13"],
+    "correct_index": 2
+  },
+  {
+    "id": "sz6",
+    "type": "multiple_select",
+    "question": "Mely logikai kapuk az úgynevezett 'univerzális kapuk', amelyekből bármilyen logikai hálózat felépíthető?",
+    "order": 6,
+    "options": ["AND (ÉS)", "NAND (NEM-ÉS)", "OR (VAGY)", "NOR (NEM-VAGY)"],
+    "correct": [1, 3]
+  },
+  {
+    "id": "sz7",
+    "type": "matching",
+    "question": "Párosítsd az igazságtábla bemeneteit a kapu kimenetével (ha a bemenetek: A=1, B=0)!",
+    "order": 7,
+    "pairs": {
+      "AND (ÉS) kapu": "0 (Hamis)",
+      "OR (VAGY) kapu": "1 (Igaz)",
+      "XOR (Kizáró VAGY) kapu": "1 (Igaz)",
+      "NOR (NEM VAGY) kapu": "0 (Hamis)"
+    }
+  },
+  {
+    "id": "sz8",
+    "type": "short_answer",
+    "question": "Milyen hálózatokat nevezünk kombinációs logikai hálózatoknak?",
+    "order": 8,
+    "answers": ["Amelyek kimenete csak az aktuális bemenetektől függ (nincs memóriájuk).", "nincs memória", "nem tartalmaznak memóriát"]
+  },
+  {
+    "id": "sz9",
+    "type": "multiple_choice",
+    "question": "Mit takar a 'kettes komplemens' (two's complement) kifejezés a számítástechnikában?",
+    "order": 9,
+    "options": ["A lebegőpontos számok ábrázolási szabványát.", "A negatív egész számok ábrázolási módját.", "A memóriacímzés egy típusát.", "Egy hibajavító kódolást."],
+    "correct_index": 1
+  },
+  {
+    "id": "sz10",
+    "type": "multiple_choice",
+    "question": "Mi történik, ha két 8 bites, előjeles egészet (kettes komplemensben) összeadunk, és az eredmény nem fér el 8 biten (pl. 120 + 10)?",
+    "order": 10,
+    "options": ["A program mindig összeomlik.", "A gép automatikusan 16 bitre bővíti a típust.", "Túlcsordulás (overflow) lép fel, az eredmény hibás, valószínűleg negatív szám lesz.", "A hardver figyelmeztető jelet küld a kijelzőre."],
+    "correct_index": 2
+  },
+  {
+    "id": "sz11",
+    "type": "multiple_select",
+    "question": "Melyek tartoznak a Neumann-architektúra szerinti alapvető buszrendszerek (sínek) közé?",
+    "order": 11,
+    "options": ["Címbusz (Address bus)", "Adatbusz (Data bus)", "Vezérlőbusz (Control bus)", "PCI busz"],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "sz12",
+    "type": "short_answer",
+    "question": "Hogy hívjuk a CPU azon belső regiszterét, amely a következő végrehajtandó utasítás memóriacímét tárolja?",
+    "order": 12,
+    "answers": ["PC", "Program Counter", "Utasításszámláló"]
+  },
+  {
+    "id": "sz13",
+    "type": "matching",
+    "question": "Párosítsd a gépi utasítások végrehajtási ciklusának (Instruction Cycle) fázisait a feladatukkal!",
+    "order": 13,
+    "pairs": {
+      "Fetch (Kiolvasás)": "A következő utasítás betöltése a memóriából a CPU-ba.",
+      "Decode (Dekódolás)": "Az utasításkód értelmezése a Vezérlőegység által.",
+      "Execute (Végrehajtás)": "A tényleges művelet elvégzése (pl. ALU által).",
+      "Store (Tárolás / Visszaírás)": "Az eredmény visszaírása a regiszterbe vagy memóriába."
+    }
+  },
+  {
+    "id": "sz14",
+    "type": "multiple_choice",
+    "question": "Mit jelent a 'megszakítás' (interrupt) fogalma?",
+    "order": 14,
+    "options": ["A gép hirtelen kikapcsolását.", "A CPU normál futásának felfüggesztését egy magasabb prioritású (pl. külső hardveres) esemény kezelése érdekében.", "A végtelen ciklusok megállítását.", "A hálózati kapcsolat megszakadását."],
+    "correct_index": 1
+  },
+  {
+    "id": "sz15",
+    "type": "multiple_select",
+    "question": "Melyek egy operációs rendszer (OS) legfontosabb alapfeladatai?",
+    "order": 15,
+    "options": ["Hardvererőforrások (CPU, memória) kezelése és elosztása.", "Folyamatok (processzek) ütemezése.", "Szövegszerkesztés és táblázatkezelés.", "Fájlrendszer és I/O eszközök kezelése."],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "sz16",
+    "type": "multiple_choice",
+    "question": "Melyik állítás igaz a RISC (Reduced Instruction Set Computer) processzorarchitektúrákra?",
+    "order": 16,
+    "options": ["Kevés, egyszerű és gyorsan végrehajtható utasítással rendelkeznek.", "Nagyon bonyolult, komplex utasításaik vannak.", "Nincs szükségük regiszterekre.", "Csak assembly nyelven programozhatóak."],
+    "correct_index": 0
+  },
+  {
+    "id": "sz17",
+    "type": "matching",
+    "question": "Párosítsd a memóriakezelési technikákat a jellemzőjükkel!",
+    "order": 17,
+    "pairs": {
+      "Virtuális memória": "A háttértárat használja a fizikai RAM kibővítésére (pl. lapozófájl).",
+      "Lapozás (Paging)": "A memóriát azonos méretű, fix blokkokra (lapokra) osztja.",
+      "Szegmentálás": "A memóriát logikai egységekre (pl. kód, adatszegmens) osztja, változó méretben.",
+      "DMA (Direct Memory Access)": "Lehetővé teszi perifériák számára, hogy a CPU bevonása nélkül írjanak/olvassanak a memóriába."
+    }
+  },
+  {
+    "id": "sz18",
+    "type": "short_answer",
+    "question": "Hány bitből áll egy Byte (bájt) a modern számítógépes rendszerekben?",
+    "order": 18,
+    "answers": ["8", "nyolc"]
+  },
+  {
+    "id": "sz19",
+    "type": "multiple_choice",
+    "question": "Mit ábrázol az IEEE 754-es szabvány?",
+    "order": 19,
+    "options": ["A karakterkódolást (Unicode).", "A hálózati csomagok szerkezetét.", "A lebegőpontos (tört) számok számítógépes ábrázolását.", "A memóriamodulok fizikai méretét."],
+    "correct_index": 2
+  },
+  {
+    "id": "sz20",
+    "type": "multiple_select",
+    "question": "Sorrendi hálózatok (szekvenciális logikai hálózatok) esetében mely állítások igazak?",
+    "order": 20,
+    "options": ["Tartalmaznak memóriát (állapotot tárolnak).", "A kimenetük csak a jelenlegi bemenetektől függ.", "Ilyenek például a flip-flopok (billenőkörök).", "Működésüket gyakran egy órajel (clock) szinkronizálja."],
+    "correct": [0, 2, 3]
+  }
+]

@@ -1,0 +1,173 @@
+[
+  {
+    "id": "dm1",
+    "type": "multiple_choice",
+    "question": "Mennyi a {1, 2, 3} halmaz hatványhalmazának számossága (azaz hány részhalmaza van)?",
+    "order": 1,
+    "options": ["3", "6", "8", "9"],
+    "correct_index": 2
+  },
+  {
+    "id": "dm2",
+    "type": "multiple_select",
+    "question": "Mely állítások igazak két halmaz direkt szorzatára (Descartes-szorzatára), A × B-re?",
+    "order": 2,
+    "options": ["Elemei rendezett párok: (a, b), ahol a ∈ A és b ∈ B.", "A × B mindig egyenlő B × A-val (kommutatív).", "Ha A üres halmaz, akkor A × B is üres halmaz.", "Számossága egyenlő A és B számosságának szorzatával (véges halmazoknál)."],
+    "correct": [0, 2, 3]
+  },
+  {
+    "id": "dm3",
+    "type": "matching",
+    "question": "Párosítsd a relációk tulajdonságait a formális definíciójukkal!",
+    "order": 3,
+    "pairs": {
+      "Reflexív": "Minden x-re igaz, hogy xRx.",
+      "Szimmetrikus": "Ha xRy, akkor yRx is teljesül.",
+      "Antiszimmetrikus": "Ha xRy és yRx, akkor x = y.",
+      "Tranzitív": "Ha xRy és yRz, akkor xRz is teljesül."
+    }
+  },
+  {
+    "id": "dm4",
+    "type": "short_answer",
+    "question": "Melyik az a relációtípus, amely egyszerre reflexív, szimmetrikus és tranzitív?",
+    "order": 4,
+    "answers": ["Ekvivalenciareláció", "ekvivalencia reláció"]
+  },
+  {
+    "id": "dm5",
+    "type": "multiple_choice",
+    "question": "Mikor mondjuk egy f: A → B függvényről, hogy bijektív (bijekció)?",
+    "order": 5,
+    "options": ["Ha minden A-beli elemnek pontosan egy képe van B-ben.", "Ha injektív (különbözőkhöz különbözőket rendel) és szürjektív (B minden eleme előáll képként) is egyszerre.", "Ha csak véges halmazokon van értelmezve.", "Ha a képhalmaz (B) részhalmaza az értelmezési tartománynak (A)."],
+    "correct_index": 1
+  },
+  {
+    "id": "dm6",
+    "type": "multiple_choice",
+    "question": "Mi az állítása a Dirichlet-féle skatulyaelvnek (skatulya-elv)?",
+    "order": 6,
+    "options": ["Minden skatulyába pontosan egy galamb kerül.", "Ha n+1 galambot helyezünk el n skatulyában, akkor lesz legalább egy skatulya, amiben legalább két galamb van.", "Ha n skatulyába n galambot teszünk, mindegyik üres marad.", "Végtelen sok galamb csak végtelen sok skatulyában fér el."],
+    "correct_index": 1
+  },
+  {
+    "id": "dm7",
+    "type": "multiple_select",
+    "question": "Melyek ekvivalensek az implikációval (A ⇒ B) a klasszikus ítéletkalkulusban?",
+    "order": 7,
+    "options": ["¬A ∨ B (Nem A vagy B)", "B ⇒ A", "¬B ⇒ ¬A (Kontrapozíció)", "A ∧ ¬B"],
+    "correct": [0, 2]
+  },
+  {
+    "id": "dm8",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azt az ítéletlogikai formulát, amely minden lehetséges igazságértékelés (modell) esetén hamis?",
+    "order": 8,
+    "answers": ["Ellentmondás", "kielégíthetetlen", "kontradikció"]
+  },
+  {
+    "id": "dm9",
+    "type": "matching",
+    "question": "Párosítsd a kombinatorikai fogalmakat a képletükkel (n elem, k darabot választunk)!",
+    "order": 9,
+    "pairs": {
+      "Ismétlés nélküli permutáció": "n!",
+      "Ismétlés nélküli variáció": "n! / (n-k)!",
+      "Ismétlés nélküli kombináció": "n! / (k! * (n-k)!) [azaz n alatt a k]",
+      "Ismétléses variáció": "n^k (n a k-adikon)"
+    }
+  },
+  {
+    "id": "dm10",
+    "type": "multiple_choice",
+    "question": "Hányféleképpen lehet sorba állítani 5 embert?",
+    "order": 10,
+    "options": ["5", "25", "120", "3125"],
+    "correct_index": 2
+  },
+  {
+    "id": "dm11",
+    "type": "multiple_select",
+    "question": "Mely állítások igazak a komplex számokra (C)?",
+    "order": 11,
+    "options": ["Minden valós szám egyben komplex szám is.", "Az imaginárius egység (i) négyzete -1.", "Két komplex szám nem adható össze.", "Felírhatók algebrai (a+bi) és trigonometrikus alakban is."],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "dm12",
+    "type": "short_answer",
+    "question": "Mi a z = 3 + 4i komplex szám konjugáltja?",
+    "order": 12,
+    "answers": ["3 - 4i", "3-4i"]
+  },
+  {
+    "id": "dm13",
+    "type": "matching",
+    "question": "Párosítsd a számelméleti fogalmakat a jelentésükkel!",
+    "order": 13,
+    "pairs": {
+      "Prímszám": "Csak 1-gyel és önmagával osztható pozitív egész szám (1-nél nagyobb).",
+      "Legnagyobb közös osztó (lnko)": "A legnagyobb egész szám, amely két adott számot maradék nélkül oszt.",
+      "Relatív prímek": "Két szám, amelyeknek a legnagyobb közös osztója 1.",
+      "Euklideszi algoritmus": "Hatékony módszer két szám legnagyobb közös osztójának megkeresésére."
+    }
+  },
+  {
+    "id": "dm14",
+    "type": "multiple_choice",
+    "question": "Mit jelent az, hogy két egész szám (a és b) kongruens modulo m (a ≡ b (mod m))?",
+    "order": 14,
+    "options": ["A két szám összege m.", "Mindkét szám egyenlő m-mel.", "m osztja (a - b)-t (vagy másképp: a és b m-mel osztva ugyanazt a maradékot adja).", "m a legnagyobb közös osztójuk."],
+    "correct_index": 2
+  },
+  {
+    "id": "dm15",
+    "type": "multiple_select",
+    "question": "Melyek a modulus szerinti aritmetika (maradékosztályok) érvényes műveletei, ahol a kongruencia megőrződik?",
+    "order": 15,
+    "options": ["Összeadás", "Kivonás", "Szorzás", "Osztás (bármilyen valós számmal)"],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "dm16",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azt az algoritmust számelméletben, amellyel gyorsan eldönthető, hogy egy adott szám prím-e (noha csak valószínűségi teszt, pl. a Miller-Rabin)? (Általánosabb iskolai módszer: amellyel kigyűjtjük a prímeket egy adott n-ig.)",
+    "order": 16,
+    "answers": ["Eratoszthenész szitája", "eratoszthenészi szita"]
+  },
+  {
+    "id": "dm17",
+    "type": "multiple_choice",
+    "question": "A binomiális tétel szerint a Pascal-háromszög n-edik sorában lévő számok összege mennyi?",
+    "order": 17,
+    "options": ["n!", "n^2", "2^n", "10^n"],
+    "correct_index": 2
+  },
+  {
+    "id": "dm18",
+    "type": "matching",
+    "question": "Párosítsd a logikai kvantorokat és jelöléseket!",
+    "order": 18,
+    "pairs": {
+      "∀ (Univerzális kvantor)": "Minden, bármely...",
+      "∃ (Egzisztenciális kvantor)": "Létezik, van olyan...",
+      "∃!": "Létezik pontosan egy...",
+      "¬∀x P(x)": "Ekvivalens azzal, hogy ∃x ¬P(x)."
+    }
+  },
+  {
+    "id": "dm19",
+    "type": "multiple_select",
+    "question": "Egy n elemű A halmazból és k elemű B halmazból hány különböző függvény képezhető (A → B)?",
+    "order": 19,
+    "options": ["n * k", "k^n (k az n-ediken)", "Minden A-beli elemhez k db B-beli elemet választhatunk.", "n^k (n a k-adikon)"],
+    "correct": [1, 2]
+  },
+  {
+    "id": "dm20",
+    "type": "short_answer",
+    "question": "Hány részhalmaza van egy 10 elemű halmaznak?",
+    "order": 20,
+    "answers": ["1024", "2^10", "kettő a tizediken"]
+  }
+]

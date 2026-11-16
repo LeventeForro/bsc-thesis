@@ -1,0 +1,227 @@
+[
+  {
+    "id": "jog1",
+    "type": "multiple_choice",
+    "question": "Melyik a legmagasabb szintű jogforrás a magyar jogrendszerben a jogszabálytan alapján?",
+    "order": 1,
+    "options": [
+      "Törvény",
+      "Kormányrendelet",
+      "Alaptörvény",
+      "Önkormányzati rendelet"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "jog2",
+    "type": "multiple_select",
+    "question": "Melyek a jogviszonyok szerkezeti elemei a tematika szerint?",
+    "order": 2,
+    "options": [
+      "Jogviszony alanya",
+      "Jogviszony tárgya",
+      "Jogviszony tartalma",
+      "Jogviszony helyszíne"
+    ],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "jog3",
+    "type": "matching",
+    "question": "Párosítsa a jogi és természetes személyekre vonatkozó fogalmakat!",
+    "order": 3,
+    "pairs": {
+      "Természetes személy": "Az élő ember, mint jogalany.",
+      "Jogi személy": "Jogképes szervezet (pl. Kft., alapítvány).",
+      "Jogképesség": "Jogok és kötelezettségek birtoklásának képessége.",
+      "Cselekvőképesség": "Saját nyilatkozattal jogok szerzésének és kötelezettségek vállalásának képessége."
+    }
+  },
+  {
+    "id": "jog4",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azt az eljárást, amelynek célja a fizetésképtelen gazdasági társaság jogutód nélküli megszüntetése a hitelezők kielégítése mellett?",
+    "order": 4,
+    "answers": ["Felszámolás", "Felszámolási eljárás"]
+  },
+  {
+    "id": "jog5",
+    "type": "multiple_choice",
+    "question": "Melyik jogágba tartozik a szoftverek jogi védelme az alapvető besorolás szerint?",
+    "order": 5,
+    "options": [
+      "Büntetőjog",
+      "Szerzői jog",
+      "Családjog",
+      "Közigazgatási jog"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "jog6",
+    "type": "multiple_select",
+    "question": "Melyek a gazdasági társaságok formái a magyar társasági jogban?",
+    "order": 6,
+    "options": [
+      "Betéti társaság (Bt.)",
+      "Korlátolt felelősségű társaság (Kft.)",
+      "Részvénytársaság (Rt.)",
+      "Alapítvány"
+    ],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "jog7",
+    "type": "matching",
+    "question": "Párosítsa a cégeljárásokat azok jellemzőivel!",
+    "order": 7,
+    "pairs": {
+      "Alapítás": "A társaság létrehozása és cégbírósági bejegyzése.",
+      "Csődeljárás": "Fizetőképesség helyreállítását célzó egyezségi kísérlet.",
+      "Végelszámolás": "Fizetőképes társaság jogutód nélküli megszűnése.",
+      "Felszámolás": "Fizetésképtelen társaság megszűnése."
+    }
+  },
+  {
+    "id": "jog8",
+    "type": "short_answer",
+    "question": "Hogy hívjuk azt a jogot, amely biztosítja, hogy mindenki maga rendelkezzen személyes adatainak feltárásáról és felhasználásáról?",
+    "order": 8,
+    "answers": ["Információs önrendelkezési jog", "adatvédelem"]
+  },
+  {
+    "id": "jog9",
+    "type": "multiple_choice",
+    "question": "Mi a dologi jog legfontosabb alapfogalma, amely a dolog feletti teljes hatalmat jelenti?",
+    "order": 9,
+    "options": [
+      "Birtoklás",
+      "Használat",
+      "Tulajdonjog",
+      "Haszonélvezet"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "jog10",
+    "type": "multiple_select",
+    "question": "Mely egyéb jogalanyokat említi a tematika a gazdasági társaságokon kívül?",
+    "order": 10,
+    "options": [
+      "Alapítvány",
+      "Egyesület",
+      "Egyéni vállalkozó",
+      "Munkaszerződés"
+    ],
+    "correct": [0, 1]
+  },
+  {
+    "id": "jog11",
+    "type": "matching",
+    "question": "Párosítsa a szellemi alkotások joga alá tartozó kategóriákat a példákkal!",
+    "order": 11,
+    "pairs": {
+      "Szerzői jog": "Irodalmi, művészeti és tudományos alkotások (pl. szoftver).",
+      "Iparjogvédelem": "Műszaki alkotások és árujelzők (pl. szabadalom, védjegy).",
+      "Személyhez fűződő jog": "A szerző nevének feltüntetéséhez való jog.",
+      "Vagyoni jog": "A mű felhasználásának engedélyezése díjazás ellenében."
+    }
+  },
+  {
+    "id": "jog12",
+    "type": "short_answer",
+    "question": "Melyik jogág foglalkozik a kárfelelősséggel és a szerződésekkel a tematika szerint?",
+    "order": 12,
+    "answers": ["Kötelmi jog"]
+  },
+  {
+    "id": "jog13",
+    "type": "multiple_choice",
+    "question": "Mi jellemzi a jogi személyt a természetes személlyel szemben?",
+    "order": 13,
+    "options": [
+      "Nincs saját neve.",
+      "Nem vállalhat kötelezettséget.",
+      "Mesterséges jogi konstrukció, amelyet a törvény ruház fel jogképességgel.",
+      "Csak kiskorú lehet."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "jog14",
+    "type": "multiple_select",
+    "question": "Milyen folyamatokat foglal magában a cégeljárás a tematika alapján?",
+    "order": 14,
+    "options": [
+      "Alapítás",
+      "Csődeljárás",
+      "Felszámolási eljárás",
+      "Végelszámolás"
+    ],
+    "correct": [0, 1, 2, 3]
+  },
+  {
+    "id": "jog15",
+    "type": "matching",
+    "question": "Párosítsa a jogforrásokat a kibocsátójukkal!",
+    "order": 15,
+    "pairs": {
+      "Törvény": "Országgyűlés",
+      "Kormányrendelet": "Kormány",
+      "Önkormányzati rendelet": "Képviselő-testület",
+      "Mniszteri rendelet": "Miniszter"
+    }
+  },
+  {
+    "id": "jog16",
+    "type": "short_answer",
+    "question": "Ki a tárgyfelelőse a Jogi ismeretek Ea kurzusnak?",
+    "order": 16,
+    "answers": ["Nikovits Tibor", "Dr. Nikovits Tibor", "Nikovits Tibor Dr."]
+  },
+  {
+    "id": "jog17",
+    "type": "multiple_choice",
+    "question": "Mit jelent a 'nevesített szerződés' kifejezés a kötelmi jogban?",
+    "order": 17,
+    "options": [
+      "Olyan szerződés, amit neves emberek kötnek.",
+      "A Polgári Törvénykönyvben külön névvel és szabályozással ellátott szerződéstípus.",
+      "Csak írásban érvényes szerződés.",
+      "Szerződés, amelynek nincs tárgya."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "jog18",
+    "type": "multiple_select",
+    "question": "Melyek a jogszabálytan és jogforrástan alapfogalmai?",
+    "order": 18,
+    "options": [
+      "Jogforrási hierarchia",
+      "Jogi norma értelmezése",
+      "Szoftverfejlesztési módszertan",
+      "Jogszabály hatálya"
+    ],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "jog19",
+    "type": "matching",
+    "question": "Párosítsa a fogalmakat a jelentésükkel a tematika alapján!",
+    "order": 19,
+    "pairs": {
+      "Kárfelelősség": "A másnak okozott kár megtérítésének kötelezettsége.",
+      "Szerződések": "Két vagy több fél joghatás kiváltására irányuló egybehangzó nyilatkozata.",
+      "Jogforrás": "A jogi norma megjelenési formája.",
+      "Dologi jog": "A javak feletti közvetlen hatalmat biztosító jogok."
+    }
+  },
+  {
+    "id": "jog20",
+    "type": "short_answer",
+    "question": "Melyik évben adták ki Pázmándi Kinga: Üzleti jog című kötelező irodalmát a tematika szerint?",
+    "order": 20,
+    "answers": ["2014"]
+  }
+]

@@ -1,0 +1,174 @@
+[
+  {
+    "id": "a1",
+    "type": "multiple_choice",
+    "question": "Mit jelent az O(g(n)) (Nagy-Origo / Big-O) aszimptotikus jelölés egy f(n) algoritmus futási idejére vonatkozóan?",
+    "order": 1,
+    "options": ["Az f(n) aszimptotikus alsó korlátja g(n).", "Az f(n) aszimptotikus felső korlátja g(n) (legrosszabb esetbeli viselkedés nagyságrendje).", "Az f(n) pontosan egyenlő g(n)-nel.", "Az f(n) futási ideje pontosan g(n) másodperc."],
+    "correct_index": 1
+  },
+  {
+    "id": "a2",
+    "type": "short_answer",
+    "question": "Melyik algoritmustervezési paradigmára (elvre) épül a Gyorsrendezés (Quicksort) és az Összefésülő rendezés (Mergesort)?",
+    "order": 2,
+    "answers": ["oszd meg és uralkodj", "divide and conquer", "divide et impera"]
+  },
+  {
+    "id": "a3",
+    "type": "matching",
+    "question": "Párosítsd az alapvető adatszerkezeteket a működési elvükkel!",
+    "order": 3,
+    "pairs": {
+      "Verem (Stack)": "LIFO (Last In, First Out) - az utoljára berakott elem jön ki először.",
+      "Sor (Queue)": "FIFO (First In, First Out) - az elsőnek berakott elem jön ki először.",
+      "Prioritási sor": "A legnagyobb (vagy legkisebb) prioritású/kulcsú elem jön ki először.",
+      "Kétirányú láncolt lista": "Minden elem ismeri a rákövetkező és a megelőző elem címét is."
+    }
+  },
+  {
+    "id": "a4",
+    "type": "multiple_select",
+    "question": "Mely rendező algoritmusok számítanak stabilnak az alábbiak közül? (A stabil rendezés megőrzi az azonos kulcsú elemek eredeti sorrendjét)",
+    "order": 4,
+    "options": ["Buborékrendezés (Bubble sort)", "Kiválasztó rendezés (Selection sort)", "Összefésülő rendezés (Merge sort)", "Gyorsrendezés (Quick sort)"],
+    "correct": [0, 2]
+  },
+  {
+    "id": "a5",
+    "type": "multiple_choice",
+    "question": "Mennyi a Gyorsrendezés (Quicksort) legrosszabb esetbeli (worst-case) időbonyolultsága, ha a támaszelem (pivot) választása folyamatosan szerencsétlen?",
+    "order": 5,
+    "options": ["O(n)", "O(n log n)", "O(n^2)", "O(2^n)"],
+    "correct_index": 2
+  },
+  {
+    "id": "a6",
+    "type": "short_answer",
+    "question": "Mi az elméleti alsó korlátja (időbonyolultsága) az összehasonlítás-alapú rendező algoritmusoknak a legrosszabb esetben?",
+    "order": 6,
+    "answers": ["O(n log n)", "Omega(n log n)", "n log n"]
+  },
+  {
+    "id": "a7",
+    "type": "matching",
+    "question": "Párosítsd a bináris fák bejárási módjait a gyökérelem meglátogatásának sorrendjével!",
+    "order": 7,
+    "pairs": {
+      "Preorder (Gyökérkezdő)": "Gyökér, Bal részfa, Jobb részfa",
+      "Inorder (Szimmetrikus)": "Bal részfa, Gyökér, Jobb részfa",
+      "Postorder (Gyökérvégző)": "Bal részfa, Jobb részfa, Gyökér",
+      "Level-order (Szintfolytonos)": "Szintenként, balról jobbra haladva"
+    }
+  },
+  {
+    "id": "a8",
+    "type": "multiple_choice",
+    "question": "Melyik adatszerkezettel valósítható meg a legtermészetesebben a gráfok vagy fák Szélességi bejárása (Breadth-First Search - BFS)?",
+    "order": 8,
+    "options": ["Verem (Stack)", "Sor (Queue)", "Bináris Keresőfa (BST)", "Hasítótábla"],
+    "correct_index": 1
+  },
+  {
+    "id": "a9",
+    "type": "multiple_choice",
+    "question": "Melyik a legalkalmasabb adatszerkezet egy 'szótár' megvalósítására, ha átlagos esetben O(1) időben szeretnénk keresni, beszúrni és törölni?",
+    "order": 9,
+    "options": ["Láncolt lista", "AVL fa", "Hasítótábla (Hash table)", "Kupac (Heap)"],
+    "correct_index": 2
+  },
+  {
+    "id": "a10",
+    "type": "multiple_select",
+    "question": "Milyen módszerekkel kezelhetők a hasítási ütközések (collision) a hasítótáblákban?",
+    "order": 10,
+    "options": ["Láncolás (Chaining) - a cellákban láncolt listákat tárolunk.", "Nyílt címzés (Open addressing) - pl. lineáris próbálkozással keresünk új üres helyet.", "Gyorsrendezés futtatása a táblán.", "Kupacépítés (Heapify)."],
+    "correct": [0, 1]
+  },
+  {
+    "id": "a11",
+    "type": "short_answer",
+    "question": "Hogyan nevezzük azt az alapműveletet az AVL fáknál (vagy Piros-Fekete fáknál), amellyel beszúrás vagy törlés után helyreállítják a fa kiegyensúlyozottságát?",
+    "order": 11,
+    "answers": ["forgatás", "forgatások", "rotation"]
+  },
+  {
+    "id": "a12",
+    "type": "multiple_choice",
+    "question": "Milyen strukturális tulajdonsággal rendelkezik egy Max-Kupac (Max-Heap)?",
+    "order": 12,
+    "options": ["Minden szülőcsúcs értéke nagyobb vagy egyenlő a gyerekei értékénél, és a fa majdnem teljes.", "Minden bal gyerek kisebb, minden jobb gyerek nagyobb a szülőnél.", "A fa magassága mindig pontosan log2(N).", "A legkisebb elem van a gyökércsúcsban."],
+    "correct_index": 0
+  },
+  {
+    "id": "a13",
+    "type": "multiple_select",
+    "question": "Mely állítások igazak a Piros-Fekete (Red-Black) fákra?",
+    "order": 13,
+    "options": ["Minden csúcs vagy piros, vagy fekete színezetű.", "A gyökér mindig piros színű.", "Egy piros csúcsnak nem lehet piros gyereke (nincs két piros egymás után).", "A fában lévő leghosszabb út a gyökértől egy levélig maximum kétszerese a legrövidebb útnak."],
+    "correct": [0, 2, 3]
+  },
+  {
+    "id": "a14",
+    "type": "matching",
+    "question": "Párosítsd a rendező algoritmusokat a leginkább rájuk jellemző tulajdonsággal!",
+    "order": 14,
+    "pairs": {
+      "Beszúró rendezés (Insertion sort)": "Már majdnem rendezett tömbökön nagyon gyors (akár O(n)).",
+      "Kupacrendezés (Heap sort)": "Helyben rendez (in-place) és aszimptotikusan garantált O(n log n) a legrosszabb esetben is.",
+      "Kiválasztó rendezés (Selection sort)": "A memóriacserék száma nagyon alacsony, maximum O(n).",
+      "Leszámláló rendezés (Counting sort)": "Nem összehasonlítás alapú, kis tartományú egész számokra lineáris (O(n+k)) futási idejű."
+    }
+  },
+  {
+    "id": "a15",
+    "type": "short_answer",
+    "question": "Mennyi a maximális magassága aszimptotikusan egy AVL fának n elem esetén?",
+    "order": 15,
+    "answers": ["O(log n)", "O(logn)", "log n"]
+  },
+  {
+    "id": "a16",
+    "type": "multiple_choice",
+    "question": "Mi a szigorú feltétele annak, hogy egy tömbön Bináris keresést (Binary Search) alkalmazhassunk?",
+    "order": 16,
+    "options": ["A tömb elemei csak egész számok lehetnek.", "A tömbnek rendezettnek kell lennie.", "A tömb hossza kettő valamelyik hatványa kell, hogy legyen.", "A tömb nem tartalmazhat ismétlődő elemeket."],
+    "correct_index": 1
+  },
+  {
+    "id": "a17",
+    "type": "matching",
+    "question": "Párosítsd az aszimptotikus jelöléseket a jelentésükkel!",
+    "order": 17,
+    "pairs": {
+      "O(g(n)) (Nagy-Origo)": "Aszimptotikus felső korlát.",
+      "Ω(g(n)) (Nagy-Omega)": "Aszimptotikus alsó korlát.",
+      "Θ(g(n)) (Nagy-Théta)": "Aszimptotikus éles (alsó és felső) korlát.",
+      "o(g(n)) (Kis-Origo)": "Szigorú (nem megengedő) felső korlát."
+    }
+  },
+  {
+    "id": "a18",
+    "type": "multiple_choice",
+    "question": "Mi a célja a Mester-tételnek (Master Theorem) az algoritmusok elemzésekor?",
+    "order": 18,
+    "options": ["Az adatszerkezetek memóriafoglalásának (helybonyolultság) pontos kiszámítása.", "Az 'Oszd meg és uralkodj' algoritmusok rekurzív összefüggéseinek (futási idejének) gyors, zárt alakú megoldása.", "A gráfok legrövidebb útjának kiszámítása.", "A determinisztikus véges automaták állapotainak minimalizálása."],
+    "correct_index": 1
+  },
+  {
+    "id": "a19",
+    "type": "multiple_select",
+    "question": "Mely alapműveletek futási ideje garantáltan O(log n) egy Bináris Keresőfában (BST), HA a fa garantáltan kiegyensúlyozott (pl. AVL fa)?",
+    "order": 19,
+    "options": ["Egy adott elem megkeresése (Search).", "Új elem beszúrása (Insert).", "Elem törlése (Delete).", "Az összes elem kilistázása növekvő sorrendben."],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "a20",
+    "type": "multiple_choice",
+    "question": "Melyik adatszerkezet használata a legjellemzőbb a Mélységi bejárás (Depth-First Search - DFS) iteratív (nem rekurzív) megvalósítása során?",
+    "order": 20,
+    "options": ["Sor (Queue)", "Verem (Stack)", "Kupac (Heap)", "Duplán láncolt lista"],
+    "correct_index": 1
+  }
+]

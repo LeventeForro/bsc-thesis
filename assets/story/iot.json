@@ -1,0 +1,214 @@
+[
+  {
+    "id": "iot1",
+    "type": "multiple_choice",
+    "question": "Mi a fő különbség az IoT eszközök és a hagyományos számítástechnikai eszközök között az erőforrások tekintetében?",
+    "order": 1,
+    "options": [
+      "Az IoT eszközök mindig nagyobb memóriával rendelkeznek.",
+      "Az IoT eszközök gyakran erőforrás-korlátosak (kevés memória, alacsony feldolgozási teljesítmény, korlátozott energiaforrás).",
+      "Az IoT eszközök nem használnak processzort.",
+      "Nincs különbség az erőforrások között."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "iot2",
+    "type": "multiple_select",
+    "question": "Melyek az IoT rendszerekben leggyakrabban használt, energiatakarékos, rövid vagy hosszú hatótávolságú rádiós technológiák?",
+    "order": 2,
+    "options": ["LoRa / LoRaWAN", "Bluetooth Low Energy (BLE)", "ZigBee", "NB-IoT", "Hagyományos Ethernet"],
+    "correct": [0, 1, 2, 3]
+  },
+  {
+    "id": "iot3",
+    "type": "matching",
+    "question": "Párosítsd az IoT protokollokat a rájuk jellemző tulajdonsággal!",
+    "order": 3,
+    "pairs": {
+      "MQTT": "Hirdetés/feliratkozás (Publish/Subscribe) alapú, könnyűsúlyú üzenetküldő protokoll.",
+      "CoAP": "UDP alapú, bináris protokoll, amelyet kifejezetten korlátozott eszközökre terveztek (REST-szerű).",
+      "HTTP REST": "Kliens-szerver architektúra, széles körben elterjedt, de nagyobb a fejléc-többlete (overhead).",
+      "WebSocket": "Kétirányú, folytonos TCP kapcsolatot biztosító protokoll."
+    }
+  },
+  {
+    "id": "iot4",
+    "type": "short_answer",
+    "question": "Hogy nevezzük az MQTT protokoll központi elemét, amely az üzenetek fogadásáért és a feliratkozókhoz való elosztásáért felel?",
+    "order": 4,
+    "answers": ["Broker", "MQTT Broker", "üzenetközvetítő"]
+  },
+  {
+    "id": "iot5",
+    "type": "multiple_choice",
+    "question": "Mit jelent az MQTT protokollban a 'Publish/Subscribe' (Hirdetés/Feliratkozás) modell lényege?",
+    "order": 5,
+    "options": [
+      "A kliensek közvetlenül egymás IP-címére küldenek adatot.",
+      "A kliensek nem ismerik egymást közvetlenül; egy közvetítőn keresztül kommunikálnak témakörök (Topics) alapján.",
+      "Csak egyetlen kliens küldhet adatot a szervernek.",
+      "Minden üzenetet minden csatlakoztatott eszköznek meg kell kapnia."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "iot6",
+    "type": "multiple_select",
+    "question": "Milyen szempontok kritikusak egy ipari IoT eszköz hálózati kommunikációjának megtervezésekor?",
+    "order": 6,
+    "options": [
+      "Energiahatékonyság (hosszú akkumulátor élettartam)",
+      "Adatbiztonság és titkosítás",
+      "Hatótávolság és zavarvédelem",
+      "Kizárólag a legmagasabb bitráta elérése"
+    ],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "iot7",
+    "type": "matching",
+    "question": "Párosítsd a fogalmakat az MQTT QoS (Quality of Service) szintjeivel!",
+    "order": 7,
+    "pairs": {
+      "QoS 0": "Legfeljebb egyszeri kézbesítés (nincs nyugtázás, elveszhet az üzenet).",
+      "QoS 1": "Legalább egyszeri kézbesítés (garantált megérkezés, de lehet duplikáció).",
+      "QoS 2": "Pontosan egyszeri kézbesítés (legbiztonságosabb, de legnagyobb forgalommal jár)."
+    }
+  },
+  {
+    "id": "iot8",
+    "type": "short_answer",
+    "question": "Mi a teljes neve az MQTT mozaikszónak?",
+    "order": 8,
+    "answers": ["Message Queuing Telemetry Transport", "Message Queue Telemetry Transport"]
+  },
+  {
+    "id": "iot9",
+    "type": "multiple_choice",
+    "question": "Mit jelent az LPWAN (Low Power Wide Area Network) kifejezés?",
+    "order": 9,
+    "options": [
+      "Nagy fogyasztású, kis távolságú hálózat.",
+      "Kis fogyasztású, nagy kiterjedésű hálózat (pl. LoRa, Sigfox).",
+      "Csak műholdas kommunikációra alkalmas hálózat.",
+      "A helyi WiFi hálózat kiterjesztése."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "iot10",
+    "type": "multiple_select",
+    "question": "Melyek a népszerű IoT felhőplatformok a tematika és a piaci trendek alapján?",
+    "order": 10,
+    "options": ["ThingSpeak", "DeviceHubNet", "AWS IoT Core", "Microsoft Word"],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "iot11",
+    "type": "matching",
+    "question": "Párosítsd az IoT hálózati topológiákat a jellemzőjükkel!",
+    "order": 11,
+    "pairs": {
+      "Csillag topológia": "Minden eszköz egy központi átjáróhoz (Gateway) vagy bázisállomáshoz csatlakozik.",
+      "Mesh (Háló) topológia": "Az eszközök egymásnak is továbbíthatják az adatokat, növelve a hatótávot.",
+      "P2P (Point-to-Point)": "Két eszköz közvetlen összeköttetése."
+    }
+  },
+  {
+    "id": "iot12",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azt az adatstruktúrát (formátumot), amely kulcs-érték párokat használ, és az IoT kommunikáció legnépszerűbb szöveges formátuma könnyűsége miatt?",
+    "order": 12,
+    "answers": ["JSON", "JavaScript Object Notation"]
+  },
+  {
+    "id": "iot13",
+    "type": "multiple_choice",
+    "question": "Mi a szerepe az OpenHAB (open Home Automation Bus) rendszernek az IoT-ben?",
+    "order": 13,
+    "options": [
+      "Egy hardveres szenzor típus.",
+      "Egy szoftveres integrációs keretrendszer, amely különböző protokollú okosotthon eszközöket fog össze egy rendszerbe.",
+      "Egy új típusú akkumulátor technológia.",
+      "Egy internetes böngésző."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "iot14",
+    "type": "multiple_select",
+    "question": "Mik az MQTT 'Topic' (témakör) hierarchiájának szabályai?",
+    "order": 14,
+    "options": [
+      "Perjellel (/) választjuk el a szinteket (pl. otthon/nappali/homerseklet).",
+      "A '+' jel egyetlen szintet helyettesítő joker karakter.",
+      "A '#' jel az összes alacsonyabb szintet helyettesítő joker karakter.",
+      "A témaköröknek fixen 3 szintből kell állniuk."
+    ],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "iot15",
+    "type": "matching",
+    "question": "Párosítsd az IoT felhasználási területeket a példákkal!",
+    "order": 15,
+    "pairs": {
+      "Smart City": "Intelligens parkolási rendszerek és közvilágítás-vezérlés.",
+      "Smart Home": "Távvezérelhető fűtés és biztonsági rendszerek.",
+      "Smart Sport": "Szenzorokkal ellátott sporteszközök, amelyek elemzik a mozgást.",
+      "Ipar 4.0": "Prediktív karbantartás szenzoradatok alapján a gyártósorokon."
+    }
+  },
+  {
+    "id": "iot16",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azt az eszközt, amely hidat képez a helyi szenzorhálózat (pl. ZigBee) és a globális Internet (IP hálózat) között?",
+    "order": 16,
+    "answers": ["Gateway", "átjáró", "IoT Gateway"]
+  },
+  {
+    "id": "iot17",
+    "type": "multiple_choice",
+    "question": "Mit jelent a 'Keep Alive' mechanizmus az MQTT-ben?",
+    "order": 17,
+    "options": [
+      "Az akkumulátor töltöttségének jelzése.",
+      "Egy időköz, amely alatt a kliensnek legalább egy üzenetet (vagy PING-et) kell küldenie, hogy a Broker tudja, a kapcsolat még él.",
+      "A szoftver automatikus frissítése.",
+      "A titkosító kulcsok cseréje."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "iot18",
+    "type": "multiple_select",
+    "question": "Melyek a CoAP (Constrained Application Protocol) legfőbb jellemzői?",
+    "order": 18,
+    "options": [
+      "UDP-t használ a TCP helyett a kisebb overhead miatt.",
+      "Támogatja a kérések/válaszok aszinkron átvitelét.",
+      "Beépített támogatása van az erőforrások felfedezéséhez (resource discovery).",
+      "Kizárólag Ethernet kábelen működik."
+    ],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "iot19",
+    "type": "matching",
+    "question": "Párosítsd a fogalmakat a jelentésükkel!",
+    "order": 19,
+    "pairs": {
+      "Payload": "Az üzenet tényleges tartalma (pl. a mért hőmérsékleti érték).",
+      "Retained Message": "Az utolsó érvényes üzenet, amit a Broker eltárol az új feliratkozók számára.",
+      "Last Will": "Egy üzenet, amit a Broker akkor küld szét, ha a kliens váratlanul lecsatlakozik."
+    }
+  },
+  {
+    "id": "iot20",
+    "type": "short_answer",
+    "question": "Melyik híres, nyílt forráskódú MQTT Broker szoftvert említi gyakran az IoT oktatás (és a gyakorlat)?",
+    "order": 20,
+    "answers": ["Mosquitto", "Eclipse Mosquitto"]
+  }
+]

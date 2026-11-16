@@ -1,0 +1,174 @@
+[
+  {
+    "id": "ivm1",
+    "type": "multiple_choice",
+    "question": "Mi az elsődleges célja az MVP (Minimum Viable Product - Életképes Minimum Termék) létrehozásának a Lean Startup módszertan szerint?",
+    "order": 1,
+    "options": ["Azonnali profit maximalizálása az első naptól kezdve.", "A termék funkcióinak maximális kiépítése a végleges piacra dobás előtt.", "A célpiac visszajelzéseinek (tanulás) minél gyorsabb és olcsóbb begyűjtése a legfontosabb alapfunkciókkal.", "Befektetők kizárólagos meggyőzése egy tökéletes prototípussal."],
+    "correct_index": 2
+  },
+  {
+    "id": "ivm2",
+    "type": "multiple_select",
+    "question": "Melyek a Lean Startup ciklus (Build-Measure-Learn visszacsatolási hurok) fő lépései?",
+    "order": 2,
+    "options": ["Építés (Build)", "Eladás (Sell)", "Mérés (Measure)", "Tanulás (Learn)", "Marketing (Marketing)"],
+    "correct": [0, 2, 3]
+  },
+  {
+    "id": "ivm3",
+    "type": "matching",
+    "question": "Párosítsd a Business Model Canvas (Üzleti Modell Vászon) kulcselemeit a leírásukkal!",
+    "order": 3,
+    "pairs": {
+      "Értékajánlat (Value Proposition)": "Milyen problémát oldunk meg, vagy milyen igényt elégítünk ki a vevő számára?",
+      "Ügyfélszegmensek (Customer Segments)": "Kiknek teremtünk értéket? Kik a legfontosabb vásárlóink?",
+      "Csatornák (Channels)": "Hogyan juttatjuk el az értékajánlatot az ügyfelekhez (értékesítés, kommunikáció)?",
+      "Bevételi áramlások (Revenue Streams)": "Milyen értékért hajlandóak ténylegesen fizetni a vevők (árazási modell)?"
+    }
+  },
+  {
+    "id": "ivm4",
+    "type": "short_answer",
+    "question": "Melyik módszertani eszközt használják a Business Model Canvas kiegészítéseként, hogy mélyebben megértsék az ügyfelek feladatait (jobs-to-be-done), fájdalmait (pains) és elvárt nyereségeit (gains)?",
+    "order": 4,
+    "answers": ["Value Proposition Canvas", "Értékajánlat vászon", "értékajánlat vaszon"]
+  },
+  {
+    "id": "ivm5",
+    "type": "multiple_choice",
+    "question": "Mit jelent a 'Pivot' (irányváltás) kifejezés a startupok világában?",
+    "order": 5,
+    "options": ["A vállalat teljes bezárását és egy teljesen új iparágba lépést.", "Alapvető, strukturált stratégiai irányváltás egy új, tesztelt hipotézis alapján, amikor az eredeti modell nem működik.", "A termék árának csökkentését a verseny miatt.", "A vezérigazgató lecserélését."],
+    "correct_index": 1
+  },
+  {
+    "id": "ivm6",
+    "type": "multiple_select",
+    "question": "Mely tényezők tartoznak a SWOT elemzés külső, a piac által diktált elemei közé?",
+    "order": 6,
+    "options": ["Erősségek (Strengths)", "Gyengeségek (Weaknesses)", "Lehetőségek (Opportunities)", "Veszélyek (Threats)"],
+    "correct": [2, 3]
+  },
+  {
+    "id": "ivm7",
+    "type": "matching",
+    "question": "Párosítsd a finanszírozási szakaszokat a jellemzőikkel egy startup életútja során!",
+    "order": 7,
+    "pairs": {
+      "Pre-Seed (Magvető előtti)": "Ötlet fázis, jellemzően alapítói tőke (FFF: Family, Friends, Fools).",
+      "Seed (Magvető)": "Termékfejlesztés, MVP tesztelése, angyalbefektetők (Angel Investors) bevonása.",
+      "Series A (A-sorozat)": "A termék már piacon van, az üzleti modell bizonyított, a cél a piaci részesedés skálázása kockázati tőkével (VC).",
+      "Exit": "A cég felvásárlása egy nagyobb vállalat által, vagy tőzsdére lépés (IPO)."
+    }
+  },
+  {
+    "id": "ivm8",
+    "type": "short_answer",
+    "question": "Hogy nevezik a befektetői (pitch) prezentációk rövid, max 1-2 perces, figyelemfelkeltő szóbeli változatát, amit egy rövid utazás alatt is elő lehet adni?",
+    "order": 8,
+    "answers": ["Elevator pitch", "liftbeszéd", "elevator-pitch"]
+  },
+  {
+    "id": "ivm9",
+    "type": "multiple_choice",
+    "question": "Mi a különbség egy startup és egy hagyományos KKV (kis- és középvállalkozás) között Steve Blank definíciója szerint?",
+    "order": 9,
+    "options": ["A KKV-k skálázhatóbbak és gyorsabban nőnek.", "A startup technológiai cég, a KKV nem az.", "A startup egy átmeneti szervezet, amely egy skálázható és megismételhető üzleti modellt keres, míg a KKV egy már bevált modellt hajt végre.", "Nincs valós különbség, csak marketing szempontból."],
+    "correct_index": 2
+  },
+  {
+    "id": "ivm10",
+    "type": "multiple_choice",
+    "question": "Mit fejez ki a CAC (Customer Acquisition Cost) mutató az üzleti tervezésben?",
+    "order": 10,
+    "options": ["Az egy ügyfélre jutó marketing és értékesítési költséget (ügyfélszerzési költség).", "Az ügyféltől származó élettartam-bevételt.", "A havi fix költségeket.", "A konverziós arányt."],
+    "correct_index": 0
+  },
+  {
+    "id": "ivm11",
+    "type": "multiple_select",
+    "question": "Milyen típusú partnereket (Key Partners) jelölhetünk meg a Business Model Canvas-ben?",
+    "order": 11,
+    "options": ["Beszállítók (akiktől nyersanyagot/erőforrást veszünk)", "Versenytársakkal kötött stratégiai szövetségek (Co-opetition)", "Célközönség/Vásárlók", "Közös vállalatok (Joint ventures) új üzletek fejlesztésére"],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "ivm12",
+    "type": "matching",
+    "question": "Párosítsd az innováció típusait a magyarázatukkal!",
+    "order": 12,
+    "pairs": {
+      "Inkrementális (Fokozatos) innováció": "Meglévő termékek, szolgáltatások vagy folyamatok kis lépésekben történő javítása.",
+      "Diszruptív (Felforgató) innováció": "Egy teljesen új piacot és értékhálózatot hoz létre, kiszorítva a korábbi vezető termékeket.",
+      "Architekturális innováció": "Meglévő technológiai elemek újragondolt, új struktúrába rendezése.",
+      "Radikális innováció": "Új tudáson vagy technológián alapuló áttörés, amely új piacokat teremt."
+    }
+  },
+  {
+    "id": "ivm13",
+    "type": "short_answer",
+    "question": "Hogyan rövidítik azt a mérőszámot, amely azt mutatja meg, hogy egy ügyfél a teljes nálunk töltött 'élettartama' (együttműködése) alatt mennyi nyereséget (bevételt) termel a cégnek?",
+    "order": 13,
+    "answers": ["LTV", "CLTV", "Customer Lifetime Value", "Life Time Value"]
+  },
+  {
+    "id": "ivm14",
+    "type": "multiple_choice",
+    "question": "A piacméret meghatározásánál (TAM-SAM-SOM modell) mit jelent a SOM (Serviceable Obtainable Market)?",
+    "order": 14,
+    "options": ["A teljes globális piacméretet.", "Az elérhető piac azon konkrét részét, amelyet a cég a jelenlegi erőforrásaival ténylegesen meg is tud szerezni (célpiac).", "A konkurencia által uralt piacot.", "A beszállítói piac méretét."],
+    "correct_index": 1
+  },
+  {
+    "id": "ivm15",
+    "type": "multiple_select",
+    "question": "Melyek a sikeres Pitch Deck (befektetői prezentáció) alapvető elemei/diái?",
+    "order": 15,
+    "options": ["A probléma (Problem)", "A megoldás (Solution)", "A csapat bemutatása (Team)", "Többoldalas, bonyolult forráskód-részletek (Code)"],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "ivm16",
+    "type": "short_answer",
+    "question": "Hogy hívják azt a mutatót (rate), amely a havi elégetett készpénz mennyiségét jelenti egy még nem profitábilis startupnál?",
+    "order": 16,
+    "answers": ["Burn rate", "burn-rate", "burnrate"]
+  },
+  {
+    "id": "ivm17",
+    "type": "matching",
+    "question": "Párosítsd az üzleti modellek (árazási/bevételi típusok) nevét a példákkal!",
+    "order": 17,
+    "pairs": {
+      "Freemium": "Alapfunkciók ingyen, a prémium funkciókért fizetni kell (pl. Spotify, LinkedIn).",
+      "Előfizetéses (Subscription)": "Havi vagy éves fix díj a szolgáltatás eléréséért (pl. Netflix, SaaS szoftverek).",
+      "Tranzakció-alapú (Marketplace)": "Jutalék minden sikeres adásvétel után a platformon (pl. Airbnb, Uber).",
+      "Razor-and-Blades (Csalitevékenység)": "Az alaptermék olcsó, a folyamatosan fogyó tartozék drága (pl. nyomtatók és patronok)."
+    }
+  },
+  {
+    "id": "ivm18",
+    "type": "multiple_choice",
+    "question": "Az ügyfélfejlesztés (Customer Development) során mi a legmegbízhatóbb módja egy probléma-hipotézis validálásának?",
+    "order": 18,
+    "options": ["Egy online kérdőív (survey) kiküldése ezer embernek.", "Célzott, mélyinterjúk (Problem Interviews) készítése a potenciális ügyfelekkel, nyitott kérdésekkel.", "Versenytársak weboldalának elemzése.", "Barátok és családtagok megkérdezése az ötletről."],
+    "correct_index": 1
+  },
+  {
+    "id": "ivm19",
+    "type": "multiple_select",
+    "question": "Melyek az értékajánlatot (Value Proposition) erősítő tényezők?",
+    "order": 19,
+    "options": ["Költségcsökkentés a vevő oldalán.", "Kockázatcsökkentés.", "Kiváló design és használhatóság.", "A termék funkcióinak indokolatlan túlbonyolítása."],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "ivm20",
+    "type": "multiple_choice",
+    "question": "Mi az a 'Runway' (kifutópálya) egy startup pénzügyi tervezésében?",
+    "order": 20,
+    "options": ["Az az időtartam (hónapokban), ameddig a cég a jelenlegi tőkéjéből - a havi cash burn rate mellett - még fenn tud maradni további befektetés vagy nyereség nélkül.", "A termékfejlesztésre szánt időkeret.", "Az az idő, amíg a versenytársak észreveszik a piacra lépést.", "A tőzsdére lépéshez szükséges 5 éves periódus."],
+    "correct_index": 0
+  }
+]

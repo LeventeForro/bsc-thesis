@@ -1,0 +1,177 @@
+[
+  {
+    "id": "ma1",
+    "type": "multiple_choice",
+    "question": "Melyik mechanikai alapfogalom határozható meg az erő és az elmozdulás szorzataként (W = F * s)?",
+    "order": 1,
+    "options": ["Teljesítmény", "Munka", "Forgatónyomaték", "Gyorsulás"],
+    "correct_index": 1
+  },
+  {
+    "id": "ma2",
+    "type": "multiple_select",
+    "question": "Melyek a belsőégésű motorok működésének alapvető ütemei egy négyütemű motor esetén?",
+    "order": 2,
+    "options": ["Szívás", "Sűrítés", "Munkavégzés (Terjeszkedés)", "Kipufogás", "Befecskendezés"],
+    "correct": [0, 1, 2, 3]
+  },
+  {
+    "id": "ma3",
+    "type": "matching",
+    "question": "Párosítsd a fizikai alapfogalmakat a mértékegységeikkel!",
+    "order": 3,
+    "pairs": {
+      "Erő": "Newton (N)",
+      "Teljesítmény": "Watt (W)",
+      "Nyomás": "Pascal (Pa)",
+      "Energia / Munka": "Joule (J)"
+    }
+  },
+  {
+    "id": "ma4",
+    "type": "short_answer",
+    "question": "Hogy nevezzük a gépek és az ember kapcsolatát, a munkakörnyezet kényelmét és hatékonyságát vizsgáló tudományágat?",
+    "order": 4,
+    "answers": ["Ergonómia", "ergonómia"]
+  },
+  {
+    "id": "ma5",
+    "type": "multiple_choice",
+    "question": "Mit állít Pascal törvénye a hidrosztatika köréből?",
+    "order": 5,
+    "options": ["A folyadékban a nyomás csak lefelé irányul.", "Zárt térben lévő folyadékban a külső erő okozta nyomás minden irányban gyengítetlenül terjed.", "A folyadékok nem összenyomhatóak.", "A gázok nyomása fordítottan arányos a térfogatukkal."],
+    "correct_index": 1
+  },
+  {
+    "id": "ma6",
+    "type": "multiple_select",
+    "question": "Melyek tekinthetők megújuló természeti erőforrásoknak?",
+    "order": 6,
+    "options": ["Napenergia", "Szélenergia", "Kőszén", "Biomassza", "Földgáz"],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "ma7",
+    "type": "matching",
+    "question": "Párosítsd az anyagtípusokat a mérnöki gyakorlatban betöltött szerepükkel!",
+    "order": 7,
+    "pairs": {
+      "Acél": "Nagy szilárdságú szerkezeti anyag (vas-szén ötvözet).",
+      "Alumínium": "Könnyűfém, jó korrózióállósággal és vezetőképességgel.",
+      "Polimerek (Műanyagok)": "Könnyen alakítható, szigetelő tulajdonságú mesterséges anyagok.",
+      "Kompozitok": "Két vagy több különböző tulajdonságú anyag kombinációja (pl. szénszálas műanyag)."
+    }
+  },
+  {
+    "id": "ma8",
+    "type": "short_answer",
+    "question": "Melyik elektrotechnikai alaptörvény mondja ki az összefüggést a feszültség, az áramerősség és az ellenállás között (U = I * R)?",
+    "order": 8,
+    "answers": ["Ohm-törvény", "Ohm törvénye", "Ohm"]
+  },
+  {
+    "id": "ma9",
+    "type": "multiple_choice",
+    "question": "Mi a fő különbség a hidrosztatika és a hidrodinamika között?",
+    "order": 9,
+    "options": ["Nincs különbség.", "A hidrosztatika a nyugvó, a hidrodinamika a mozgásban lévő folyadékok törvényszerűségeit vizsgálja.", "A hidrosztatika csak vízzel, a hidrodinamika minden folyadékkal foglalkozik.", "A hidrodinamika csak a hőmérsékletet vizsgálja."],
+    "correct_index": 1
+  },
+  {
+    "id": "ma10",
+    "type": "multiple_select",
+    "question": "Melyek az alapvető egyszerű gépek / gépelemek az alábbiak közül?",
+    "order": 10,
+    "options": ["Emelő", "Lejtő", "Csavar", "Ék", "Mikroprocesszor"],
+    "correct": [0, 1, 2, 3]
+  },
+  {
+    "id": "ma11",
+    "type": "matching",
+    "question": "Párosítsd a termodinamikai alapfogalmakat a jelentésükkel!",
+    "order": 11,
+    "pairs": {
+      "Hőmérséklet": "Az anyag belső energiájával kapcsolatos állapotjelző.",
+      "Entrópia": "A rendszer rendezetlenségének mértéke.",
+      "Hővezetés": "Energiaátadás az anyag részecskéinek közvetlen érintkezése útján.",
+      "Izobár folyamat": "Olyan állapotváltozás, amely során a nyomás állandó marad."
+    }
+  },
+  {
+    "id": "ma12",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azt az elektronikai alkatrészt, amely csak egy irányba engedi át az elektromos áramot?",
+    "order": 12,
+    "answers": ["Dióda", "dióda"]
+  },
+  {
+    "id": "ma13",
+    "type": "multiple_choice",
+    "question": "Melyik állítás jellemző a villamos motorokra?",
+    "order": 13,
+    "options": ["Hőenergiát alakítanak vegyi energiává.", "Elektromos energiát alakítanak mechanikai munkává (forgó mozgássá).", "Csak egyenárammal működhetnek.", "Működésük alapja a hidraulikus nyomás."],
+    "correct_index": 1
+  },
+  {
+    "id": "ma14",
+    "type": "multiple_select",
+    "question": "Mik a környezetvédelem és fenntartható energiagazdálkodás fő szempontjai a mérnöki munkában?",
+    "order": 14,
+    "options": ["Károsanyag-kibocsátás csökkentése", "Energiahatékonyság növelése", "Hulladék újrahasznosítás", "Kizárólag a fosszilis tüzelőanyagok használatának növelése"],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "ma15",
+    "type": "matching",
+    "question": "Párosítsd a járművek felépítésének részegységeit a funkciójukkal!",
+    "order": 15,
+    "pairs": {
+      "Erőátviteli berendezés": "A motor forgatónyomatékát juttatja el a hajtott kerekekhez.",
+      "Futómű": "Biztosítja a jármű úttartását, rugózását és kormányzását.",
+      "Fékberendezés": "A mozgási energia hővé alakításával lassítja vagy megállítja a járművet.",
+      "Alváz / Karosszéria": "A jármű tartószerkezete, amely hordozza a többi egységet és a terhet."
+    }
+  },
+  {
+    "id": "ma16",
+    "type": "short_answer",
+    "question": "Melyik fizikai mennyiség írható le az erő és az erőkar szorzataként (M = F * k)?",
+    "order": 16,
+    "answers": ["Forgatónyomaték", "nyomaték", "forgató nyomaték"]
+  },
+  {
+    "id": "ma17",
+    "type": "multiple_choice",
+    "question": "Mi a szerepe a szabványosításnak a mérnöki gyakorlatban?",
+    "order": 17,
+    "options": ["A termékek egyedivé tétele, hogy ne legyenek cserélhetőek.", "Egységes szabályok, méretek és minőségi követelmények rögzítése a csereszabatosság és biztonság érdekében.", "A műszaki rajzok készítésének tiltása.", "Az árak rögzítése a világpiacon."],
+    "correct_index": 1
+  },
+  {
+    "id": "ma18",
+    "type": "multiple_select",
+    "question": "Milyen típusú áramlástani gépeket ismerünk a tematika alapján?",
+    "order": 18,
+    "options": ["Szivattyúk (folyadékhoz)", "Ventilátorok / Kompresszorok (gázokhoz)", "Turbinák (energiatermeléshez)", "Transzformátorok"],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "ma19",
+    "type": "matching",
+    "question": "Párosítsd az elektronikai alapfogalmakat!",
+    "order": 19,
+    "pairs": {
+      "Vezető": "Olyan anyag, amelyben sok a szabad töltéshordozó (pl. réz).",
+      "Szigetelő": "Olyan anyag, amely nem vagy alig vezeti az áramot (pl. kerámia, gumi).",
+      "Félvezető": "Vezetőképessége adalékolással vagy külső hatásra változtatható (pl. szilícium).",
+      "Integrált áramkör (IC)": "Egyetlen lapkán megvalósított bonyolult elektronikai rendszer."
+    }
+  },
+  {
+    "id": "ma20",
+    "type": "short_answer",
+    "question": "Hogy nevezzük a mechanikai munkavégzés gyorsaságát jellemző fizikai mennyiséget (P = W / t)?",
+    "order": 20,
+    "answers": ["Teljesítmény", "teljesitmeny"]
+  }
+]

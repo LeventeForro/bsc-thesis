@@ -1,0 +1,172 @@
+[
+  {
+    "id": "a2_1",
+    "type": "multiple_choice",
+    "question": "A dinamikus programozás (Dynamic Programming) melyik esetben alkalmazható a leghatékonyabban?",
+    "order": 1,
+    "options": ["Amikor a probléma független, nem átfedő részproblémákra bontható (mint az Oszd meg és uralkodj).", "Amikor a részproblémák átfedik egymást (overlapping subproblems), és az optimális megoldás felépíthető a részproblémák optimális megoldásaiból (optimal substructure).", "Kizárólag lineáris keresés esetén.", "Amikor a bemeneti adatok már eleve rendezettek."],
+    "correct_index": 1
+  },
+  {
+    "id": "a2_2",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azt a technikát a dinamikus programozásban, amikor a kiszámolt részeredményeket egy táblázatban (tömbben) eltároljuk, hogy később ne kelljen őket újra kiszámolni?",
+    "order": 2,
+    "answers": ["Memoizáció", "memoization", "táblázatkitöltés"]
+  },
+  {
+    "id": "a2_3",
+    "type": "multiple_select",
+    "question": "Melyek a klasszikus Dinamikus Programozással megoldható problémák?",
+    "order": 3,
+    "options": ["Hátizsák-probléma (0-1 Knapsack)", "Leghosszabb közös részsorozat (LCS - Longest Common Subsequence)", "Mátrixlánc-szorzás optimalizálása", "Bináris keresés"],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "a2_4",
+    "type": "matching",
+    "question": "Párosítsd a gráfalgoritmusokat a legrövidebb út (Shortest Path) problémák típusával!",
+    "order": 4,
+    "pairs": {
+      "Dijkstra-algoritmus": "Egyetlen forrásból az összes többi csúcsba, csak nemnegatív élsúlyok esetén működik.",
+      "Bellman-Ford-algoritmus": "Egyetlen forrásból az összes többi csúcsba, negatív élsúlyokat is megenged, de negatív kört nem.",
+      "Floyd-Warshall-algoritmus": "Minden csúcspár között (All-Pairs Shortest Path) kiszámolja a legrövidebb utat dinamikus programozással.",
+      "Kruskal-algoritmus": "Nem legrövidebb utat, hanem minimális feszítőfát (MST) keres."
+    }
+  },
+  {
+    "id": "a2_5",
+    "type": "multiple_choice",
+    "question": "Mit tesz a Bellman-Ford algoritmus, ha a gráfban negatív összsúlyú kör (negative weight cycle) található a forrásból elérhetően?",
+    "order": 5,
+    "options": ["Kijavítja a kör súlyát pozitívra.", "Végtelen ciklusba kerül, és sosem áll meg.", "Kiszámolja a legrövidebb utat, mintha a kör ott sem lenne.", "Detektálja a negatív kört, és hibajelzéssel (False) tér vissza, mivel a legrövidebb út ilyenkor nem értelmezhető."],
+    "correct_index": 3
+  },
+  {
+    "id": "a2_6",
+    "type": "multiple_select",
+    "question": "Mely állítások igazak a Mohó (Greedy) algoritmusokra?",
+    "order": 6,
+    "options": ["Mindig a lokálisan legoptimálisabbnak tűnő lépést választják az adott pillanatban.", "Minden problématípusnál garantáltan megtalálják a globális optimumot.", "Általában gyorsabbak (kisebb bonyolultságúak), mint a dinamikus programozás.", "Visszalépnek (backtracking), ha rájönnek, hogy rossz döntést hoztak korábban."],
+    "correct": [0, 2]
+  },
+  {
+    "id": "a2_7",
+    "type": "matching",
+    "question": "Párosítsd az algoritmikus paradigmákat a rájuk jellemző problémákkal!",
+    "order": 7,
+    "pairs": {
+      "Mohó (Greedy) stratégia": "Törtekre bontható (folytonos) hátizsák-probléma, Huffman-kódolás.",
+      "Dinamikus programozás": "0-1 (diszkrét) hátizsák-probléma, Floyd-Warshall.",
+      "Oszd meg és uralkodj": "Gyorsrendezés (Quicksort), Összefésülő rendezés (Mergesort).",
+      "Visszalépéses keresés (Backtracking)": "8 királynő probléma, Sudoku megoldó."
+    }
+  },
+  {
+    "id": "a2_8",
+    "type": "short_answer",
+    "question": "Melyik híres mohó algoritmust használjuk a veszteségmentes adattömörítésben, amely a karakterek előfordulási gyakorisága alapján változó hosszúságú (prefix) kódokat rendel a betűkhöz?",
+    "order": 8,
+    "answers": ["Huffman-kódolás", "Huffman", "Huffman kódolás"]
+  },
+  {
+    "id": "a2_9",
+    "type": "multiple_choice",
+    "question": "Milyen adatszerkezetet használ a Dijkstra-algoritmus a leghatékonyabb (pl. O((V+E) log V)) megvalósításhoz?",
+    "order": 9,
+    "options": ["Verem (Stack)", "Prioritási sor (Priority Queue / Min-Heap)", "Láncolt lista (Linked List)", "Kétdimenziós tömb (Matrix)"],
+    "correct_index": 1
+  },
+  {
+    "id": "a2_10",
+    "type": "multiple_select",
+    "question": "Melyek a 'P' és 'NP' bonyolultsági osztályok definíciói az algoritmuselméletben?",
+    "order": 10,
+    "options": ["P: Azok a eldöntési problémák, amelyek megoldhatók polinomiális időben egy determinisztikus Turing-géppel.", "NP: Azok az eldöntési problémák, amelyeknek a megoldása (a tanú) ELLENŐRIZHETŐ polinomiális időben.", "NP: A 'Nem-Polinomiális' (Non-Polynomial) rövidítése, vagyis biztosan nem oldhatók meg polinom időben.", "Ha egy probléma NP-teljes, akkor minden NP probléma visszavezethető rá polinom időben."],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "a2_11",
+    "type": "short_answer",
+    "question": "Mi a neve annak a gráfalgoritmusnak, amely egy irányított, körmentes gráf (DAG) csúcsait rendezi sorba úgy, hogy minden él balról jobbra mutasson (pl. feladatok függőségi sorrendjének meghatározására)?",
+    "order": 11,
+    "answers": ["Topologikus rendezés", "Topological sort"]
+  },
+  {
+    "id": "a2_12",
+    "type": "matching",
+    "question": "Párosítsd a minimális feszítőfa (MST) algoritmusokat a működési elvükkel!",
+    "order": 12,
+    "pairs": {
+      "Kruskal-algoritmus": "Mohó algoritmus; az éleket súly szerint növekvő sorrendbe rendezi, és egyesével veszi be azokat, amelyek nem zárnak be kört.",
+      "Prim-algoritmus": "Mohó algoritmus; egyetlen pontból indul ki, és a már meglévő fához mindig a legolcsóbb, kifelé mutató élt adja hozzá.",
+      "Diszjunkt halmazok (Union-Find)": "Adatszerkezet, amelyet a Kruskal-algoritmus használ a körök gyors (O(log* n)) detektálására."
+    }
+  },
+  {
+    "id": "a2_13",
+    "type": "multiple_choice",
+    "question": "A String-illesztő (Mintaillesztő) algoritmusok közül mi a KMP (Knuth-Morris-Pratt) algoritmus fő újítása a naiv módszerhez képest?",
+    "order": 13,
+    "options": ["Hátulról előrefelé hasonlítja össze a karaktereket.", "Hash-függvényeket használ a minta és a szöveg összehasonlítására (ez a Rabin-Karp).", "Egy 'prefix' tömböt (hibafüggvényt) épít fel előre a mintából, így nemegyezés esetén nem kell visszalépnie a főszövegben, ezáltal O(N+M) lineáris időt ér el.", "Végtelen memóriát igényel."],
+    "correct_index": 2
+  },
+  {
+    "id": "a2_14",
+    "type": "multiple_choice",
+    "question": "Hogyan működik a Rabin-Karp mintaillesztő algoritmus?",
+    "order": 14,
+    "options": ["Suffix-fákat épít.", "A minta és a vizsgált szövegablak Hash értékét (ujjlenyomatát) hasonlítja össze guruló hash (rolling hash) technikával, és csak egyezés esetén végez karakterenkénti ellenőrzést.", "Felismerési automatát (DFA) épít.", "Csak számokat tud illeszteni."],
+    "correct_index": 1
+  },
+  {
+    "id": "a2_15",
+    "type": "multiple_select",
+    "question": "Mely állítások igazak a Ford-Fulkerson módszerre (Maximális folyam probléma)?",
+    "order": 15,
+    "options": ["Keres egy 'javító utat' (augmenting path) a forrástól a nyelőig a reziduális (maradék) gráfban.", "Addig növeli a folyamot ezen az úton, amíg lehetséges (a szűk keresztmetszet értékével).", "A módszer befejeződik, amikor már nincs több javító út a reziduális gráfban.", "Mindig a leghosszabb utat keresi meg először."],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "a2_16",
+    "type": "short_answer",
+    "question": "Melyik híres tétel mondja ki a hálózatokban, hogy egy hálózatban a maximális folyam (max flow) értéke pontosan egyenlő a minimális vágás (min cut) kapacitásával?",
+    "order": 16,
+    "answers": ["Max-flow min-cut tétel", "maximális folyam minimális vágás", "Ford-Fulkerson tétel"]
+  },
+  {
+    "id": "a2_17",
+    "type": "matching",
+    "question": "Párosítsd a számítási bonyolultságelmélet fogalmait!",
+    "order": 17,
+    "pairs": {
+      "Polinomiális redukció (Karp-redukció)": "Egy A probléma átalakítása B problémává polinomiális időben (A ≤p B). Ha B megoldható, akkor A is.",
+      "NP-nehéz (NP-hard)": "Olyan probléma, amelyre minden NP probléma polinomiálisan visszavezethető (de nem feltétlenül van az NP osztályban).",
+      "NP-teljes (NP-complete)": "Olyan probléma, amely az NP osztályban van, ÉS egyben NP-nehéz is (a legnehezebb problémák NP-ben).",
+      "Utazó ügynök probléma (TSP)": "Klasszikus NP-teljes feladat: a legrövidebb út megtalálása, amely minden várost pontosan egyszer érint."
+    }
+  },
+  {
+    "id": "a2_18",
+    "type": "multiple_choice",
+    "question": "Mi az a 'visszalépéses keresés' (Backtracking)?",
+    "order": 18,
+    "options": ["A gráf legmélyebb pontjáról való visszatérés a szélességi bejárásban.", "Egy algoritmustervezési stratégia, amely szisztematikusan bejárja a megoldás-teret (állapottér-fát), de amint rájön, hogy egy adott részletmegoldás nem vezethet a célhoz, 'visszalép' (nyesés) és megpróbál egy másik ágat.", "Az adatok visszaállítása (backup) merevlemezről.", "A stringek hátulról előre való olvasása."],
+    "correct_index": 1
+  },
+  {
+    "id": "a2_19",
+    "type": "multiple_select",
+    "question": "Mely algoritmusok használnak mátrixokat az élsúlyok tárolására és dinamikus programozást a gráfokban futó utakra vonatkozóan?",
+    "order": 19,
+    "options": ["Floyd-Warshall-algoritmus (Minden pontpár közti legrövidebb út)", "Warshall-algoritmus (Tranzitív lezárt, elérhetőség meghatározása)", "Kruskal-algoritmus", "BFS (Szélességi bejárás)"],
+    "correct": [0, 1]
+  },
+  {
+    "id": "a2_20",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azt az Oszd meg és uralkodj algoritmust, amellyel a két n x n-es mátrix szorzása naiv O(n^3) helyett O(n^2.81) idő alatt is elvégezhető az összeadások számának növelése árán?",
+    "order": 20,
+    "answers": ["Strassen-algoritmus", "Strassen"]
+  }
+]

@@ -1,0 +1,173 @@
+[
+  {
+    "id": "a2_1",
+    "type": "short_answer",
+    "question": "Mi a Newton-Leibniz formula alapvető állítása egy [a,b] intervallumon folytonos f(x) függvény határozott integráljának kiszámítására (ha F(x) a primitív függvénye)?",
+    "order": 1,
+    "answers": ["F(b) - F(a)", "F(b)-F(a)"]
+  },
+  {
+    "id": "a2_2",
+    "type": "multiple_choice",
+    "question": "Melyik a parciális integrálás helyes, általános képlete (f és g differenciálható függvények esetén)?",
+    "order": 2,
+    "options": ["∫ f'*g = f*g - ∫ f*g'", "∫ f*g = f'*g' - ∫ f*g", "∫ f/g = f'*g - f*g'", "∫ f*g = (f^2 * g^2)/2"],
+    "correct_index": 0
+  },
+  {
+    "id": "a2_3",
+    "type": "multiple_select",
+    "question": "Mely geometriai vagy fizikai mennyiségek kiszámítására használható fel közvetlenül a határozott integrál az egyváltozós analízisben?",
+    "order": 3,
+    "options": ["Síkidomok területe", "Forgástestek térfogata", "Görbék ívhossza", "Mátrixok determinánsa"],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "a2_4",
+    "type": "matching",
+    "question": "Párosítsd a gyakori alapfüggvényeket a primitív függvényükkel (határozatlan integráljukkal, a '+ C' konstanstól eltekintve)!",
+    "order": 4,
+    "pairs": {
+      "∫ (1/x) dx": "ln|x|",
+      "∫ cos(x) dx": "sin(x)",
+      "∫ e^x dx": "e^x",
+      "∫ (1/(1+x^2)) dx": "arctan(x)"
+    }
+  },
+  {
+    "id": "a2_5",
+    "type": "multiple_choice",
+    "question": "Mikor nevezünk egy határozott integrált improprius (nem valódi) integrálnak?",
+    "order": 5,
+    "options": ["Ha az integrálási tartomány végtelen (pl. [a, ∞)), vagy a függvény nem korlátos az integrálási intervallumban.", "Ha a függvénynek nincs elemi primitív függvénye.", "Ha a Newton-Leibniz formula negatív eredményt ad.", "Kizárólag akkor, ha az integrál értéke komplex szám."],
+    "correct_index": 0
+  },
+  {
+    "id": "a2_6",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azt a vektort, amely egy többváltozós valós függvény adott pontbeli összes elsőrendű parciális deriváltját tartalmazza?",
+    "order": 6,
+    "answers": ["Gradiens", "gradiens vektor", "grad"]
+  },
+  {
+    "id": "a2_7",
+    "type": "multiple_choice",
+    "question": "Egy differenciálható többváltozós függvény esetében melyik irányban maximális az iránymenti derivált (hol nő a leggyorsabban a függvény)?",
+    "order": 7,
+    "options": ["A gradiens vektor irányában.", "A gradiens vektorra merőleges irányban.", "Mindig az origó felé mutató irányban.", "Az x-tengely irányában."],
+    "correct_index": 0
+  },
+  {
+    "id": "a2_8",
+    "type": "multiple_select",
+    "question": "Mik a szükséges és/vagy elégséges feltételei annak, hogy egy kétszer folytonosan differenciálható f(x,y) függvénynek lokális szélsőértéke legyen egy (x0, y0) pontban?",
+    "order": 8,
+    "options": ["Szükséges: mindkét elsőrendű parciális derivált 0 legyen a pontban (stacionárius pont).", "Elégséges: a Hesse-mátrix determinánsa pozitív legyen a pontban.", "Szükséges: a gradiens vektor hossza maximális legyen.", "Elégséges: a vegyes parciális deriváltak értéke 0 legyen."],
+    "correct": [0, 1]
+  },
+  {
+    "id": "a2_9",
+    "type": "matching",
+    "question": "Párosítsd a Hesse-mátrix determinánsának (D) értékét a kétváltozós szélsőérték típusával (feltéve, hogy a pont stacionárius: fx=0, fy=0)!",
+    "order": 9,
+    "pairs": {
+      "D > 0 és fxx > 0": "Lokális minimum",
+      "D > 0 és fxx < 0": "Lokális maximum",
+      "D < 0": "Nyeregpont (nincs szélsőérték)",
+      "D = 0": "További vizsgálat szükséges (a teszt nem dönt)"
+    }
+  },
+  {
+    "id": "a2_10",
+    "type": "multiple_choice",
+    "question": "Kettős integrál kiszámításakor, ha Descartes-koordinátákról (x, y) polárkoordinátákra (r, φ) térünk át, mivel kell kötelezően megszorozni az integrandust (mi a Jacobi-determináns abszolút értéke)?",
+    "order": 10,
+    "options": ["r", "r^2", "cos(φ)", "r * sin(φ)"],
+    "correct_index": 0
+  },
+  {
+    "id": "a2_11",
+    "type": "multiple_choice",
+    "question": "Mit mond ki a Fubini-tétel a többváltozós analízisben?",
+    "order": 11,
+    "options": ["Megfelelő feltételek (pl. folytonosság) mellett a többszörös (pl. kettős) integrál kiszámítható iterált (egymás utáni) egyváltozós integrálásokkal, és a sorrend felcserélhető.", "A gradiens rotációja mindig nulla.", "Csak a téglalap alakú tartományokon lehet integrálni.", "A parciális deriválások sorrendje felcserélhető."],
+    "correct_index": 0
+  },
+  {
+    "id": "a2_12",
+    "type": "short_answer",
+    "question": "Mi a neve annak a tételnek, amely kimondja, hogy ha egy többváltozós függvény kétszer folytonosan differenciálható, akkor a vegyes másodrendű parciális deriváltak függetlenek a deriválás sorrendjétől (azaz fxy = fyx)?",
+    "order": 12,
+    "answers": ["Young-tétel", "Schwarz-tétel", "Young", "Schwarz"]
+  },
+  {
+    "id": "a2_13",
+    "type": "multiple_select",
+    "question": "Mely állítások igazak a hatványsorokra (valós esetben)?",
+    "order": 13,
+    "options": ["Létezik egy R konvergenciasugár, amelyen belül (az (x0-R, x0+R) intervallumban) a sor abszolút konvergens.", "A konvergenciatartomány szélén (x = x0 ± R) a konvergenciát külön vizsgálni kell.", "Minden hatványsor csak az x=0 pontban konvergens.", "A hatványsorok a konvergenciaintervallumuk belsejében tagonként differenciálhatók és integrálhatók."],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "a2_14",
+    "type": "matching",
+    "question": "Párosítsd a helyettesítéses integrálás (t = g(x)) jellemzőit az ∫ f(g(x))*g'(x) dx feladat esetén!",
+    "order": 14,
+    "pairs": {
+      "t": "g(x) (az új változó)",
+      "dt": "g'(x) dx (a differenciál átírása)",
+      "Határozott integrál esetén": "Az integrálási határokat (a, b) is át kell számolni az új változóra (g(a), g(b)).",
+      "A módszer fő célja": "Bonyolult, összetett függvényt tartalmazó integrálok egyszerűbb alakra hozása."
+    }
+  },
+  {
+    "id": "a2_15",
+    "type": "multiple_choice",
+    "question": "Milyen alakú bázisfüggvények lineáris kombinációjaként állítja elő a Fourier-sor a periodikus függvényeket?",
+    "order": 15,
+    "options": ["Polinomok (x, x^2, x^3...)", "Szinusz és koszinusz (trigonometrikus) függvények", "Exponenciális függvények", "Logaritmikus függvények"],
+    "correct_index": 1
+  },
+  {
+    "id": "a2_16",
+    "type": "short_answer",
+    "question": "Melyik az a (pontonkéntinél erősebb) konvergenciafogalom függvénysorozatok esetén, amely garantálja, hogy ha a sorozat tagjai folytonosak, akkor a határfüggvény is folytonos lesz?",
+    "order": 16,
+    "answers": ["Egyenletes konvergencia", "egyenletes"]
+  },
+  {
+    "id": "a2_17",
+    "type": "multiple_select",
+    "question": "Mik a szükséges feltételei egy f(x) függvény Taylor-sorának felírásához egy adott x0 pont körül?",
+    "order": 17,
+    "options": ["A függvény legyen akárhányszor (végtelenszer) differenciálható az x0 pont egy környezetében.", "Ismerni kell a függvény és deriváltjainak pontos értékét az x0 pontban.", "A függvénynek szigorúan monoton növekvőnek kell lennie az értelmezési tartományán.", "A függvény csak pozitív értékeket vehet fel."],
+    "correct": [0, 1]
+  },
+  {
+    "id": "a2_18",
+    "type": "matching",
+    "question": "Párosítsd a legismertebb elemi függvényeket a hozzájuk tartozó Maclaurin-sorral (x0 = 0 körüli Taylor-sorral)!",
+    "order": 18,
+    "pairs": {
+      "e^x": "1 + x + x^2/2! + x^3/3! + ...",
+      "sin(x)": "x - x^3/3! + x^5/5! - ...",
+      "cos(x)": "1 - x^2/2! + x^4/4! - ...",
+      "1/(1-x)": "1 + x + x^2 + x^3 + ... (Geometriai sor)"
+    }
+  },
+  {
+    "id": "a2_19",
+    "type": "multiple_choice",
+    "question": "Milyen analízis-problémák megoldására szolgál a Lagrange-féle multiplikátormódszer?",
+    "order": 19,
+    "options": ["Közönséges differenciálegyenletek egzakt megoldására.", "Többváltozós függvények lokális szélsőértékének megkeresésére olyan esetekben, amikor a változókra valamilyen egyenlőség formájú feltétel (kényszer) vonatkozik (feltételes szélsőérték).", "Határozatlan integrálok parciális törtekre bontására.", "A Taylor-sor maradéktagjának becslésére."],
+    "correct_index": 1
+  },
+  {
+    "id": "a2_20",
+    "type": "short_answer",
+    "question": "Az integrálási szabályok szerint, ha f(x) egy folytonos és páratlan függvény (vagyis f(-x) = -f(x)), mennyi az f(x) határozott integrálja a [-a, a] szimmetrikus intervallumon (ahol 'a' pozitív valós szám)?",
+    "order": 20,
+    "answers": ["0", "nulla"]
+  }
+]

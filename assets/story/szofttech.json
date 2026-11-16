@@ -1,0 +1,172 @@
+[
+  {
+    "id": "szt1",
+    "type": "multiple_choice",
+    "question": "Mi a felhasználói történet (User Story) elsődleges célja a követelményelemzés során (agilis környezetben)?",
+    "order": 1,
+    "options": ["A szoftver adatbázis-architektúrájának részletes leírása.", "Egy szoftverfunkció rövid, üzleti értéket közvetítő leírása a végfelhasználó szemszögéből.", "A fejlesztők napi munkaóráinak adminisztrálása.", "A forráskód automatikus tesztelése."],
+    "correct_index": 1
+  },
+  {
+    "id": "szt2",
+    "type": "matching",
+    "question": "Párosítsd a Használati eset (Use Case) diagram elemeit a jelentésükkel!",
+    "order": 2,
+    "pairs": {
+      "Ágens (Actor)": "Olyan külső entitás (ember vagy másik rendszer), amely interakcióba lép a vizsgált rendszerrel.",
+      "Használati eset (Use Case)": "A rendszer egy funkciója, amely valamilyen értéket/eredményt nyújt egy ágens számára.",
+      "<<include>> kapcsolat": "Azt jelöli, hogy egy alap használati eset végrehajtása mindig, kötelezően magában foglalja a hivatkozott esetet is.",
+      "<<extend>> kapcsolat": "Opcionális, feltételhez kötött kiterjesztés, amikor egy használati eset futását egy másik eset bizonyos körülmények között kibővítheti."
+    }
+  },
+  {
+    "id": "szt3",
+    "type": "multiple_select",
+    "question": "Mely UML diagramok tartoznak a szerkezeti (structural) diagramok közé?",
+    "order": 3,
+    "options": ["Osztálydiagram (Class Diagram)", "Szekvenciadiagram (Sequence Diagram)", "Állapotgép diagram (State Machine Diagram)", "Komponensdiagram (Component Diagram)"],
+    "correct": [0, 3]
+  },
+  {
+    "id": "szt4",
+    "type": "short_answer",
+    "question": "Melyik szoftvertervezési (SOLID) alapelv rövidítése az SRP, amely kimondja, hogy egy osztálynak csak egyetlen oka lehet a változásra?",
+    "order": 4,
+    "answers": ["Single Responsibility Principle", "Egy felelősség elve", "SRP"]
+  },
+  {
+    "id": "szt5",
+    "type": "multiple_choice",
+    "question": "Mit jelöl a teli (fekete) rombusz az UML osztálydiagramon az osztályok közötti kapcsolatoknál?",
+    "order": 5,
+    "options": ["Általánosítás / Öröklődés", "Kompozíció (erős rész-egész kapcsolat, a rész nem létezhet az egész nélkül)", "Aggregáció (gyenge rész-egész kapcsolat, a rész önállóan is életképes)", "Függőség (Dependency)"],
+    "correct_index": 1
+  },
+  {
+    "id": "szt6",
+    "type": "multiple_choice",
+    "question": "Az Open/Closed Principle (Nyitott/Zárt elv) szerint a szoftver entitásoknak (osztályok, modulok)...",
+    "order": 6,
+    "options": ["Nyitottnak kell lenniük a módosításra, de zártnak a kiterjesztésre.", "Nyitottnak kell lenniük a kiterjesztésre (pl. örökléssel, interfészekkel), de zártnak a módosításra (a meglévő működő kód átírására).", "Nyitott forráskódúnak kell lenniük.", "Zártnak kell lenniük a külső rendszerek felé."],
+    "correct_index": 1
+  },
+  {
+    "id": "szt7",
+    "type": "short_answer",
+    "question": "Melyik népszerű, elosztott verziókezelő rendszert használják ma a leggyakrabban a szoftverfejlesztésben (amelyre pl. a GitHub és a GitLab is épül)?",
+    "order": 7,
+    "answers": ["Git", "git"]
+  },
+  {
+    "id": "szt8",
+    "type": "matching",
+    "question": "Párosítsd a Git alapvető parancsait a feladatukkal!",
+    "order": 8,
+    "pairs": {
+      "git clone": "Egy távoli (remote) tároló teljes másolatának letöltése a helyi gépre.",
+      "git add": "A módosított fájlok átmozgatása a munkakönyvtárból a felkészítési területre (staging area).",
+      "git commit": "A felkészített változtatások végleges mentése a helyi tároló (repository) történetébe egy üzenettel.",
+      "git push": "A helyi tárolóban rögzített új commitok feltöltése a távoli szerverre."
+    }
+  },
+  {
+    "id": "szt9",
+    "type": "multiple_select",
+    "question": "Milyen állapotokban (states) lehet egy fájl a Git verziókezelő lokális munkafolyamata szerint?",
+    "order": 9,
+    "options": ["Modified (Módosított, de még nincs előkészítve)", "Staged (Előkészített, bekerült a következő commitba)", "Committed (Biztonságosan eltárolva a helyi adatbázisban)", "Compiled (Lefordított)"],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "szt10",
+    "type": "short_answer",
+    "question": "Mi a neve annak a Git műveletnek, amikor két különböző ág (branch) fejlesztési vonalát és módosításait egyesítjük egyetlen ágba?",
+    "order": 10,
+    "answers": ["merge", "összefésülés", "git merge"]
+  },
+  {
+    "id": "szt11",
+    "type": "matching",
+    "question": "Párosítsd a szoftvertesztelés szintjeit (levels) a jellemzőjükkel!",
+    "order": 11,
+    "pairs": {
+      "Egységteszt (Unit test)": "A legkisebb tesztelhető kódrészletek (pl. osztályok, metódusok) izolált ellenőrzése a fejlesztő által.",
+      "Integrációs teszt": "Több, már külön-külön letesztelt modul együttes működésének és kommunikációjának ellenőrzése.",
+      "Rendszerteszt": "A teljes, integrált szoftverrendszer átfogó tesztelése a specifikáció (követelmények) alapján.",
+      "Átvételi teszt (Acceptance test)": "A megrendelő vagy a végfelhasználó által végzett tesztelés a szoftver élesítésének jóváhagyására."
+    }
+  },
+  {
+    "id": "szt12",
+    "type": "multiple_choice",
+    "question": "Mi a feketedoboz (black-box) tesztelés lényege?",
+    "order": 12,
+    "options": ["A tesztelő ismeri és vizsgálja a program belső forráskódját és struktúráját.", "A tesztelő nem ismeri a belső megvalósítást, csak a bemeneteket (input) adja meg, és a kimeneteket (output) hasonlítja össze a várt elvárásokkal.", "Kizárólag a szoftver kiberbiztonságának tesztelését jelenti.", "A hardveres eszközök fizikai stressztesztelése."],
+    "correct_index": 1
+  },
+  {
+    "id": "szt13",
+    "type": "multiple_select",
+    "question": "Melyek a fehérdoboz (white-box) teszteléshez gyakran használt kódlefedettségi (coverage) mutatók?",
+    "order": 13,
+    "options": ["Utasításlefedettség (Statement coverage)", "Döntés- / Elágazáslefedettség (Branch coverage)", "Útlefedettség (Path coverage)", "Színlefedettség (Color coverage)"],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "szt14",
+    "type": "short_answer",
+    "question": "Melyik UML viselkedési diagram (behavioral diagram) ábrázolja az objektumok közötti üzenetváltásokat az időbeliség (fentről lefelé haladó idővonal) sorrendjében?",
+    "order": 14,
+    "answers": ["Szekvenciadiagram", "Szekvencia diagram", "Sequence diagram"]
+  },
+  {
+    "id": "szt15",
+    "type": "multiple_choice",
+    "question": "Mi a regressziós tesztelés (regression testing) fő célja?",
+    "order": 15,
+    "options": ["A szoftver teljesítményének (sebességének) mérése nagy terhelés alatt.", "Annak ellenőrzése, hogy egy új kódmódosítás, funkcióbővítés vagy hibajavítás nem rontott-e el egy korábban már jól működő funkciót.", "A szoftver régebbi verzióinak visszaállítása a verziókezelőben.", "A felhasználói felület ergonómiai vizsgálata."],
+    "correct_index": 1
+  },
+  {
+    "id": "szt16",
+    "type": "short_answer",
+    "question": "Hogy nevezik azt a szoftverfejlesztési módszertant (rövidítve TDD), ahol a fejlesztő először megírja az automatizált tesztet a funkcióhoz, ami természetesen elbukik, majd csak ezután írja meg az azt teljesítő kódot?",
+    "order": 16,
+    "answers": ["Tesztvezérelt fejlesztés", "Test-Driven Development", "Test Driven Development"]
+  },
+  {
+    "id": "szt17",
+    "type": "multiple_select",
+    "question": "Kik vagy mik lehetnek Ágensek (Actorok) egy UML Use Case diagramon?",
+    "order": 17,
+    "options": ["Emberi felhasználók (pl. Vásárló, Adminisztrátor).", "Más, külső szoftverrendszerek (pl. Banki fizetési kapu).", "Hardvereszközök (pl. Hőmérséklet szenzor, amely adatot küld).", "A vizsgált rendszer saját belső függvényei és osztályai."],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "szt18",
+    "type": "matching",
+    "question": "Párosítsd a szoftverarchitektúra tervezés során használt 3-rétegű (3-tier) architektúra rétegeit a feladatukkal!",
+    "order": 18,
+    "pairs": {
+      "Prezentációs réteg (Presentation Tier)": "A felhasználói felület (GUI), amely megjeleníti az adatokat és fogadja az inputot.",
+      "Üzleti / Logikai réteg (Logic / Business Tier)": "A rendszer magja, amely feldolgozza az adatokat és végrehajtja a specifikus üzleti szabályokat.",
+      "Adatelérési réteg (Data Tier)": "Kezeli és tárolja a perzisztens adatokat (pl. adatbázis-kapcsolatok, SQL lekérdezések)."
+    }
+  },
+  {
+    "id": "szt19",
+    "type": "multiple_choice",
+    "question": "Mit nevezünk Mock (utánzat) objektumnak a szoftvertesztelés során?",
+    "order": 19,
+    "options": ["Egy rosszul megírt, hibás kódot tartalmazó osztályt.", "Egy olyan teszt-duplungot (test double), amely szimulálja egy bonyolult, külső függőség (pl. adatbázis vagy hálózat) viselkedését, hogy a vizsgált osztályt izoláltan lehessen tesztelni.", "Az átvételi teszt (UAT) hivatalos dokumentumát.", "A grafikus felület drótváz-tervét (wireframe)."],
+    "correct_index": 1
+  },
+  {
+    "id": "szt20",
+    "type": "multiple_choice",
+    "question": "A SOLID Liskov-féle behelyettesítési elv (Liskov Substitution Principle) kimondja, hogy...",
+    "order": 20,
+    "options": ["Minden interfészt kis darabokra kell bontani.", "A magas szintű modulok nem függhetnek alacsony szintű moduloktól.", "A szülő osztály példányainak minden esetben helyettesíthetőnek kell lenniük a leszármazott (gyermek) osztályaik példányaival, anélkül, hogy a program helyes működése megváltozna.", "Egy osztálynak pontosan egy feladatot szabad ellátnia."],
+    "correct_index": 2
+  }
+]

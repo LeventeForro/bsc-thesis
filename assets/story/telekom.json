@@ -1,0 +1,227 @@
+[
+  {
+    "id": "tk1",
+    "type": "multiple_choice",
+    "question": "Melyik hálózati réteg felelős a végpontok közötti útvonalválasztásért (routing) és a csomagtovábbításért?",
+    "order": 1,
+    "options": [
+      "Fizikai réteg",
+      "Adatkapcsolati réteg",
+      "Hálózati réteg",
+      "Szállítói réteg"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "tk2",
+    "type": "multiple_select",
+    "question": "Melyek az adatkapcsolati réteg (Data Link Layer) fő feladatai a tematika alapján?",
+    "order": 2,
+    "options": [
+      "Hibafelismerés és javítás (pl. CRC)",
+      "Közeg-hozzáférés vezérlés (MAC)",
+      "Alkalmazási protokollok (pl. HTTP) futtatása",
+      "Csatornafoglalás és multiplexálás"
+    ],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "tk3",
+    "type": "matching",
+    "question": "Párosítsd a hálózati rétegeket a hozzájuk tartozó jellemző protokollal vagy eszközzel!",
+    "order": 3,
+    "pairs": {
+      "Hálózati réteg": "IPv4, IPv6, BGP",
+      "Szállítói réteg": "TCP, UDP",
+      "Alkalmazási réteg": "DNS, HTTP, SMTP",
+      "Adatkapcsolati réteg": "Ethernet, ARP"
+    }
+  },
+  {
+    "id": "tk4",
+    "type": "short_answer",
+    "question": "Mi a rövidítése annak a hibaellenőrző eljárásnak, amelyet ciklikus redundancia-ellenőrzésnek nevezünk?",
+    "order": 4,
+    "answers": ["CRC", "Cyclic Redundancy Check"]
+  },
+  {
+    "id": "tk5",
+    "type": "multiple_choice",
+    "question": "Mit jelent a fizikai rétegben használt 'alapsávú' (baseband) átvitel?",
+    "order": 5,
+    "options": [
+      "A jelet moduláció nélkül, eredeti frekvenciatartományában küldik el a közegen.",
+      "A jelet egy magas frekvenciájú vivőhullámra ültetik rá.",
+      "Több különböző csatorna osztozik a sávszélességen frekvenciaosztással.",
+      "Csak optikai kábelen alkalmazható eljárás."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "tk6",
+    "type": "multiple_select",
+    "question": "Melyek a kollízió (ütközés) alapú protokollok az alábbiak közül?",
+    "order": 6,
+    "options": [
+      "Aloha",
+      "CSMA",
+      "Token Ring",
+      "Ethernet (fél-duplex módban)"
+    ],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "tk7",
+    "type": "matching",
+    "question": "Párosítsd a routing protokollokat a típusukkal!",
+    "order": 7,
+    "pairs": {
+      "RIP": "Distance-Vector alapú routing",
+      "OSPF": "Link-State alapú routing",
+      "BGP": "Inter-AS (autonóm rendszerek közötti) routing",
+      "IGRP": "Cisco-specifikus Distance-Vector protokoll"
+    }
+  },
+  {
+    "id": "tk8",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azt a protokollt, amely az IP címekhez rendeli hozzá a megfelelő fizikai (MAC) címeket?",
+    "order": 8,
+    "answers": ["ARP", "Address Resolution Protocol"]
+  },
+  {
+    "id": "tk9",
+    "type": "multiple_choice",
+    "question": "Melyik TCP torlódásvezérlési algoritmus a 'modern' alapértelmezett sok Linux disztribúcióban a tematika szerint?",
+    "order": 9,
+    "options": [
+      "Tahoe",
+      "Reno",
+      "CUBIC",
+      "Vegas"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "tk10",
+    "type": "multiple_select",
+    "question": "Milyen előnyei vannak az IPv6-nak az IPv4-gyel szemben?",
+    "order": 10,
+    "options": [
+      "Lényegesen nagyobb címtartomány (128 bit)",
+      "Beépített IPSec támogatás",
+      "Egyszerűbb fejléc-szerkezet",
+      "Nincs szükség benne útvonalválasztókra"
+    ],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "tk11",
+    "type": "matching",
+    "question": "Párosítsd a TCP torlódásvezérlés fogalmait a jelentésükkel!",
+    "order": 11,
+    "pairs": {
+      "AIMD": "Additív növelés, multiplikatív csökkentés elve.",
+      "Slow Start": "Exponenciális ablakméret-növelés a kapcsolat elején.",
+      "Fast Retransmit": "Gyors újraküldés három azonos nyugta (ACK) esetén.",
+      "ECN": "Explicit torlódásjelzés a hálózati csomópontok felől."
+    }
+  },
+  {
+    "id": "tk12",
+    "type": "short_answer",
+    "question": "Melyik protokoll felelős az IP címek automatikus kiosztásáért a kliensek számára?",
+    "order": 12,
+    "answers": ["DHCP", "Dynamic Host Configuration Protocol"]
+  },
+  {
+    "id": "tk13",
+    "type": "multiple_choice",
+    "question": "Mi a szerepe az Autonomous System-ek közötti BGP protokollnak?",
+    "order": 13,
+    "options": [
+      "Lokális hálózatok (LAN) belüli fájlátvitel.",
+      "Az Internet gerincvonalán az autonóm rendszerek közötti útvonalak cseréje.",
+      "IP címek hozzárendelése domain nevekhez.",
+      "Hibajavítás a fizikai rétegben."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "tk14",
+    "type": "multiple_select",
+    "question": "Mely technológiák tartoznak a modern hálózati trendek közé a tematika szerint?",
+    "order": 14,
+    "options": [
+      "SDN (Software Defined Networking)",
+      "NFV (Network Function Virtualization)",
+      "Adatközponti hálózatok",
+      "Analóg betárcsázós modem"
+    ],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "tk15",
+    "type": "matching",
+    "question": "Párosítsd az alkalmazási réteg protokolljait a funkciójukkal!",
+    "order": 15,
+    "pairs": {
+      "DNS": "Domain nevek feloldása IP címekre.",
+      "SMTP": "Elektronikus levelek (E-mail) továbbítása.",
+      "HTTP": "Weboldalak és webes tartalmak átvitele.",
+      "P2P": "Központi szerver nélküli, egyenrangú felek közötti adatcsere."
+    }
+  },
+  {
+    "id": "tk16",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azt a szoftveres hálózatemulátort, amelyet a tárgy a hálózati kísérletekhez használ?",
+    "order": 16,
+    "answers": ["Mininet"]
+  },
+  {
+    "id": "tk17",
+    "type": "multiple_choice",
+    "question": "Mit határoz meg a Hamming-távolság a hibajavító kódoknál?",
+    "order": 17,
+    "options": [
+      "A kábel maximális fizikai hosszát.",
+      "Két azonos hosszúságú kódszó között az eltérő bitek számát.",
+      "A hálózati csomagok késleltetését (latency).",
+      "Az IP címek közötti ugrások (hops) számát."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "tk18",
+    "type": "multiple_select",
+    "question": "Melyek a TCP (Transmission Control Protocol) fő jellemzői?",
+    "order": 18,
+    "options": [
+      "Összeköttetés-alapú kommunikáció",
+      "Garantált, sorrendhelyes csomagszállítás",
+      "Torlódásvezérlés alkalmazása",
+      "Gyors, de nem megbízható (best-effort) átvitel"
+    ],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "tk19",
+    "type": "matching",
+    "question": "Párosítsd a hálózatbiztonsági fogalmakat!",
+    "order": 19,
+    "pairs": {
+      "VPN": "Virtuális magánhálózat, biztonságos alagút publikus hálózaton.",
+      "IPSec": "Hálózati rétegbeli titkosítási protokollcsomag.",
+      "Tűzfal": "A forgalmat szabályokon alapuló szűréssel korlátozó eszköz.",
+      "Titkosítás": "Az adatok olvashatatlanná tétele jogosulatlanok számára."
+    }
+  },
+  {
+    "id": "tk20",
+    "type": "short_answer",
+    "question": "Mi a neve annak a címzési módszernek (pl. 192.168.1.0/24), amely felváltotta a hagyományos osztályalapú IP címzést?",
+    "order": 20,
+    "answers": ["CIDR", "Classless Inter-Domain Routing"]
+  }
+]

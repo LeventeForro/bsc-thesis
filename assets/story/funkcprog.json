@@ -1,0 +1,173 @@
+[
+  {
+    "id": "f1",
+    "type": "multiple_choice",
+    "question": "Mi a tiszta funkcionális programozási nyelvek (pl. Haskell) legfőbb jellemzője az imperatív nyelvekkel szemben?",
+    "order": 1,
+    "options": ["Kizárólag while ciklusokat használnak.", "Objektum-orientált paradigmára épülnek.", "Nincsenek mellékhatások (side-effects) és a változók megváltoztathatatlanok (immutable).", "Nincs típusrendszerük."],
+    "correct_index": 2
+  },
+  {
+    "id": "f2",
+    "type": "short_answer",
+    "question": "Melyik tisztán funkcionális programozási nyelvet használják jellemzően ezen a kurzuson?",
+    "order": 2,
+    "answers": ["Haskell", "haskell"]
+  },
+  {
+    "id": "f3",
+    "type": "multiple_select",
+    "question": "Melyek érvényes, beépített alaptípusok a Haskell nyelvben az alábbiak közül?",
+    "order": 3,
+    "options": ["Int", "Boolean", "Char", "Double", "Float"],
+    "correct": [0, 2, 3, 4]
+  },
+  {
+    "id": "f4",
+    "type": "matching",
+    "question": "Párosítsd az alapvető listakezelő függvényeket a leírásukkal!",
+    "order": 4,
+    "pairs": {
+      "head": "Visszaadja a lista első elemét.",
+      "tail": "Visszaadja a listát az első eleme nélkül.",
+      "take": "Kiveszi és visszaadja a lista első 'n' darab elemét.",
+      "drop": "Eldobja a lista első 'n' darab elemét és visszaadja a maradékot."
+    }
+  },
+  {
+    "id": "f5",
+    "type": "multiple_choice",
+    "question": "Mit csinál a magasabbrendű 'map' függvény?",
+    "order": 5,
+    "options": ["Kiszűri az elemeket egy logikai feltétel alapján.", "Összegzi a lista elemeit.", "Alkalmaz egy adott függvényt egy lista minden egyes elemére, és visszaadja az új eredmények listáját.", "Megkeresi a lista legnagyobb elemét."],
+    "correct_index": 2
+  },
+  {
+    "id": "f6",
+    "type": "short_answer",
+    "question": "Mi a neve annak a kiértékelési stratégiának, amelyet a Haskell alapértelmezetten használ (csak akkor számol ki egy kifejezést, ha annak értékére feltétlenül szükség van)?",
+    "order": 6,
+    "answers": ["Lusta kiértékelés", "lusta kiertekeles", "lazy evaluation"]
+  },
+  {
+    "id": "f7",
+    "type": "multiple_select",
+    "question": "Mely állítások igazak a Haskell függvényekre?",
+    "order": 7,
+    "options": ["A függvények elsőosztályú értékek (first-class citizens).", "Egy függvény paraméterként átadható egy másik függvénynek.", "A függvények megváltoztathatják a globális változókat (mellékhatás).", "Létezhetnek név nélküli (lambda) függvények is."],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "f8",
+    "type": "matching",
+    "question": "Párosítsd a leggyakoribb típusosztályokat (Type classes) a hozzájuk kapcsolódó műveletekkel/tulajdonságokkal!",
+    "order": 8,
+    "pairs": {
+      "Eq": "Egyenlőség vizsgálata (==, /=)",
+      "Ord": "Rendezhetőség, kisebb-nagyobb összehasonlítás (<, >, <=, >=)",
+      "Show": "Szöveggé (String) konvertálás a megjelenítéshez",
+      "Num": "Alapvető numerikus műveletek (+, -, *)"
+    }
+  },
+  {
+    "id": "f9",
+    "type": "multiple_choice",
+    "question": "Hogyan írjuk fel helyesen listaértelmezéssel (list comprehension) az 1-től 10-ig tartó páros számokat Haskellben?",
+    "order": 9,
+    "options": ["[x | x <- [1..10], even x]", "[x <- [1..10] | even x]", "{x : x in 1..10, x % 2 == 0}", "for x in [1..10] if even x"],
+    "correct_index": 0
+  },
+  {
+    "id": "f10",
+    "type": "short_answer",
+    "question": "Melyik kétkarakteres operátorral fűzünk össze két listát Haskellben?",
+    "order": 10,
+    "answers": ["++", "két plusz", "plusz plusz"]
+  },
+  {
+    "id": "f11",
+    "type": "multiple_choice",
+    "question": "Mi a curryzés (currying) jelentése a funkcionális programozásban?",
+    "order": 11,
+    "options": ["Egy n-paraméteres függvény átalakítása egyparaméteres függvények láncolatává.", "A paraméterek sorrendjének felcserélése.", "A rekurzió egy speciális fajtája, amely kiküszöböli a veremtúlcsordulást.", "A memóriaszemét eltávolításának folyamata."],
+    "correct_index": 0
+  },
+  {
+    "id": "f12",
+    "type": "multiple_select",
+    "question": "Melyek a magasabbrendű (higher-order) függvények az alábbiak közül (amelyek függvényt várnak paraméterként vagy adnak vissza)?",
+    "order": 12,
+    "options": ["map", "filter", "length", "foldr", "reverse"],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "f13",
+    "type": "matching",
+    "question": "Párosítsd az alapvető kifejezéseket az eredményükkel (Haskell szintaktika szerint)!",
+    "order": 13,
+    "pairs": {
+      "fst (1, 'a')": "1",
+      "snd (1, 'a')": "'a'",
+      "1 : [2, 3]": "[1, 2, 3]",
+      "length []": "0"
+    }
+  },
+  {
+    "id": "f14",
+    "type": "short_answer",
+    "question": "Melyik kulcsszóval hozhatunk létre saját algebrai adattípust (ADT) Haskellben?",
+    "order": 14,
+    "answers": ["data", "data kulcsszó"]
+  },
+  {
+    "id": "f15",
+    "type": "multiple_choice",
+    "question": "Mi a mintaillesztés (pattern matching) legfőbb alkalmazása Haskellben?",
+    "order": 15,
+    "options": ["Reguláris kifejezések (regex) futtatása szövegeken.", "Futásidejű típusellenőrzés végrehajtása.", "Adatstruktúrák (pl. listák, tuple-ök) felbontása és a vezérlési áramlás irányítása az adat formája alapján.", "Az adatbázis lekérdezések optimalizálása."],
+    "correct_index": 2
+  },
+  {
+    "id": "f16",
+    "type": "multiple_select",
+    "question": "Mely állítások igazak a tuple (rendezett n-es) adattípusra Haskellben a listákkal szemben?",
+    "order": 16,
+    "options": ["Tartalmazhat különböző típusú elemeket (heterogén).", "A hossza fix, és a típus részét képezi (pl. (Int, Char) nem azonos típusú mint (Int, Char, Bool)).", "Bármikor dinamikusan adhatunk hozzá új elemeket futás közben.", "Végtelen hosszú is lehet."],
+    "correct": [0, 1]
+  },
+  {
+    "id": "f17",
+    "type": "multiple_choice",
+    "question": "Mit jelent a referenciális átláthatóság (referential transparency)?",
+    "order": 17,
+    "options": ["A forráskód könnyen olvasható más fejlesztők számára.", "Egy kifejezés bármikor helyettesíthető a kiszámított értékével anélkül, hogy a program viselkedése megváltozna (a függvény mindig ugyanazt adja ugyanarra a bemenetre).", "A mutatók (pointerek) memóriacíme rejtett a fejlesztő elől.", "A program mindig kiírja a képernyőre az állapotát."],
+    "correct_index": 1
+  },
+  {
+    "id": "f18",
+    "type": "matching",
+    "question": "Párosítsd a funkcionális hajtogatás (fold) és szűrés fogalmait!",
+    "order": 18,
+    "pairs": {
+      "foldr": "Jobbról balra értékeli ki a listát egy akkumulátor és egy bináris operátor segítségével.",
+      "foldl": "Balról jobbra hajtogatja a listát.",
+      "filter": "Csak azokat az elemeket tartja meg, amelyekre egy predikátum (függvény) igazat ad.",
+      "Akkumulátor": "A részeredményeket tároló belső állapot a hajtogatás során."
+    }
+  },
+  {
+    "id": "f19",
+    "type": "short_answer",
+    "question": "Mi az a karakter (szimbólum), amelyet a lambda kifejezések (névtelen függvények) bevezetésére használunk a Haskell szintaktikában?",
+    "order": 19,
+    "answers": ["\\", "visszaper", "backslash", "\\ karakter"]
+  },
+  {
+    "id": "f20",
+    "type": "multiple_choice",
+    "question": "Mi a típusa a következő kifejezésnek Haskellben? `['a', 'b', 'c']`",
+    "order": 20,
+    "options": ["[Char] (amely a String szinonimája)", "Char", "[String]", "(Char, Char, Char) tuple"],
+    "correct_index": 0
+  }
+]

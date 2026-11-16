@@ -1,0 +1,211 @@
+[
+  {
+    "id": "kp1",
+    "type": "multiple_choice",
+    "question": "Mi a fő különbség a párhuzamos (parallel) és a konkurrens programozás között?",
+    "order": 1,
+    "options": [
+      "Nincs különbség, a két fogalom szinonima.",
+      "A konkurrencia több feladat egyidejű kezeléséről szól (logikai párhuzamosság), míg a párhuzamosság több feladat ténylegesen egy időben történő végrehajtásáról (fizikai párhuzamosság).",
+      "A konkurrens programok csak egyetlen processzoron futhatnak.",
+      "A párhuzamos programok nem használnak megosztott memóriát."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "kp2",
+    "type": "multiple_select",
+    "question": "Mely állítások igazak a szálak (threads) memóriakezelésére a folyamatokhoz (processes) képest?",
+    "order": 2,
+    "options": [
+      "A szálak osztoznak a folyamat közös memóriaterületén (Heap).",
+      "Minden szál saját, elkülönült veremmel (Stack) rendelkezik.",
+      "A szálak közötti adatcsere lassabb, mint a folyamatok közötti (IPC).",
+      "A szálak memóriája teljesen elkülönített, soha nem láthatják egymás változóit."
+    ],
+    "correct": [0, 1]
+  },
+  {
+    "id": "kp3",
+    "type": "matching",
+    "question": "Párosítsd a szálütemezési fogalmakat a jelentésükkel!",
+    "order": 3,
+    "pairs": {
+      "Pre-emption (Kiszajátítás)": "Az ütemező bármikor megszakíthatja a futó szálat, hogy egy másiknak adjon processzoridőt.",
+      "Run-to-completion": "A szál addig fut, amíg önként le nem mond a processzorról vagy be nem fejeződik.",
+      "Kontextusváltás": "A CPU állapotának mentése és egy másik szál állapotának betöltése.",
+      "Időosztás (Time-sharing)": "A processzoridő igazságos elosztása a futni vágyó szálak között."
+    }
+  },
+  {
+    "id": "kp4",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azt a jelenséget, amikor több szál egyszerre próbál módosítani egy közös erőforrást, és a végeredmény a szálak végrehajtási sorrendjétől (időzítésétől) függ?",
+    "order": 4,
+    "answers": ["Versenyhelyzet", "Race condition", "interferencia"]
+  },
+  {
+    "id": "kp5",
+    "type": "multiple_choice",
+    "question": "Melyik kulcsszó szolgál a Java nyelvben arra, hogy egy változó értékének módosítása minden szál számára azonnal látható legyen (elkerülve a cache-elési problémákat)?",
+    "order": 5,
+    "options": ["static", "final", "volatile", "synchronized"],
+    "correct_index": 2
+  },
+  {
+    "id": "kp6",
+    "type": "multiple_select",
+    "question": "Melyek a 'Monitor' mint szinkronizációs eszköz alapvető funkciói?",
+    "order": 6,
+    "options": [
+      "Kölcsönös kizárás (Mutual Exclusion) biztosítása.",
+      "Várakozási és értesítési mechanizmus (wait/notify) biztosítása.",
+      "A hálózati forgalom figyelése.",
+      "A programszálak prioritásának automatikus növelése."
+    ],
+    "correct": [0, 1]
+  },
+  {
+    "id": "kp7",
+    "type": "matching",
+    "question": "Párosítsd a többszálú programozás hibatípusait a leírásukkal!",
+    "order": 7,
+    "pairs": {
+      "Holtpont (Deadlock)": "Két vagy több szál egymásra vár körkörösen, így egyik sem tud továbbhaladni.",
+      "Livelock": "A szálak folyamatosan változtatják az állapotukat válaszul egymásra, de érdemi munkát nem végeznek.",
+      "Kiéheztetés (Starvation)": "Egy szál sosem vagy csak nagyon sokára jut hozzá a szükséges erőforráshoz.",
+      "Interferencia": "A szálak műveletei 'összegabalyodnak', hibás köztes állapotot eredményezve."
+    }
+  },
+  {
+    "id": "kp8",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azt a tulajdonságot, amikor egy műveletsorozatot vagy utasítást úgy hajtunk végre, hogy az kívülről oszthatatlannak tűnik (vagy teljesen lefut, vagy egyáltalán nem)?",
+    "order": 8,
+    "answers": ["Atomicitás", "atomos", "atomicity"]
+  },
+  {
+    "id": "kp9",
+    "type": "multiple_choice",
+    "question": "Mit jelent a 'szálbiztosság' (thread safety) fogalma?",
+    "order": 9,
+    "options": [
+      "A program sosem fagy le.",
+      "Egy objektum vagy metódus helyesen működik akkor is, ha több szál egyidejűleg, külső szinkronizáció nélkül használja.",
+      "A szálak nem használhatnak külső könyvtárakat.",
+      "Minden változó 'final' módosítóval van ellátva."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "kp10",
+    "type": "multiple_select",
+    "question": "Melyek a 'szinkronizáció' fő céljai a konkurrens programozásban?",
+    "order": 10,
+    "options": ["Láthatóság (Visibility) biztosítása", "Atomicitás biztosítása", "A program futási sebességének lassítása", "Kölcsönös kizárás (Mutual Exclusion)"],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "kp11",
+    "type": "matching",
+    "question": "Párosítsd a szinkronizációs eszközöket a feladatukkal!",
+    "order": 11,
+    "pairs": {
+      "Szemaphor": "Engedélyek (permits) halmazát kezeli, korlátozva az erőforráshoz férő szálak számát.",
+      "ReentrantLock": "Rugalmasabb kizárást biztosít, mint a synchronized blokk (pl. megszakítható várakozás).",
+      "ReadWriteLock": "Különválasztja az olvasási és írási hozzáférést a hatékonyság érdekében.",
+      "CountDownLatch": "Bevárja, amíg bizonyos számú esemény bekövetkezik vagy szál befejeződik."
+    }
+  },
+  {
+    "id": "kp12",
+    "type": "short_answer",
+    "question": "Melyik klasszikus konkurrens programozási feladatban szerepel egy közös tároló (buffer), ahová egyes szálak adatot tesznek, mások pedig kiveszik onnan?",
+    "order": 12,
+    "answers": ["Termelő-fogyasztó", "producer-consumer"]
+  },
+  {
+    "id": "kp13",
+    "type": "multiple_choice",
+    "question": "Melyik metódussal 'altatható el' egy szál a Monitoron belül, amíg egy feltétel teljesülésére vár?",
+    "order": 13,
+    "options": ["sleep()", "wait()", "yield()", "stop()"],
+    "correct_index": 1
+  },
+  {
+    "id": "kp14",
+    "type": "multiple_select",
+    "question": "Mely állítások igazak a 'Check-then-act' jellegű műveletekre?",
+    "order": 14,
+    "options": [
+      "Ilyen például a 'ha nincs benne a kulcs, akkor tedd be' (put-if-absent) művelet.",
+      "Szinkronizáció nélkül versenyhelyzethez vezethetnek.",
+      "Csak egyetlen változót érinthetnek.",
+      "Minden esetben atomosak a processzor szintjén."
+    ],
+    "correct": [0, 1]
+  },
+  {
+    "id": "kp15",
+    "type": "matching",
+    "question": "Párosítsd a szálak állapotait a jelentésükkel!",
+    "order": 15,
+    "pairs": {
+      "NEW": "A szál objektum létrejött, de még nem indult el.",
+      "RUNNABLE": "A szál fut, vagy futásra vár az ütemezőnél.",
+      "BLOCKED": "A szál egy monitor zárjára (lock) vár.",
+      "TERMINATED": "A szál befejezte a futását."
+    }
+  },
+  {
+    "id": "kp16",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azt az állapotot, amikor egy szál tevékenysége várakozás miatt fel van függesztve, és nem használ CPU-t?",
+    "order": 16,
+    "answers": ["Blokkolt", "blokkoló tevékenység", "blocked"]
+  },
+  {
+    "id": "kp17",
+    "type": "multiple_choice",
+    "question": "Mi a különbség a `notify()` és a `notifyAll()` metódusok között?",
+    "order": 17,
+    "options": [
+      "A `notify()` minden szálat felébreszt.",
+      "A `notify()` egyetlen véletlenszerűen kiválasztott szálat ébreszt fel a várakozási sorból, a `notifyAll()` pedig az összeset.",
+      "A `notifyAll()` törli az összes objektumot a memóriából.",
+      "Nincs különbség."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "kp18",
+    "type": "multiple_select",
+    "question": "Melyek a 'szálbiztos' (concurrent) adatszerkezetek előnyei a sima, szinkronizált gyűjteményekkel szemben?",
+    "order": 18,
+    "options": [
+      "Jobb skálázhatóság (több szál esetén kisebb a versengés).",
+      "Gyakran finomabb szemcséjű (fine-grained) zárolást használnak.",
+      "Kevesebb memóriát fogyasztanak.",
+      "Soha nem okozhatnak kivételt."
+    ],
+    "correct": [0, 1]
+  },
+  {
+    "id": "kp19",
+    "type": "matching",
+    "question": "Párosítsd a szinkronizációs anomáliákat az okaikkal!",
+    "order": 19,
+    "pairs": {
+      "Elveszett frissítés": "Két szál egyszerre olvas, módosít, majd ír vissza egy értéket, felülírva egymást.",
+      "Piszkos olvasás": "Egy szál egy másik szál által még be nem fejezett, inkonzisztens adatot lát.",
+      "Nem ismételhető olvasás": "Ugyanazon tranzakció/művelet alatt kétszer olvasva az adatot, az érték megváltozik."
+    }
+  },
+  {
+    "id": "kp20",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azokat a logikai állításokat, amelyeknek a konkurrens program futása során (pl. egy osztály állapota felett) mindig igaznak kell maradniuk?",
+    "order": 20,
+    "answers": ["Invariáns", "invariánsok"]
+  }
+]

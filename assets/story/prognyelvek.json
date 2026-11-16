@@ -1,0 +1,173 @@
+[
+  {
+    "id": "pn1",
+    "type": "multiple_choice",
+    "question": "Az Objektumorientált Programozás (OOP) melyik alapelve biztosítja, hogy egy objektum belső állapota és megvalósítási részletei rejtve maradjanak a külvilág elől?",
+    "order": 1,
+    "options": ["Polimorfizmus", "Öröklődés (Inheritance)", "Egységbezárás (Encapsulation / Adatrejtés)", "Absztrakció"],
+    "correct_index": 2
+  },
+  {
+    "id": "pn2",
+    "type": "short_answer",
+    "question": "Melyik kulcsszóval hozunk létre a Java és C++ nyelvekben egy új objektumpéldányt (instanciát) egy osztályból, ami memóriát foglal a heapen?",
+    "order": 2,
+    "answers": ["new", "new kulcsszó"]
+  },
+  {
+    "id": "pn3",
+    "type": "multiple_select",
+    "question": "Mely állítások igazak a többszörös öröklődésre (multiple inheritance) a Java és C++ nyelvek viszonylatában?",
+    "order": 3,
+    "options": ["A C++ támogatja a többszörös osztályöröklődést.", "A Java támogatja a többszörös osztályöröklődést.", "A Java-ban egy osztály csak egyetlen másik osztályból (szülőből) örökölhet közvetlenül.", "A Java-ban egy osztály több interfészt (interface) is implementálhat."],
+    "correct": [0, 2, 3]
+  },
+  {
+    "id": "pn4",
+    "type": "matching",
+    "question": "Párosítsd a láthatósági (hozzáférés-vezérlési) módosítókat a jellemzőikkel Java/C++ nyelvekben!",
+    "order": 4,
+    "pairs": {
+      "public": "Bárhonnan elérhető, a program bármely pontjáról hivatkozható.",
+      "private": "Csak és kizárólag a deklaráló osztályon belülről érhető el.",
+      "protected": "Elérhető az osztályon belül, és a belőle származtatott (öröklő) osztályokból is.",
+      "package-private (Java alapértelmezett)": "Elérhető minden osztály számára, amely ugyanabban a csomagban (package) van."
+    }
+  },
+  {
+    "id": "pn5",
+    "type": "multiple_choice",
+    "question": "Mi a legfőbb jellemzője a statikus (static) adattagoknak/metódusoknak egy osztályban?",
+    "order": 5,
+    "options": ["Csak a konstruktorban kaphatnak értéket.", "Nem az egyes példányokhoz (objektumokhoz), hanem magához az osztályhoz tartoznak, így az összes példány osztozik rajtuk.", "Futásidőben nem lehet megváltoztatni az értéküket.", "Automatikusan törlődnek, amint egy metódus lefut."],
+    "correct_index": 1
+  },
+  {
+    "id": "pn6",
+    "type": "multiple_choice",
+    "question": "Mi az a Polimorfizmus a programozási nyelvekben?",
+    "order": 6,
+    "options": ["A kód átfordítása különböző gépikód-architektúrákra.", "Többféle visszatérési típus megadása egyetlen függvényben.", "Azon képesség, hogy azonos nevű (vagy felülírt) metódusok különböző módon viselkednek az adott objektum tényleges futásidejű típusától függően (késői kötés).", "A változók típusának elrejtése a fordító elől."],
+    "correct_index": 2
+  },
+  {
+    "id": "pn7",
+    "type": "short_answer",
+    "question": "Hogy hívják azt a speciális metódust (tagfüggvényt) egy osztályban, amely automatikusan lefut, amikor az objektum létrejön, és célja az alapértelmezett értékek beállítása?",
+    "order": 7,
+    "answers": ["konstruktor", "constructor"]
+  },
+  {
+    "id": "pn8",
+    "type": "multiple_select",
+    "question": "Melyek az absztrakt osztályok (abstract class) jellemzői a Java nyelvben?",
+    "order": 8,
+    "options": ["Nem hozható létre belőlük közvetlenül példány (objektum).", "Minden metódusuknak kötelezően absztraktnak kell lennie (nem lehet törzsük).", "Tartalmazhatnak már megvalósított (törzzsel rendelkező) metódusokat is.", "Lehetnek adattagjaik (mezőik)."],
+    "correct": [0, 2, 3]
+  },
+  {
+    "id": "pn9",
+    "type": "matching",
+    "question": "Párosítsd a memóriakezelési fogalmakat és területeket!",
+    "order": 9,
+    "pairs": {
+      "Stack (Verem)": "A lokális változók és függvényhívási környezetek tárolóhelye, automatikusan felszabadul.",
+      "Heap (Kupac)": "A dinamikusan, 'new' operátorral létrehozott objektumok memóriaterülete.",
+      "Garbage Collector (GC)": "A Java (és más menedzselt nyelvek) memóriafelszabadítási mechanizmusa, amely letakarítja az elérhetetlen objektumokat.",
+      "Destruktor": "A C++ nyelvben az objektum megsemmisülésekor (memória felszabadításakor) lefutó speciális metódus."
+    }
+  },
+  {
+    "id": "pn10",
+    "type": "multiple_choice",
+    "question": "Mi történik a C++ nyelvben, ha paraméterátadáskor érték szerinti átadást (pass-by-value) alkalmazunk egy nagy objektumra?",
+    "order": 10,
+    "options": ["Csak az objektum memóriacíme adódik át (nagyon gyors).", "A függvény hibát dob a méret miatt.", "Az objektumról a másoló konstruktor segítségével egy teljes, új másolat (kópia) készül a veremben, ami idő- és memóriaigényes.", "A függvény közvetlenül módosíthatja az eredeti objektumot."],
+    "correct_index": 2
+  },
+  {
+    "id": "pn11",
+    "type": "short_answer",
+    "question": "C++ nyelvben melyik (egykarakteres) szimbólum jelzi, hogy egy változót vagy paramétert referencia szerint (by reference) adunk át?",
+    "order": 11,
+    "answers": ["&", "és", "ampersand"]
+  },
+  {
+    "id": "pn12",
+    "type": "multiple_select",
+    "question": "Mely állítások igazak a kivételkezelésre (Exception handling) a Java-ban?",
+    "order": 12,
+    "options": ["A 'try' blokkba kerül a védendő, hibát okozható kód.", "A 'catch' blokk kapja el és kezeli le a felmerülő hibát.", "A 'finally' blokk mindig lefut (ha van), függetlenül attól, hogy volt-e hiba vagy sem.", "A 'Checked Exception'-öket (pl. IOException) kötelező lekezelni vagy továbbdobni, különben a kód nem is fordul le."],
+    "correct": [0, 1, 2, 3]
+  },
+  {
+    "id": "pn13",
+    "type": "multiple_choice",
+    "question": "Mit jelent a metódus túlterhelés (Method Overloading)?",
+    "order": 13,
+    "options": ["Amikor egy leszármazott osztály újraírja a szülő osztály metódusát (Overriding).", "Amikor egy osztályon belül több, azonos nevű metódus létezik, de eltérő a paraméterlistájuk (szignatúrájuk).", "Amikor egy függvény túl sok memóriát fogyaszt.", "Amikor egy operátort (+, -) új jelentéssel ruházunk fel."],
+    "correct_index": 1
+  },
+  {
+    "id": "pn14",
+    "type": "matching",
+    "question": "Párosítsd a kulcsszavakat a szerepükkel Java/C++ nyelvekben!",
+    "order": 14,
+    "pairs": {
+      "this": "Önhivatkozás; az aktuális objektumpéldányra mutató referencia/pointer.",
+      "super (Java)": "A szülő osztály (ős) konstruktorának vagy metódusainak meghívására szolgál.",
+      "virtual (C++)": "Azt jelzi a fordítónak, hogy a metódus felülírható, és futásidőben dőljön el, melyik változat hívódik meg (késői kötés).",
+      "final (Java)": "Jelzi, hogy egy változó értéke nem módosítható (konstans), egy metódus nem írható felül, vagy egy osztályból nem lehet örökölni."
+    }
+  },
+  {
+    "id": "pn15",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azt az univerzális/ős osztályt Java-ban, amelyből minden más osztály implicit (automatikusan) származik?",
+    "order": 15,
+    "answers": ["Object", "Object osztály", "java.lang.Object"]
+  },
+  {
+    "id": "pn16",
+    "type": "multiple_choice",
+    "question": "Melyik állítás igaz a Generikus (Generics) programozásra (pl. Java-ban a List<T>, C++-ban a Template-ek)?",
+    "order": 16,
+    "options": ["Csak beépített primitív típusokkal használhatók (pl. int).", "Lehetővé teszik osztályok és metódusok megírását anélkül, hogy előre rögzítenénk, milyen pontos adattípussal fognak dolgozni, biztosítva a típusbiztonságot.", "Futásidőben generálnak új osztályokat a memóriában.", "Gyorsabbá teszik az algoritmusokat."],
+    "correct_index": 1
+  },
+  {
+    "id": "pn17",
+    "type": "multiple_select",
+    "question": "Melyek alapvető primitív (nem objektum) adattípusok a Java nyelvben?",
+    "order": 17,
+    "options": ["int", "boolean", "String", "double"],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "pn18",
+    "type": "matching",
+    "question": "Párosítsd a C++ specifikus fogalmakat a jelentésükkel!",
+    "order": 18,
+    "pairs": {
+      "Pointer (Mutató)": "Egy memóriacímet tároló változó, amivel közvetlenül manipulálható a memória.",
+      "Referencia": "Egy már létező változó alternatív neve (alias), amelyet deklarációkor azonnal inicializálni kell.",
+      "Header fájl (.h / .hpp)": "Deklarációkat tartalmazza (osztályok, függvények fejlécei).",
+      "Forrásfájl (.cpp)": "A deklarált függvények és osztályok tényleges implementációját, kifejtését tartalmazza."
+    }
+  },
+  {
+    "id": "pn19",
+    "type": "multiple_choice",
+    "question": "Melyik paradigmához tartoznak a Java és a C++ nyelvek?",
+    "order": 19,
+    "options": ["Deklaratív", "Logikai", "Funkcionális", "Imperatív / Objektumorientált"],
+    "correct_index": 3
+  },
+  {
+    "id": "pn20",
+    "type": "short_answer",
+    "question": "Mi a Java virtuális gép (JVM) által végrehajtott, operációs rendszertől független, lefordított köztes kód neve?",
+    "order": 20,
+    "answers": ["bytecode", "bájtkód", "byte kód"]
+  }
+]

@@ -1,0 +1,177 @@
+[
+  {
+    "id": "py1",
+    "type": "multiple_choice",
+    "question": "Milyen típusú programozási nyelv a Python a végrehajtási mechanizmusát tekintve?",
+    "order": 1,
+    "options": ["Tisztán fordított (compiled) nyelv.", "Értelmezett (interpreted) szkriptnyelv.", "Kizárólag assembly alapú nyelv.", "Alacsony szintű gép közeli nyelv."],
+    "correct_index": 1
+  },
+  {
+    "id": "py2",
+    "type": "multiple_select",
+    "question": "Melyek a Python nyelv főbb jellemzői a tematika alapján?",
+    "order": 2,
+    "options": ["Dinamikus típusrendszer", "Automatikus memóriakezelés (Garbage Collection)", "Erősen típusos (statisztikai) kötés", "Heterogén adatszerkezetek kezelése", "Gyors alkalmazásfejlesztés"],
+    "correct": [0, 1, 3, 4]
+  },
+  {
+    "id": "py3",
+    "type": "matching",
+    "question": "Párosítsd a beépített összetett adatszerkezeteket a jellemzőikkel!",
+    "order": 3,
+    "pairs": {
+      "Lista (list)": "Módosítható (mutable), rendezett sorozat, [ ] jelekkel.",
+      "Tuple": "Módosíthatatlan (immutable), rendezett sorozat, ( ) jelekkel.",
+      "Szótár (dict)": "Kulcs-érték párok gyűjteménye, { } jelekkel.",
+      "Halmaz (set)": "Egyedi elemek rendezetlen gyűjteménye, matematikai halmazműveletekkel."
+    }
+  },
+  {
+    "id": "py4",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azt a Python-specifikus tömör szintaxist, amellyel egy meglévő listából egyetlen sorban hozhatunk létre egy újat (pl. [x*x for x in lista])?",
+    "order": 4,
+    "answers": ["List comprehension", "listaértelmezés", "listakomprehenzió"]
+  },
+  {
+    "id": "py5",
+    "type": "multiple_choice",
+    "question": "Hogyan határozzuk meg a Pythonban a kódblokkok (pl. ciklusok, feltételek törzse) határait?",
+    "order": 5,
+    "options": ["Kapcsos zárójelekkel { }.", "A kód behúzásával (indentation) / whitespace-ekkel.", "A 'begin' és 'end' kulcsszavakkal.", "Pontosvesszőkkel."],
+    "correct_index": 1
+  },
+  {
+    "id": "py6",
+    "type": "multiple_select",
+    "question": "Melyek az érvényes fájlmegnyitási módok a Python `open()` függvényében?",
+    "order": 6,
+    "options": ["'r' (olvasás)", "'w' (írás, felülírással)", "'a' (hozzáfűzés)", "'x' (exkluzív létrehozás)", "'z' (tömörítés)"],
+    "correct": [0, 1, 2, 3]
+  },
+  {
+    "id": "py7",
+    "type": "matching",
+    "question": "Párosítsd a Python OOP fogalmakat a jelentésükkel!",
+    "order": 7,
+    "pairs": {
+      "__init__": "Az osztály konstruktora, az objektum inicializálásáért felel.",
+      "self": "Az aktuális objektumpéldányra való hivatkozás a metóduson belül.",
+      "class": "Az osztálydefiníciót bevezető kulcsszó.",
+      "öröklődés": "Lehetővé teszi, hogy egy osztály átvegye egy másik tulajdonságait."
+    }
+  },
+  {
+    "id": "py8",
+    "type": "short_answer",
+    "question": "Melyik kulcsszóval importálhatunk be külső csomagokat vagy modulokat a kódunkba?",
+    "order": 8,
+    "answers": ["import"]
+  },
+  {
+    "id": "py9",
+    "type": "multiple_choice",
+    "question": "Mi történik a Pythonban, ha egy változónak új értéket adunk, ami más típusú, mint az előző (pl. x = 5 után x = 'szöveg')?",
+    "order": 9,
+    "options": ["Típus hiba (TypeError) keletkezik.", "A Python automatikusan konvertálja a szöveget számmá.", "Sima értékadás történik, mivel a Python dinamikusan típusos nyelv.", "A fordító megállítja a programot."],
+    "correct_index": 2
+  },
+  {
+    "id": "py10",
+    "type": "multiple_select",
+    "question": "Mely könyvtárak/modulok használhatók a tematika szerint grafikus felület (GUI) készítésére Pythonban?",
+    "order": 10,
+    "options": ["Tkinter", "PyQt", "Pandas", "Kivy"],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "py11",
+    "type": "matching",
+    "question": "Párosítsd a hibakezelés kulcsszavait a funkciójukkal!",
+    "order": 11,
+    "pairs": {
+      "try": "A kódblokk, amelyben hiba léphet fel.",
+      "except": "Itt kapjuk el és kezeljük le a konkrét kivételt.",
+      "finally": "Mindenképpen lefutó blokk (pl. erőforrások lezárására).",
+      "raise": "Kivétel manuális kiváltása."
+    }
+  },
+  {
+    "id": "py12",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azt az adatszerkezetet, amely megváltoztathatatlan (immutable), és elemeire indexszel hivatkozhatunk? (Gyakran függvények többes visszatérési értékére használják.)",
+    "order": 12,
+    "answers": ["tuple", "n-es", "rendezett n-es"]
+  },
+  {
+    "id": "py13",
+    "type": "multiple_choice",
+    "question": "Melyik Python modul szolgál a tematika szerint kriptográfiai támogatásra?",
+    "order": 13,
+    "options": ["math", "cryptography", "random", "json"],
+    "correct_index": 1
+  },
+  {
+    "id": "py14",
+    "type": "multiple_select",
+    "question": "Mely állítások igazak a Python szótárakra (dictionary)?",
+    "order": 14,
+    "options": ["A kulcsoknak egyedinek kell lenniük.", "A kulcsok csak számok lehetnek.", "Az értékek bármilyen típusúak lehetnek.", "Rendezett adatszerkezet (Python 3.7+ óta)."],
+    "correct": [0, 2, 3]
+  },
+  {
+    "id": "py15",
+    "type": "matching",
+    "question": "Párosítsd az iterációs eszközöket a leírásukkal!",
+    "order": 15,
+    "pairs": {
+      "for": "Elemeken való végighaladásra szolgáló ciklus.",
+      "range()": "Egész számok sorozatát generáló függvény.",
+      "enumerate()": "Az elemek mellé azok indexét is visszaadja az iteráció során.",
+      "zip()": "Több iterálható objektum elemeit párosítja össze."
+    }
+  },
+  {
+    "id": "py16",
+    "type": "short_answer",
+    "question": "Mi a kiterjesztése a lefordított, bájtkódot tartalmazó Python fájloknak, amelyek a __pycache__ mappában találhatók?",
+    "order": 16,
+    "answers": [".pyc", "pyc"]
+  },
+  {
+    "id": "py17",
+    "type": "multiple_choice",
+    "question": "Hogyan tudunk Pythonban egy adatbázishoz (pl. SQLite) csatlakozni a szabványos könyvtárral?",
+    "order": 17,
+    "options": ["Az `import sql` parancsal.", "Az `sqlite3` modul segítségével.", "Kizárólag külső driverek telepítésével.", "A Python nem támogatja az adatbázisokat."],
+    "correct_index": 1
+  },
+  {
+    "id": "py18",
+    "type": "multiple_select",
+    "question": "Melyek a Python szeletelés (slicing) operátorának részei? (lista[start:stop:step])",
+    "order": 18,
+    "options": ["Kezdő index (start)", "Záró index (stop - nem beleértve)", "Lépésköz (step)", "Típusmegkötés"],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "py19",
+    "type": "matching",
+    "question": "Párosítsd a lista metódusokat a hatásukkal!",
+    "order": 19,
+    "pairs": {
+      "append()": "Új elem hozzáadása a lista végéhez.",
+      "pop()": "Elem eltávolítása és visszaadása egy adott indexről.",
+      "sort()": "A lista elemeinek helyben történő rendezése.",
+      "extend()": "Egy másik iterálható objektum összes elemének hozzáadása."
+    }
+  },
+  {
+    "id": "py20",
+    "type": "short_answer",
+    "question": "Hogy hívják a Python központi csomagkezelő eszközét, amellyel külső könyvtárakat telepíthetünk (pl. a parancssorból)?",
+    "order": 20,
+    "answers": ["pip"]
+  }
+]

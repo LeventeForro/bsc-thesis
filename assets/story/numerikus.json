@@ -1,0 +1,209 @@
+[
+  {
+    "id": "nm1",
+    "type": "multiple_choice",
+    "question": "Hogyan definiáljuk a relatív hibát, ha 'x' a pontos érték és 'x*' a közelítő érték?",
+    "order": 1,
+    "options": [
+      "|x - x*|",
+      "|x - x*| / |x|",
+      "x / x*",
+      "|x*| / |x|"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "nm2",
+    "type": "multiple_select",
+    "question": "Melyek a lineáris egyenletrendszerek (LER) megoldására szolgáló DIREKT módszerek?",
+    "order": 2,
+    "options": [
+      "Gauss-elimináció",
+      "LU-felbontás",
+      "Jacobi-iteráció",
+      "Gauss-Seidel iteráció"
+    ],
+    "correct": [0, 1]
+  },
+  {
+    "id": "nm3",
+    "type": "matching",
+    "question": "Párosítsd a numerikus integrálási formulákat a jellemzőikkel!",
+    "order": 3,
+    "pairs": {
+      "Érintő-formula": "A tartomány középpontjában vett függvényértékkel számol.",
+      "Trapéz-szabály": "A függvényt az intervallum végpontjaiban illesztett egyenessel közelíti.",
+      "Simpson-szabály": "A függvényt másodfokú polinommal (parabolával) közelíti.",
+      "Newton-Cotes formulák": "Az alappontok egyenlő távolságra helyezkednek el."
+    }
+  },
+  {
+    "id": "nm4",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azt a mérőszámot, amely azt mutatja meg, hogy a bemeneti adatok kis változása mekkora változást okoz a lineáris egyenletrendszer megoldásában? (cond(A))",
+    "order": 4,
+    "answers": ["Kondíciószám", "kondíciós szám", "kondíciószám"]
+  },
+  {
+    "id": "nm5",
+    "type": "multiple_choice",
+    "question": "Milyen alakú az LU-felbontásban az 'L' mátrix?",
+    "order": 5,
+    "options": [
+      "Felső háromszögmátrix",
+      "Alsó háromszögmátrix",
+      "Diagonális mátrix",
+      "Egységmátrix"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "nm6",
+    "type": "multiple_select",
+    "question": "Milyen axiómáknak kell teljesülniük egy tetszőleges ||.|| mátrixnorma esetén?",
+    "order": 6,
+    "options": [
+      "||A|| >= 0, és ||A|| = 0 akkor és csak akkor, ha A = 0",
+      "||c * A|| = |c| * ||A||",
+      "||A + B|| <= ||A|| + ||B|| (háromszög-egyenlőtlenség)",
+      "||A * B|| <= ||A|| * ||B|| (szubmultiplikativitás)"
+    ],
+    "correct": [0, 1, 2, 3]
+  },
+  {
+    "id": "nm7",
+    "type": "matching",
+    "question": "Párosítsd a nemlineáris egyenletek megoldására szolgáló fogalmakat!",
+    "order": 7,
+    "pairs": {
+      "Banach-féle fixpont tétel": "Garantálja az iteráció konvergenciáját, ha a függvény kontrakció.",
+      "Newton-módszer": "Érintőmódszernek is nevezik, a függvény deriváltját használja.",
+      "Fixpont iteráció": "Az x = f(x) alakra hozott egyenlet megoldása.",
+      "Konvergencia sebessége": "Megmutatja, milyen gyorsan közelítjük meg a pontos gyököt."
+    }
+  },
+  {
+    "id": "nm8",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azt az interpolációs eljárást, amelyben az n+1 ponthoz egy legfeljebb n-edfokú polinomot illesztünk, és amelynek Lagrange- és Newton-alakja is ismert?",
+    "order": 8,
+    "answers": ["Polinom interpoláció", "polinominterpoláció"]
+  },
+  {
+    "id": "nm9",
+    "type": "multiple_choice",
+    "question": "Mi a legfőbb különbség a Jacobi- és a Gauss-Seidel iteráció között?",
+    "order": 9,
+    "options": [
+      "A Jacobi-módszer gyorsabb.",
+      "A Gauss-Seidel módszer az aktuális iterációban már kiszámolt új értékeket azonnal felhasználja.",
+      "A Jacobi-módszer nem igényel mátrixot.",
+      "A Gauss-Seidel módszer csak 2x2-es mátrixokra jó."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "nm10",
+    "type": "multiple_select",
+    "question": "Mik a feltételei a Newton-módszer (érintőmódszer) alkalmazhatóságának?",
+    "order": 10,
+    "options": [
+      "A függvény legyen folytonosan differenciálható a gyök környezetében.",
+      "A derivált nem lehet nulla a gyökhelyen (f'(x*) != 0).",
+      "A kezdőpont (x0) legyen elég közel a tényleges gyökhöz.",
+      "A függvénynek lineárisnak kell lennie."
+    ],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "nm11",
+    "type": "matching",
+    "question": "Párosítsd a hibatípusokat az eredetükkel!",
+    "order": 11,
+    "pairs": {
+      "Öröklött hiba": "A bemeneti adatok pontatlanságából ered.",
+      "Kerekítési hiba": "A számítógépes számábrázolás véges pontossága okozza.",
+      "Képlet hiba": "A matematikai modell vagy a numerikus módszer közelítéseiből adódik (pl. végtelen sor levágása)."
+    }
+  },
+  {
+    "id": "nm12",
+    "type": "short_answer",
+    "question": "Melyik módszer célja az adatpontokra illesztett olyan függvény meghatározása, amelynél az eltérések négyzeteinek összege minimális?",
+    "order": 12,
+    "answers": ["Legkisebb négyzetek módszere", "legkisebb négyzetek"]
+  },
+  {
+    "id": "nm13",
+    "type": "multiple_choice",
+    "question": "Hány alappontot használ a Simpson-szabály az integrál közelítéséhez egy elemi intervallumon?",
+    "order": 13,
+    "options": ["1", "2", "3", "4"],
+    "correct_index": 2
+  },
+  {
+    "id": "nm14",
+    "type": "multiple_select",
+    "question": "Mely állítások igazak a Lagrange-interpolációs polinomra?",
+    "order": 14,
+    "options": [
+      "Átmegy az összes megadott alapponton.",
+      "Egyértelműen létezik adott alappontok esetén.",
+      "A fokszáma megegyezik az alappontok számával.",
+      "Lineáris kombinációként állítható elő az alappolinomok segítségével."
+    ],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "nm15",
+    "type": "matching",
+    "question": "Párosítsd a mátrixnormákat a kiszámításuk módjával!",
+    "order": 15,
+    "pairs": {
+      "Sorösszeg norma (Végtelen-norma)": "A sorokban lévő elemek abszolútérték-összegeinek maximuma.",
+      "Oszlopösszeg norma (1-es norma)": "Az oszlopokban lévő elemek abszolútérték-összegeinek maximuma.",
+      "Frobenius-norma": "Az összes elem négyzetösszegéből vont négyzetgyök."
+    }
+  },
+  {
+    "id": "nm16",
+    "type": "short_answer",
+    "question": "Hogy nevezzük a Gauss-elimináció során azt az elemet, amellyel a többi elemet elimináljuk az adott oszlopban (és ami nem lehet nulla)?",
+    "order": 16,
+    "answers": ["Főelem", "pivotelem", "pivot"]
+  },
+  {
+    "id": "nm17",
+    "type": "multiple_choice",
+    "question": "Mekkora a Gauss-elimináció műveletigénye nagyságrendileg egy n x n-es mátrix esetén?",
+    "order": 17,
+    "options": ["O(n)", "O(n^2)", "O(n^3)", "O(2^n)"],
+    "correct_index": 2
+  },
+  {
+    "id": "nm18",
+    "type": "multiple_select",
+    "question": "Mely szoftvereszközöket említi a tematika a numerikus módszerek szemléltetésére?",
+    "order": 18,
+    "options": ["Matlab", "Maple", "Photoshop", "Excel"],
+    "correct": [0, 1]
+  },
+  {
+    "id": "nm19",
+    "type": "matching",
+    "question": "Párosítsd az iterációs módszerek konvergenciájának feltételeit!",
+    "order": 19,
+    "pairs": {
+      "Szigorú diagonális dominancia": "Elegendő feltétel a Jacobi- és a Gauss-Seidel módszer konvergenciájához.",
+      "Spektrálsugár < 1": "Szükséges és elégséges feltétele az iteráció konvergenciájának.",
+      "Kontrakció": "A leképezés távolságcsökkentő tulajdonsága."
+    }
+  },
+  {
+    "id": "nm20",
+    "type": "short_answer",
+    "question": "Melyik híres tétel adja meg az alapját a fixpont-iterációk vizsgálatának a metrikus terekben?",
+    "order": 20,
+    "answers": ["Banach-féle fixponttétel", "Banach-tétel", "Banach"]
+  }
+]

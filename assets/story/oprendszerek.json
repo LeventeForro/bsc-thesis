@@ -1,0 +1,171 @@
+[
+  {
+    "id": "op1",
+    "type": "multiple_choice",
+    "question": "Mit jelent a holtpont (deadlock) fogalma az operációs rendszerekben?",
+    "order": 1,
+    "options": ["A processzor túlmelegedése miatti automatikus leállás.", "Két vagy több folyamat kölcsönösen egymásra vár olyan erőforrások felszabadítása miatt, amelyeket ők maguk tartanak lefoglalva.", "Az operációs rendszer végtelen ciklusba kerülése hibás kód miatt.", "A fizikai memória teljes megtelése, amikor a rendszer már nem tud lapozni."],
+    "correct_index": 1
+  },
+  {
+    "id": "op2",
+    "type": "multiple_select",
+    "question": "Melyek a holtpont kialakulásának egyidejűleg szükséges feltételei (Coffman-feltételek)?",
+    "order": 2,
+    "options": ["Kölcsönös kizárás (Mutual exclusion)", "Fogd és várj (Hold and wait)", "Nincs kisajátítás (No preemption)", "Körkörös várakozás (Circular wait)"],
+    "correct": [0, 1, 2, 3]
+  },
+  {
+    "id": "op3",
+    "type": "matching",
+    "question": "Párosítsd a folyamatok (processzek) életciklusának alapvető állapotait a jellemzőjükkel!",
+    "order": 3,
+    "pairs": {
+      "Futó (Running)": "A folyamat utasításait éppen végrehajtja a processzor.",
+      "Kész (Ready)": "A folyamat futásra kész, csak arra vár, hogy megkapja a processzort az ütemezőtől.",
+      "Blokkolt (Blocked / Waiting)": "A folyamat egy eseményre (pl. I/O művelet befejezése) vár, addig nem futhat."
+    }
+  },
+  {
+    "id": "op4",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azt a táblázatot (vagy adatstruktúrát), amely a folyamatok (processzek) adminisztrációjához szükséges információkat (pl. állapot, programszámláló, regiszterek, nyitott fájlok) tárolja? (Három betűs rövidítés is jó)",
+    "order": 4,
+    "answers": ["PCB", "Process Control Block", "folyamatvezérlő blokk"]
+  },
+  {
+    "id": "op5",
+    "type": "multiple_choice",
+    "question": "Mi a virtuális memória elsődleges előnye?",
+    "order": 5,
+    "options": ["Meggyorsítja a processzor órajelét.", "Lehetővé teszi, hogy a fizikai memóriánál (RAM) nagyobb memóriát igénylő programok is futhassanak azáltal, hogy a háttértárat használja a memória kiterjesztésére.", "Megakadályozza a vírusok bejutását a rendszerbe.", "Automatikusan tömöríti a fájlokat a merevlemezen."],
+    "correct_index": 1
+  },
+  {
+    "id": "op6",
+    "type": "multiple_select",
+    "question": "Melyek ismert memóriakezelési / lapcsere (page replacement) algoritmusok?",
+    "order": 6,
+    "options": ["FIFO (First-In, First-Out)", "LRU (Least Recently Used)", "Kör-körös (Round Robin)", "Optimális algoritmus (OPT)"],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "op7",
+    "type": "matching",
+    "question": "Párosítsd a memóriakezeléshez kapcsolódó fogalmakat!",
+    "order": 7,
+    "pairs": {
+      "Lapozás (Paging)": "A logikai és fizikai memóriát azonos méretű, fix blokkokra (lapokra/keretekre) osztja.",
+      "Szegmentálás": "A memóriát logikai egységekre (függvények, adatok, tömbök) osztja, amelyek változó méretűek.",
+      "MMU (Memory Management Unit)": "Hardveregység, amely a logikai címeket fizikai címekké alakítja futásidőben."
+    }
+  },
+  {
+    "id": "op8",
+    "type": "short_answer",
+    "question": "Melyik rövidítés (3 betű) fedi azt az I/O kezelési módszert, amikor egy speciális hardver a memóriába ír vagy onnan olvas közvetlenül anélkül, hogy a CPU-t minden egyes bájt mozgatásánál leterhelné?",
+    "order": 8,
+    "answers": ["DMA", "Direct Memory Access", "közvetlen memóriahozzáférés"]
+  },
+  {
+    "id": "op9",
+    "type": "multiple_choice",
+    "question": "Mi a különbség a belső (internal) és a külső (external) fragmentáció (töredezettség) között a memóriakezelésben?",
+    "order": 9,
+    "options": ["Nincs különbség.", "A külső fragmentáció a merevlemezen, a belső a RAM-ban jelentkezik.", "A külső fragmentáció esetén a szabad területek túl apró darabokban szóródnak szét (nem folytonosak), a belső fragmentáció pedig a lefoglalt blokkon belüli fel nem használt tér.", "A belső fragmentáció csak szegmentálásnál fordul elő."],
+    "correct_index": 2
+  },
+  {
+    "id": "op10",
+    "type": "multiple_select",
+    "question": "Milyen struktúrákkal/módszerekkel tarthatja nyilván az operációs rendszer a lemez szabad tárterületét (free space management)?",
+    "order": 10,
+    "options": ["Bitvektor (Bájt/Bittérkép)", "Láncolt lista (Linked list)", "Invertált laptábla", "Csoportosítás (Grouping)"],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "op11",
+    "type": "matching",
+    "question": "Párosítsd a gyakori RAID (Redundant Array of Independent Disks) szinteket a működési elvükkel!",
+    "order": 11,
+    "pairs": {
+      "RAID 0": "Adatcsíkozás (Striping) hibatűrés nélkül, cél a maximális sebesség.",
+      "RAID 1": "Tükrözés (Mirroring), az adatok duplikálása több lemezre a nagy hibatűrésért.",
+      "RAID 5": "Adatcsíkozás elosztott paritással, legalább 3 lemez kell hozzá, elviseli egy lemez kiesését."
+    }
+  },
+  {
+    "id": "op12",
+    "type": "short_answer",
+    "question": "Hogy nevezik UNIX/Linux alapú fájlrendszerekben azt az adatstruktúrát, amely egy fájl metaadatait (méret, jogosultságok, időbélyegek, adatok helye a lemezen) tárolja, de a fájl nevét NEM?",
+    "order": 12,
+    "answers": ["inode", "index node", "i-node"]
+  },
+  {
+    "id": "op13",
+    "type": "multiple_choice",
+    "question": "Mi a fájlrendszerek naplózásának (journaling) elsődleges célja?",
+    "order": 13,
+    "options": ["A felhasználók minden egyes billentyűleütésének rögzítése.", "A rendszer gyors helyreállítása (inkonzisztenciák elkerülése) áramszünet vagy rendszerösszeomlás után, azáltal, hogy a metaadat-változásokat előbb egy naplóba írja.", "A fájlok automatikus verziókövetésének biztosítása (mint a Git).", "A lemeztöredezettség megszüntetése."],
+    "correct_index": 1
+  },
+  {
+    "id": "op14",
+    "type": "multiple_select",
+    "question": "Melyek a CPU ütemezés (Scheduling) célkitűzései és optimalizációs szempontjai?",
+    "order": 14,
+    "options": ["A CPU kihasználtságának (utilization) maximalizálása.", "Az áteresztőképesség (throughput) növelése (adott idő alatt befejezett processzek száma).", "A válaszidő (response time) és várakozási idő (waiting time) minimalizálása.", "A lemez IO műveletek leállítása."],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "op15",
+    "type": "matching",
+    "question": "Párosítsd az ütemezési algoritmusokat a jelentésükkel!",
+    "order": 15,
+    "pairs": {
+      "FCFS (First-Come, First-Served)": "A folyamatok érkezési sorrendben kapják meg a processzort (nem megszakítható).",
+      "SJF (Shortest Job First)": "A legrövidebb CPU-löketet (burst time) igénylő folyamat indul először.",
+      "Round Robin (RR)": "Körkörös ütemezés időkvantumokkal; ha letelik az idő, a folyamat a sor végére kerül."
+    }
+  },
+  {
+    "id": "op16",
+    "type": "short_answer",
+    "question": "Mi a rendszerhívás (System Call)?",
+    "order": 16,
+    "answers": ["Az a mechanizmus/interfész, amelyen keresztül egy felhasználói program szolgáltatásokat kérhet az operációs rendszer magjától (kerneltől).", "Interfész a felhasználói program és a kernel között", "kernel hívás", "rendszer hívás"]
+  },
+  {
+    "id": "op17",
+    "type": "multiple_choice",
+    "question": "A lemezütemezés (disk scheduling) esetében mit okozhat az SSTF (Shortest Seek Time First - Legrövidebb Keresési Idő Először) algoritmus használata?",
+    "order": 17,
+    "options": ["Optimális RAID 0 teljesítményt.", "Éheztetést (Starvation) a távolabbi sávokon lévő I/O kérések esetében.", "Automatikusan hardverhibát detektál.", "Minden kérés pontosan azonos idő alatt lesz kiszolgálva."],
+    "correct_index": 1
+  },
+  {
+    "id": "op18",
+    "type": "multiple_select",
+    "question": "Mely információkat tartalmazza általában egy könyvtárbejegyzés (Directory Entry) egy egyszerű, fába szervezett fájlrendszerben?",
+    "order": 18,
+    "options": ["A fájl/könyvtár nevét.", "A CPU regisztereinek mentett állapotát.", "Mutatót az inode-ra vagy a kezdő adatblokkra.", "Hivatkozást az adott fájl operációs rendszer kernel kódjára."],
+    "correct": [0, 2]
+  },
+  {
+    "id": "op19",
+    "type": "matching",
+    "question": "Párosítsd a I/O (Bemeneti/Kimeneti) eszköztípusokat a jellemzőikkel!",
+    "order": 19,
+    "pairs": {
+      "Blokk orientált eszköz": "Az adatok fix méretű blokkokban utaznak, minden blokknak saját címe van (pl. HDD, SSD).",
+      "Karakter orientált eszköz": "A rendszer bájtok/karakterek sorozataként kezeli a streamet, nem címezhető blokkokban (pl. billentyűzet, egér)."
+    }
+  },
+  {
+    "id": "op20",
+    "type": "short_answer",
+    "question": "Hogy hívják azt a technikát, amikor az operációs rendszer a memóriában lévő futó programok közt gyorsan váltogatja a CPU-t, így a felhasználó számára úgy tűnik, mintha egyszerre futnának (Multiprogramming / Time-sharing)?",
+    "order": 20,
+    "answers": ["Kontextusváltás", "Context switch", "időosztás"]
+  }
+]

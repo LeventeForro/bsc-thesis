@@ -1,0 +1,178 @@
+[
+  {
+    "id": "be1",
+    "type": "multiple_choice",
+    "question": "Mi a beágyazott rendszer (embedded system) legjellemzőbb tulajdonsága?",
+    "order": 1,
+    "options": ["Általános célú számítógép, amin bármilyen irodai program futtatható.", "Egy specifikus feladat vagy feladatkör ellátására tervezett, hardvert és szoftvert integráló célrendszer.", "Kizárólag hálózati útválasztásra (routing) használják.", "Soha nem tartalmaz processzort vagy mikrokontrollert."],
+    "correct_index": 1
+  },
+  {
+    "id": "be2",
+    "type": "multiple_select",
+    "question": "Melyek a legfőbb különbségek egy mikrokontroller (MCU) és egy általános mikroprocesszor (MPU) között?",
+    "order": 2,
+    "options": ["Az MCU egyetlen chipen (SoC) tartalmazza a CPU-t, a memóriát és a perifériákat is.", "Az MPU jellemzően olcsóbb és kevesebb energiát fogyaszt.", "Az MCU tipikusan alacsonyabb órajelen működik, és specifikus, valós idejű célokra szánják.", "Az MPU működéséhez (pl. egy PC-ben) külön külső RAM és háttértár illesztése szükséges."],
+    "correct": [0, 2, 3]
+  },
+  {
+    "id": "be3",
+    "type": "matching",
+    "question": "Párosítsd a memóriatípusokat és számítógép-architektúrákat a jellemzőikkel!",
+    "order": 3,
+    "pairs": {
+      "Harvard architektúra": "Külön fizikai memóriában és adatsínen (buszon) kap helyet a programkód és az adat.",
+      "Neumann architektúra": "Közös memóriában és közös buszon osztozik az adat és a programkód.",
+      "Flash memória": "Nem felejtő (non-volatile) memória, beágyazott rendszereknél jellemzően a firmware (programkód) tárolására szolgál.",
+      "SRAM (Statikus RAM)": "Felejtő (volatile) memória, a program futása során a változók és a verem (stack) gyors tárolására használják."
+    }
+  },
+  {
+    "id": "be4",
+    "type": "short_answer",
+    "question": "Mi a GPIO rövidítés jelentése a mikrokontrollereknél?",
+    "order": 4,
+    "answers": ["General Purpose Input/Output", "General Purpose Input Output", "általános célú bemenet/kimenet"]
+  },
+  {
+    "id": "be5",
+    "type": "multiple_choice",
+    "question": "Mi az a \"Watchdog Timer\" (WDT) a beágyazott rendszerekben?",
+    "order": 5,
+    "options": ["Egy pontos időzítő, amely az aktuális dátumot és időt méri (RTC).", "Egy hardveres számláló, amely automatikusan újraindítja (reseteli) a rendszert, ha a szoftver 'lefagy', és nem nullázza ki időben a számlálót.", "Egy biztonsági kamera modul, amely figyeli a panelt.", "A memóriaszivárgást figyelő szoftveres rutin."],
+    "correct_index": 1
+  },
+  {
+    "id": "be6",
+    "type": "multiple_select",
+    "question": "Milyen szabályokat és alapelveket ajánlott betartani egy megszakításkiszolgáló rutin (ISR - Interrupt Service Routine) megírásakor?",
+    "order": 6,
+    "options": ["Legyen a lehető legrövidebb és leggyorsabb lefutású.", "Kerülendő a blokkoló várakozások (delay) vagy lassú I/O műveletek (pl. printf) használata benne.", "Érdemes benne hosszú, végtelen while(1) ciklusokat hagyni.", "Ajánlott globális 'volatile' jelzőváltozókat (flageket) beállítani, amiket majd a főprogram (main) feldolgoz."],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "be7",
+    "type": "matching",
+    "question": "Párosítsd a népszerű soros kommunikációs protokollokat a jellemzőikkel!",
+    "order": 7,
+    "pairs": {
+      "I2C (Inter-Integrated Circuit)": "Kétvezetékes (SDA, SCL), szinkron, több-mesteres (multi-master) protokoll, amely 7 vagy 10 bites eszközcímzést használ.",
+      "SPI (Serial Peripheral Interface)": "Négyvezetékes (MISO, MOSI, SCK, CS), szinkron protokoll, amely nagy sebességű, full-duplex adatátvitelre képes.",
+      "UART (Universal Asynchronous Receiver-Transmitter)": "Aszinkron protokoll, nincs külön órajel, a kommunikáló feleknek előre egyeztetett sebességen (baud rate) kell működniük.",
+      "CAN (Controller Area Network)": "Kifejezetten az autóiparban és ipari automatizálásban elterjedt, rendkívül zavarvédett, differenciális jelátvitelt használó protokoll."
+    }
+  },
+  {
+    "id": "be8",
+    "type": "short_answer",
+    "question": "Melyik (3 betűs) hardveres periféria felel a beágyazott rendszerekben azért, hogy egy folytonos analóg feszültségjelet (pl. egy szenzorból) a processzor számára feldolgozható digitális értékké alakítson?",
+    "order": 8,
+    "answers": ["ADC", "Analog to Digital Converter", "analóg-digitális átalakító"]
+  },
+  {
+    "id": "be9",
+    "type": "multiple_choice",
+    "question": "Melyik szoftveres módszer az, amikor a processzor ciklikusan, egy programhurokban folyamatosan kérdezi le egy periféria állapotát (pl. megnyomtak-e egy gombot), a hardveres megszakítás (Interrupt) alkalmazása helyett?",
+    "order": 9,
+    "options": ["Polling (Lekérdezéses módszer)", "DMA (Közvetlen memóriahozzáférés)", "Daisy-chaining", "RTOS Task scheduling"],
+    "correct_index": 0
+  },
+  {
+    "id": "be10",
+    "type": "multiple_select",
+    "question": "Mely állítások igazak a PWM (Pulse Width Modulation - Impulzusszélesség-moduláció) jelre?",
+    "order": 10,
+    "options": ["Kiválóan használható LED-ek fényerejének digitális (látszólag analóg) szabályozására.", "Használható DC motorok fordulatszámának vezérlésére.", "A jel kitöltési tényezője (Duty cycle) mutatja meg a magas (H) állapot időtartamának arányát a teljes periódusidőhöz képest.", "Kizárólag bonyolult analóg áramkörökkel állítható elő, mikrokontroller belső timereivel nem."],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "be11",
+    "type": "matching",
+    "question": "Párosítsd a Valós Idejű Operációs Rendszerekhez (RTOS) kapcsolódó alapfogalmakat a jelentésükkel!",
+    "order": 11,
+    "pairs": {
+      "Hard Real-Time (Szigorú valós idejű)": "Olyan rendszer, ahol egy határidő (deadline) lekésése fatális, katasztrofális hibát okoz (pl. ABS, repülőgép vezérlő).",
+      "Soft Real-Time (Lágy valós idejű)": "Egy határidő lekésése 'csak' a szolgáltatás minőségének romlását okozza, de nem okoz katasztrófát (pl. videostreaming).",
+      "Task (Feladat / Szál)": "Az RTOS által önállóan ütemezett, független végrehajtási egység.",
+      "Ütemező (Scheduler)": "Az operációs rendszer (Kernel) magjának az a része, amely eldönti, melyik pillanatban melyik Task kapja meg a CPU-t."
+    }
+  },
+  {
+    "id": "be12",
+    "type": "short_answer",
+    "question": "Hogy nevezik azt a vezetéket/jeltípust az SPI kommunikációban, amellyel a Master (Mester) kiválasztja azt a konkrét Slave (Szolga) eszközt, amellyel éppen kommunikálni szeretne? (Gyakori 2 betűs angol rövidítés)",
+    "order": 12,
+    "answers": ["CS", "SS", "Chip Select", "Slave Select"]
+  },
+  {
+    "id": "be13",
+    "type": "multiple_choice",
+    "question": "Mit jelent a \"Bare-metal\" programozás a beágyazott rendszerek kontextusában?",
+    "order": 13,
+    "options": ["Az eszköz tokozása kizárólag fémből készül a zavarvédelem miatt.", "A kód operációs rendszer (pl. RTOS vagy Linux) közbeiktatása nélkül, közvetlenül a hardveren (mikrokontrolleren) fut.", "Kizárólag Assembly nyelvű programozást jelent, C/C++ nem használható.", "Olyan felhőalapú (cloud) fejlesztési platformot jelent, ahol a hardver távolról elérhető."],
+    "correct_index": 1
+  },
+  {
+    "id": "be14",
+    "type": "multiple_select",
+    "question": "Milyen technikákkal csökkenthető egy mikrokontrolleres eszköz (pl. okosóra, IoT szenzor) áramfogyasztása az akkumulátor élettartamának növelése érdekében?",
+    "order": 14,
+    "options": ["Különböző alvó módok (Sleep / Deep Sleep) használata, amikor a CPU és a perifériák részlegesen leállnak.", "Az órajel-frekvencia (Clock speed) szoftveres csökkentése.", "Folyamatos Polling (lekérdezés) használata a hardveres megszakítások (Interruptok) helyett.", "A nem használt perifériák (pl. ADC, Timer) órajelének és tápellátásának kikapcsolása (Clock Gating)."],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "be15",
+    "type": "matching",
+    "question": "Párosítsd az alkatrészeket a beágyazott rendszerekben betöltött funkciójukkal!",
+    "order": 15,
+    "pairs": {
+      "Szenzor (Érzékelő)": "A fizikai környezet egy paraméterét (pl. hőmérséklet, nyomás) alakítja az elektronika számára értelmezhető elektromos jellé.",
+      "Aktuátor (Beavatkozó)": "Elektromos vezérlőjel hatására valamilyen fizikai változást (pl. forgó mozgás, folyadék áramlása) hoz létre.",
+      "Termisztor": "Egy speciális ellenállás, amelynek értéke a hőmérséklet változásával nagymértékben módosul (hőmérséklet szenzor).",
+      "Szervomotor": "Olyan aktuátor, amellyel egy forgórész adott szögpozícióba történő rendkívül pontos beállítása és megtartása lehetséges."
+    }
+  },
+  {
+    "id": "be16",
+    "type": "short_answer",
+    "question": "Hogy hívják az I2C buszon azt a vezetéket, amelyiken a tényleges adatátvitel történik (SCL mellett)? (Angol rövidítés)",
+    "order": 16,
+    "answers": ["SDA", "Serial Data", "SDA vonal"]
+  },
+  {
+    "id": "be17",
+    "type": "multiple_choice",
+    "question": "Melyik memóriatípus tartja meg a tartalmát a tápfeszültség kikapcsolása után is, amelyet a konfigurációs adatok beágyazott eszközökön történő tárolására gyakran használnak (bájtonként írható/törölhető)?",
+    "order": 17,
+    "options": ["SRAM", "DRAM", "EEPROM", "A processzor belső regiszterei"],
+    "correct_index": 2
+  },
+  {
+    "id": "be18",
+    "type": "multiple_select",
+    "question": "Mi jellemző a DMA-ra (Direct Memory Access)?",
+    "order": 18,
+    "options": ["Tehermentesíti a CPU-t a nagy adatblokkok másolása alól.", "Közvetlen adatátvitelt tesz lehetővé a perifériák és a memória (vagy memória és memória) között a processzor beavatkozása nélkül.", "A DMA transzfer alatt a processzor mindig teljesen 'leáll' (lefagy), és nem tud más utasítást végrehajtani.", "Nagymértékben növeli a rendszer teljesítményét, pl. nagy mennyiségű ADC minta olvasásakor vagy egy kijelző bufferének frissítésekor."],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "be19",
+    "type": "matching",
+    "question": "Párosítsd a mikrokontrollerek belső elemeit és fogalmait a feladatukkal!",
+    "order": 19,
+    "pairs": {
+      "ALU (Aritmetikai és Logikai Egység)": "A matematikai és logikai műveletek tényleges fizikai végrehajtója a processzorban.",
+      "PC (Program Counter)": "A soron következő végrehajtandó gépi utasítás memóriacímét tároló regiszter.",
+      "Timer / Counter": "Hardveres időmérés, jelszámlálás vagy periodikus megszakítások generálása függetlenül a főprogramtól.",
+      "Baud rate": "A soros aszinkron kommunikáció (UART) sebessége, bit/másodperc (vagy szimbólum/másodperc) értékben."
+    }
+  },
+  {
+    "id": "be20",
+    "type": "multiple_choice",
+    "question": "Mikor beszélünk szinkron soros kommunikációról?",
+    "order": 20,
+    "options": ["Ha a két eszköz egyszerre küld és fogad adatot.", "Ha egy külön fizikai vezeték (órajel / clock line, pl. SCL, SCK) gondoskodik a küldő és a fogadó eszköz közötti adatátvitel bitjeinek pontos időzítéséről.", "Ha a kommunikáció vezeték nélkül történik.", "Ha a kommunikáló eszközök megegyező tápfeszültségről (pl. 3.3V) működnek."],
+    "correct_index": 1
+  }
+]

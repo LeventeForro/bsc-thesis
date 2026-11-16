@@ -1,0 +1,202 @@
+[
+  {
+    "id": "ma1",
+    "type": "multiple_choice",
+    "question": "Melyik tudományág foglalkozik a gépek és az ember kapcsolatával, a munkakörnyezet kényelmével és hatékonyságával?",
+    "order": 1,
+    "options": ["Mechanika", "Ergonómia", "Termodinamika", "Hidrosztatika"],
+    "correct_index": 1
+  },
+  {
+    "id": "ma2",
+    "type": "multiple_select",
+    "question": "Melyek tekinthetők megújuló természeti erőforrásnak az alábbiak közül?",
+    "order": 2,
+    "options": ["Szélenergia", "Kőolaj", "Napenergia", "Földgáz", "Biomassza"],
+    "correct": [0, 2, 4]
+  },
+  {
+    "id": "ma3",
+    "type": "matching",
+    "question": "Párosítsd a fizikai alapfogalmakat a hozzájuk tartozó SI mértékegységgel!",
+    "order": 3,
+    "pairs": {
+      "Erő": "Newton (N)",
+      "Munka": "Joule (J)",
+      "Teljesítmény": "Watt (W)",
+      "Nyomás": "Pascal (Pa)"
+    }
+  },
+  {
+    "id": "ma4",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azt a mechanikai fogalmat, amely az erő és az erőkar szorzataként határozható meg (M = F * k)?",
+    "order": 4,
+    "answers": ["Forgatónyomaték", "nyomaték", "forgató nyomaték"]
+  },
+  {
+    "id": "ma5",
+    "type": "multiple_choice",
+    "question": "Mit mond ki Pascal törvénye a nyugvó folyadékokra vonatkozóan?",
+    "order": 5,
+    "options": [
+      "A folyadék súlya miatt a nyomás csak lefelé hat.",
+      "A zárt térben lévő folyadékban a külső erő okozta nyomás minden irányban gyengítetlenül terjed.",
+      "A folyadékok áramlási sebessége a keresztmetszettől függ.",
+      "A folyadékok nem közvetítenek erőt."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ma6",
+    "type": "multiple_select",
+    "question": "Melyek tartoznak az alapvető egyszerű gépek vagy gépelemek közé?",
+    "order": 6,
+    "options": ["Emelő", "Lejtő", "Csavar", "Kondenzátor", "Ék"],
+    "correct": [0, 1, 2, 4]
+  },
+  {
+    "id": "ma7",
+    "type": "matching",
+    "question": "Párosítsd a mérnöki anyagokat a rájuk jellemző tulajdonsággal!",
+    "order": 7,
+    "pairs": {
+      "Acél": "Nagy szilárdságú, rugalmas vas-szén ötvözet.",
+      "Alumínium": "Kis sűrűségű, jó korrózióállóságú könnyűfém.",
+      "Polimerek": "Műanyagok, amelyek könnyen alakíthatók és szigetelők.",
+      "Kompozitok": "Különböző anyagtípusok előnyös tulajdonságait ötvöző társított anyagok."
+    }
+  },
+  {
+    "id": "ma8",
+    "type": "short_answer",
+    "question": "Melyik elektrotechnikai alaptörvény írja le az összefüggést a feszültség, az áramerősség és az ellenállás között (U = I * R)?",
+    "order": 8,
+    "answers": ["Ohm-törvény", "Ohm törvénye", "Ohm"]
+  },
+  {
+    "id": "ma9",
+    "type": "multiple_choice",
+    "question": "Hogyan értelmezzük a gépek hatásfokát (η)?",
+    "order": 9,
+    "options": [
+      "A befektetett és a hasznos energia összege.",
+      "A hasznos munka és a befektetett munka hányadosa.",
+      "A gép maximális üzemi sebessége.",
+      "A gép karbantartási igényének mutatója."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ma10",
+    "type": "multiple_select",
+    "question": "Melyek a négyütemű belsőégésű motor ciklusának fázisai?",
+    "order": 10,
+    "options": ["Szívás", "Sűrítés", "Munkavégzés", "Kipufogás", "Kenés"],
+    "correct": [0, 1, 2, 3]
+  },
+  {
+    "id": "ma11",
+    "type": "matching",
+    "question": "Párosítsd az áramlástani gépeket az általuk mozgatott közeggel!",
+    "order": 11,
+    "pairs": {
+      "Szivattyú": "Folyadékok (pl. víz) szállítása.",
+      "Ventilátor": "Gázok (levegő) kismértékű sűrítése és szállítása.",
+      "Kompresszor": "Gázok nagyarányú sűrítése.",
+      "Turbína": "Az áramló közeg energiáját alakítja mechanikai munkává."
+    }
+  },
+  {
+    "id": "ma12",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azt az elektronikai alkatrészt, amely csak egy irányban engedi át az elektromos áramot?",
+    "order": 12,
+    "answers": ["Dióda", "dióda"]
+  },
+  {
+    "id": "ma13",
+    "type": "multiple_choice",
+    "question": "Mi a villamos motorok elsődleges feladata?",
+    "order": 13,
+    "options": [
+      "Hőenergia átalakítása elektromos energiává.",
+      "Elektromos energia átalakítása mechanikai munkává (forgó mozgássá).",
+      "Váltakozó feszültség felerősítése.",
+      "Kémiai energia tárolása."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ma14",
+    "type": "multiple_select",
+    "question": "Mik a mérnöki szabványosítás legfőbb előnyei a gyártásban?",
+    "order": 14,
+    "options": [
+      "Csereszabatosság biztosítása",
+      "Biztonsági követelmények egységesítése",
+      "Költségcsökkentés a tömeggyártás révén",
+      "Minden termék egyedivé tétele"
+    ],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "ma15",
+    "type": "matching",
+    "question": "Párosítsd a járműfelépítés részeit a funkciójukkal!",
+    "order": 15,
+    "pairs": {
+      "Erőátvitel": "A motor nyomatékát juttatja el a hajtott kerekekhez.",
+      "Futómű": "Biztosítja a kerekek felfüggesztését és a rugózást.",
+      "Fékberendezés": "A mozgási energiát hővé alakítva lassítja a járművet.",
+      "Alváz": "A jármű fő tartószerkezete."
+    }
+  },
+  {
+    "id": "ma16",
+    "type": "short_answer",
+    "question": "Hogy nevezzük a munkavégzés gyorsaságát jellemző fizikai mennyiséget (P = W / t)?",
+    "order": 16,
+    "answers": ["Teljesítmény", "teljesitmeny"]
+  },
+  {
+    "id": "ma17",
+    "type": "multiple_choice",
+    "question": "Mi jellemző az izobár állapotváltozásra a termodinamikában?",
+    "order": 17,
+    "options": [
+      "A hőmérséklet állandó.",
+      "A nyomás állandó.",
+      "A térfogat nem változik.",
+      "Nincs hőcsere a környezettel."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ma18",
+    "type": "multiple_select",
+    "question": "Melyek az elektronika alapvető passzív alkatrészei?",
+    "order": 18,
+    "options": ["Ellenállás", "Kondenzátor", "Tekercs", "Tranzisztor", "Integrált áramkör"],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "ma19",
+    "type": "matching",
+    "question": "Párosítsd a természeti erőforrásokat a típusukkal!",
+    "order": 19,
+    "pairs": {
+      "Kőszén": "Fosszilis / Nem megújuló",
+      "Geotermikus energia": "Megújuló",
+      "Uránérc": "Nukleáris / Nem megújuló",
+      "Vízi energia": "Megújuló"
+    }
+  },
+  {
+    "id": "ma20",
+    "type": "short_answer",
+    "question": "Melyik mértékegységben fejezzük ki a mechanikai munkát és az energiát az SI rendszerben?",
+    "order": 20,
+    "answers": ["Joule", "J"]
+  }
+]

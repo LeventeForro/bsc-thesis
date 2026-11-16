@@ -1,0 +1,173 @@
+[
+  {
+    "id": "wp1",
+    "type": "multiple_choice",
+    "question": "Mi a Node.js legfőbb jellemzője a kód végrehajtási modelljét tekintve?",
+    "order": 1,
+    "options": ["Többszálú (Multi-threaded), szinkron végrehajtású rendszer.", "Egyszálú (Single-threaded), aszinkron és eseményvezérelt (Event Loop-ot használ).", "Kizárólag böngészőben futó kliensoldali motor.", "Csak relációs adatbázisok kezelésére szolgáló köztesréteg."],
+    "correct_index": 1
+  },
+  {
+    "id": "wp2",
+    "type": "multiple_select",
+    "question": "Melyek a JavaScriptben aszinkron műveletek kezelésére használt Promise állapotai (states)?",
+    "order": 2,
+    "options": ["Pending (Függőben)", "Fulfilled (Teljesítve / Sikeres)", "Rejected (Elutasítva / Hibás)", "Running (Folyamatban lévő)"],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "wp3",
+    "type": "matching",
+    "question": "Párosítsd a HTTP kérési metódusokat a REST API-kban általánosan használt CRUD műveletekkel!",
+    "order": 3,
+    "pairs": {
+      "GET": "Read (Adatok lekérdezése, olvasása az adatbázisból)",
+      "POST": "Create (Új erőforrás, bejegyzés létrehozása)",
+      "PUT / PATCH": "Update (Meglévő erőforrás frissítése/módosítása)",
+      "DELETE": "Delete (Erőforrás törlése)"
+    }
+  },
+  {
+    "id": "wp4",
+    "type": "short_answer",
+    "question": "Mi a neve annak a Node.js-es fájlnak, amely a projekt metaadatait, verziószámát és a külső csomagfüggőségeket (dependencies) tartja nyilván JSON formátumban?",
+    "order": 4,
+    "answers": ["package.json", "package"]
+  },
+  {
+    "id": "wp5",
+    "type": "multiple_choice",
+    "question": "Mi az a 'middleware' (köztesréteg) az Express.js keretrendszerben?",
+    "order": 5,
+    "options": ["A kliensoldali böngészőt futtató szoftverkomponens.", "Egy olyan függvény, amely hozzáfér a kérés (req) és válasz (res) objektumokhoz, és a `next()` függvénnyel továbbadhatja a vezérlést a láncban.", "Az adatbázis szerver hivatalos elnevezése Express környezetben.", "Kizárólag a statikus HTML fájlok kiszolgálására való eszköz."],
+    "correct_index": 1
+  },
+  {
+    "id": "wp6",
+    "type": "multiple_choice",
+    "question": "A React architektúrában mit jelent a 'Virtual DOM' (Virtuális DOM) fogalma?",
+    "order": 6,
+    "options": ["A böngésző natív, C++ nyelven írt, beépített DOM-ját hívják így.", "Egy könnyűsúlyú JavaScript objektum, amely a valódi DOM memóriában tárolt másolata; a React ezen számolja ki a változásokat, hogy minimalizálja a lassú, valós DOM frissítések számát.", "A szerveroldalon generált HTML kód hivatalos neve.", "Egy harmadik féltől származó CSS animációs könyvtár."],
+    "correct_index": 1
+  },
+  {
+    "id": "wp7",
+    "type": "multiple_select",
+    "question": "Mely állítások igazak a React 'useState' hookjára?",
+    "order": 7,
+    "options": ["Egy függvénykomponens lokális állapotának (state) deklarálására és tárolására szolgál.", "Egy tömböt ad vissza két elemmel: az aktuális állapottal és egy azt frissítő függvénnyel.", "Kizárólag a régi típusú osztálykomponensekben (class components) használható.", "Ha az állapotfrissítő függvénnyel új értéket adunk meg, a komponens újrarendereli (újrarajzolja) önmagát."],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "wp8",
+    "type": "matching",
+    "question": "Párosítsd a REST API fejlesztés során gyakran használt HTTP státuszkódokat a jelentésükkel!",
+    "order": 8,
+    "pairs": {
+      "200 OK": "A kérés sikeresen feldolgozva (pl. adatok lekérése esetén).",
+      "201 Created": "Sikeres POST kérés, új erőforrás jött létre a szerveren.",
+      "401 Unauthorized": "Hiányzó vagy érvénytelen hitelesítés (a felhasználó nincs bejelentkezve).",
+      "404 Not Found": "A kért erőforrás vagy URL végpont nem található."
+    }
+  },
+  {
+    "id": "wp9",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azt az architektúrális mintát / könyvtártípust (pl. Sequelize vagy Prisma), amely a relációs adatbázis-táblákat objektumokra képezi le, így SQL helyett JavaScript metódusokkal írhatunk lekérdezéseket?",
+    "order": 9,
+    "answers": ["ORM", "Object Relational Mapping", "Object-Relational Mapping"]
+  },
+  {
+    "id": "wp10",
+    "type": "multiple_choice",
+    "question": "Mi a JWT (JSON Web Token) elsődleges feladata a modern webes alkalmazásokban?",
+    "order": 10,
+    "options": ["Képek és videók aszinkron tömörítése a backend szerveren.", "Állapotmentes (stateless) hitelesítés (authentication) és biztonságos adatcsere megvalósítása a kliens (frontend) és az API (szerver) között.", "Az adatbázis relációinak leírása.", "A JavaScript forráskód titkosítása a kliens böngészőjében."],
+    "correct_index": 1
+  },
+  {
+    "id": "wp11",
+    "type": "multiple_select",
+    "question": "Melyek a JWT (JSON Web Token) Base64Url kódolású, ponttal (.) elválasztott strukturális részei?",
+    "order": 11,
+    "options": ["Header (Fejléc, algoritmus típusa)", "Payload (Hasznos teher, pl. felhasználói ID, lejárati idő)", "Signature (Aláírás, a szerver titkos kulcsával generálva a hitelességhez)", "Password (A felhasználó jelszava titkosítatlanul)"],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "wp12",
+    "type": "matching",
+    "question": "Párosítsd a modern JavaScript (ES6+) fogalmait a szintaktikai példákkal!",
+    "order": 12,
+    "pairs": {
+      "Destrukturálás (Destructuring)": "const { username, email } = userObject;",
+      "Spread operátor": "const newArray = [...oldArray, newItem];",
+      "Template literál (Template literal)": "`Bejelentkezve mint: ${username}`",
+      "Nyílfüggvény (Arrow function)": "const calculateTotal = (a, b) => a + b;"
+    }
+  },
+  {
+    "id": "wp13",
+    "type": "short_answer",
+    "question": "Melyik React hookot (kampót) használjuk a mellékhatások (side effects) kezelésére, például arra, hogy a komponens első betöltődésekor (mount) adatokat töltsünk le a háttérből a fetch API-val?",
+    "order": 13,
+    "answers": ["useEffect", "useEffect()", "use effect"]
+  },
+  {
+    "id": "wp14",
+    "type": "multiple_choice",
+    "question": "Mi a 'CORS' (Cross-Origin Resource Sharing) szabályzat lényege a böngészőkben?",
+    "order": 14,
+    "options": ["Megakadályozza a kliensoldali SQL Injection támadásokat.", "Egy biztonsági mechanizmus, amely szabályozza (és alapértelmezetten letiltja), hogy egy adott domain-en futó weboldal indíthat-e aszinkron HTTP kéréseket egy MÁSIK domain-en futó szerver API-jához.", "Közvetlen szerver-szerver közötti titkosított kommunikáció.", "Kikényszeríti, hogy az oldal csak HTTP/2 protokollt használjon."],
+    "correct_index": 1
+  },
+  {
+    "id": "wp15",
+    "type": "multiple_select",
+    "question": "Mely állítások igazak a WebSocket protokollra a hagyományos HTTP-vel szemben?",
+    "order": 15,
+    "options": ["Folyamatos, nyitott, kétirányú (full-duplex) TCP kapcsolatot tart fenn a kliens és a szerver között.", "Minden egyes üzenetváltáskor a teljes HTTP fejlécet (headers, sütik) újra elküldi.", "A szerver bármikor, aszinkron módon tud adatot (push) küldeni a kliensnek anélkül, hogy a kliens lekérné azt.", "Kiválóan alkalmas valós idejű alkalmazások, pl. csevegők (chat), online játékok készítésére."],
+    "correct": [0, 2, 3]
+  },
+  {
+    "id": "wp16",
+    "type": "short_answer",
+    "question": "Milyen szintaktikával jelezzük a React JSX kódjában, hogy HTML-szerű tagek között ki szeretnénk értékelni egy dinamikus JavaScript kifejezést vagy változót?",
+    "order": 16,
+    "answers": ["{ }", "kapcsos zárójelek", "{}", "kapcsos zárójel"]
+  },
+  {
+    "id": "wp17",
+    "type": "matching",
+    "question": "Párosítsd a React fogalmakat a rövid definíciójukkal!",
+    "order": 17,
+    "pairs": {
+      "Props (Tulajdonságok)": "Szülőtől a gyermekkomponens felé áramló, ott csak olvasható (immutable) adatok.",
+      "State (Állapot)": "A komponens saját, belsőleg tárolt és változtatható adata, aminek a frissítése kiváltja a felület újrarajzolását.",
+      "JSX": "JavaScript szintaxis-kiterjesztés, amivel a megjelenést és a UI logikát egy helyen, HTML-hez hasonló módon írhatjuk meg.",
+      "Komponens (Component)": "Újrafelhasználható, független UI építőelem (általában egy JS függvény), amely leírja a felület egy részét."
+    }
+  },
+  {
+    "id": "wp18",
+    "type": "multiple_choice",
+    "question": "Hogyan valósítják meg a globális hibakezelést (Error Handling) az Express.js alkalmazásokban a legszakszerűbben?",
+    "order": 18,
+    "options": ["A JavaScript minden hibát automatikusan JSON válaszként küld vissza a kliensnek.", "Egy speciális, pontosan NÉGY paramétert váró (err, req, res, next) middleware deklarálásával, amelyet a route-ok után a lánc legvégén regisztrálnak a szerverfájlban.", "A Node.js processz egyszerű újraindításával.", "A Frontend (React) automatikusan kiolvassa a konzolhibákat a szerverről."],
+    "correct_index": 1
+  },
+  {
+    "id": "wp19",
+    "type": "multiple_select",
+    "question": "Mik a Single Page Application (SPA) architektúra – például egy React/Vite alkalmazás – jellemzői a hagyományos, szerveroldalon renderelt (SSR) weboldalakkal szemben?",
+    "order": 19,
+    "options": ["A kezdeti betöltés után az oldal (HTML) sosem töltődik újra teljesen, a navigáció a kliensben történik (kliensoldali routing).", "Simább, sokkal reszponzívabb, mobilos applikációhoz hasonló felhasználói élményt nyújt.", "A szervernek csak API végpontokat (jellemzően JSON adatokat) kell szolgáltatnia, HTML nézeteket nem.", "A böngészők számára a legkönnyebben (alapból) keresőoptimalizálható (SEO) megoldás, mert a letöltött HTML azonnal tartalmazza a teljes szöveget."],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "wp20",
+    "type": "short_answer",
+    "question": "Ha egy Express route-ban egy dinamikus URL paramétert definiálunk (például az ID-t a `/users/:id` útvonalon), melyik request (req) objektum-tulajdonságon keresztül olvashatjuk ki ezt az értéket?",
+    "order": 20,
+    "answers": ["req.params", "params", "req.params.id"]
+  }
+]

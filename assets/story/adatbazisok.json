@@ -1,0 +1,212 @@
+[
+  {
+    "id": "ab1",
+    "type": "multiple_choice",
+    "question": "Mit nevezünk 'elsődleges kulcsnak' (Primary Key) a relációs adatmodellben?",
+    "order": 1,
+    "options": [
+      "Egy olyan attribútumot, amely tetszőleges értéket vehet fel.",
+      "Egy vagy több attribútum olyan halmazát, amely egyértelműen azonosítja a tábla minden egyes sorát, és értéke nem lehet NULL.",
+      "A tábla nevét az adatbázisban.",
+      "Egy mutatót, amely egy másik táblára hivatkozik."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ab2",
+    "type": "multiple_select",
+    "question": "Melyek az SQL nyelv DDL (Data Definition Language - Adatdefiníciós nyelv) utasításai?",
+    "order": 2,
+    "options": ["CREATE", "SELECT", "ALTER", "DROP", "INSERT"],
+    "correct": [0, 2, 3]
+  },
+  {
+    "id": "ab3",
+    "type": "matching",
+    "question": "Párosítsd az Egyed-Kapcsolat (ER) modell fogalmait a jelentésükkel!",
+    "order": 3,
+    "pairs": {
+      "Egyed (Entity)": "Valóságos vagy képzeletbeli dolog, amelyről adatokat tárolunk (pl. Hallgató).",
+      "Attribútum": "Az egyed egy tulajdonsága (pl. Név, Neptun-kód).",
+      "Kapcsolat (Relationship)": "Egyedek közötti viszony (pl. Hallgató 'felveszi' a Kurzuspéldányt).",
+      "Kardinalitás": "A kapcsolatban részt vevő egyedpéldányok számossága (pl. 1:1, 1:N, N:M)."
+    }
+  },
+  {
+    "id": "ab4",
+    "type": "short_answer",
+    "question": "Melyik SQL kulcsszót használjuk a lekérdezés eredményeinek csoportosítására, általában aggregáló függvényekkel (pl. SUM, AVG) együtt?",
+    "order": 4,
+    "answers": ["GROUP BY", "group by"]
+  },
+  {
+    "id": "ab5",
+    "type": "multiple_choice",
+    "question": "Mi a szerepe az 'idegen kulcsnak' (Foreign Key) a relációs adatbázisokban?",
+    "order": 5,
+    "options": [
+      "Biztosítja a tábla sorainak sorrendjét.",
+      "Létrehozza a kapcsolatot két tábla között azáltal, hogy egy másik tábla elsődleges kulcsára hivatkozik.",
+      "Gyorsítja a keresést a táblában.",
+      "Tárolja az adatbázis jelszavait."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ab6",
+    "type": "multiple_select",
+    "question": "Melyek az SQL DML (Data Manipulation Language - Adatmanipulációs nyelv) utasításai?",
+    "order": 6,
+    "options": ["INSERT", "UPDATE", "DELETE", "TRUNCATE", "GRANT"],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "ab7",
+    "type": "matching",
+    "question": "Párosítsd az SQL JOIN típusokat a működésükkel!",
+    "order": 7,
+    "pairs": {
+      "INNER JOIN": "Csak azokat a sorokat adja vissza, amelyekhez mindkét táblában van illeszkedő érték.",
+      "LEFT JOIN": "Visszaadja a bal oldali tábla összes sorát, és a jobb oldalról az illeszkedőket (ha nincs, NULL-t).",
+      "FULL OUTER JOIN": "Visszaadja mindkét tábla összes sorát, ahol nincs egyezés, ott NULL értékekkel tölti ki.",
+      "CROSS JOIN": "Két tábla sorainak Descartes-szorzatát adja vissza."
+    }
+  },
+  {
+    "id": "ab8",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azt a folyamatot, amely során az adatbázis sémáját úgy alakítjuk át (szabályok mentén), hogy elkerüljük az adatredundanciát és a módosítási anomáliákat?",
+    "order": 8,
+    "answers": ["Normalizálás", "normalizáció", "adatbázis normalizálás"]
+  },
+  {
+    "id": "ab9",
+    "type": "multiple_choice",
+    "question": "Mit állít az Első Normálforma (1NF) alapvető szabálya?",
+    "order": 9,
+    "options": [
+      "Minden táblának kell legyen idegen kulcsa.",
+      "Minden attribútum értéke atomi kell legyen (nem lehetnek csoportok vagy listák egy mezőben).",
+      "Nem lehetnek részleges függőségek a táblában.",
+      "A tábla minden oszlopának szövegesnek kell lennie."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ab10",
+    "type": "multiple_select",
+    "question": "Milyen tulajdonságokkal rendelkeznek az adatbázis-kezelő rendszerek a tranzakciókezelés során (ACID elvek)?",
+    "order": 10,
+    "options": [
+      "Atomiság (Atomicity)",
+      "Konzisztencia (Consistency)",
+      "Izoláció (Isolation)",
+      "Tartósság (Durability)",
+      "Gyorsaság (Acceleration)"
+    ],
+    "correct": [0, 1, 2, 3]
+  },
+  {
+    "id": "ab11",
+    "type": "matching",
+    "question": "Párosítsd az SQL aggregáló függvényeket a feladatukkal!",
+    "order": 11,
+    "pairs": {
+      "COUNT()": "Visszaadja a sorok vagy a nem NULL értékek számát.",
+      "SUM()": "Kiszámítja a numerikus értékek összegét.",
+      "AVG()": "Kiszámítja a numerikus értékek átlagát.",
+      "MAX()": "Visszaadja a legnagyobb értéket a vizsgált oszlopban."
+    }
+  },
+  {
+    "id": "ab12",
+    "type": "short_answer",
+    "question": "Melyik SQL záradékot (clause) használjuk a feltételek megadására aggregált értékek (pl. csoportátlagok) szűrésekor?",
+    "order": 12,
+    "answers": ["HAVING", "having"]
+  },
+  {
+    "id": "ab13",
+    "type": "multiple_choice",
+    "question": "Mi a különbség a WHERE és a HAVING záradék között?",
+    "order": 13,
+    "options": [
+      "Nincs különbség, mindkettő szűrésre szolgál.",
+      "A WHERE az egyedi sorokra vonatkozik a csoportosítás előtt, a HAVING a csoportokra a csoportosítás után.",
+      "A WHERE csak számokra, a HAVING csak szövegekre jó.",
+      "A HAVING-et csak a DELETE utasításban használhatjuk."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ab14",
+    "type": "multiple_select",
+    "question": "Milyen megszorításokat (Constraints) adhatunk meg egy tábla oszlopaihoz SQL-ben?",
+    "order": 14,
+    "options": ["NOT NULL", "UNIQUE", "CHECK", "DEFAULT", "FAST_SEARCH"],
+    "correct": [0, 1, 2, 3]
+  },
+  {
+    "id": "ab15",
+    "type": "matching",
+    "question": "Párosítsd az Oracle PL/SQL alapfogalmakat!",
+    "order": 15,
+    "pairs": {
+      "Trigger": "Olyan speciális tárolt eljárás, amely egy esemény (pl. INSERT) hatására automatikusan lefut.",
+      "Kurzor": "Eszköz, amely lehetővé teszi a lekérdezés eredményhalmazának soronkénti feldolgozását.",
+      "Tárolt eljárás (Procedure)": "Az adatbázisban tárolt, névvel ellátott PL/SQL blokk, amely paramétereket fogadhat.",
+      "Funkció (Function)": "Hasonló az eljáráshoz, de kötelezően visszaad egy értéket (RETURN)."
+    }
+  },
+  {
+    "id": "ab16",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azt az adatbázis-objektumot, amely a lekérdezések gyorsítására szolgál (hasonlóan a könyvek végén lévő tárgymutatóhoz)?",
+    "order": 16,
+    "answers": ["Index", "indexek"]
+  },
+  {
+    "id": "ab17",
+    "type": "multiple_choice",
+    "question": "Mit jelent az ER diagram leképezésekor az N:M (sok-sok) kapcsolat kezelése?",
+    "order": 17,
+    "options": [
+      "Az egyik táblába felvesszük a másik tábla kulcsát.",
+      "Egy harmadik, úgynevezett kapcsolótáblát (kapcsolati táblát) kell létrehozni a két egyed kulcsaival.",
+      "Soha nem ábrázolható relációs modellben.",
+      "Csak egyetlen táblában tároljuk az összes adatot."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "ab18",
+    "type": "multiple_select",
+    "question": "Melyek a relációs adatbázis-kezelő rendszerek (RDBMS) tipikus jellemzői?",
+    "order": 18,
+    "options": [
+      "Táblákban tárolják az adatokat.",
+      "SQL nyelvet használnak a lekérdezéshez.",
+      "Garantálják az adatintegritást.",
+      "Kizárólag videofájlok tárolására alkalmasak."
+    ],
+    "correct": [0, 1, 2]
+  },
+  {
+    "id": "ab19",
+    "type": "matching",
+    "question": "Párosítsd a nullérték-kezeléssel kapcsolatos SQL kifejezéseket!",
+    "order": 19,
+    "pairs": {
+      "IS NULL": "Ellenőrzi, hogy egy mező értéke NULL-e.",
+      "IS NOT NULL": "Ellenőrzi, hogy egy mező rendelkezik-e konkrét értékkel.",
+      "NVL (vagy COALESCE)": "Lehetővé teszi, hogy a NULL érték helyett egy alapértelmezett értéket jelenítsünk meg."
+    }
+  },
+  {
+    "id": "ab20",
+    "type": "short_answer",
+    "question": "Mi az eredménye az '1' + 1 kifejezésnek egy SQL lekérdezésben a legtöbb modern rendszerben (automatikus típuskonverzió mellett)?",
+    "order": 20,
+    "answers": ["2", "kettő"]
+  }
+]

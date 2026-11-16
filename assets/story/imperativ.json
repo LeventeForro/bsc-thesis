@@ -1,0 +1,172 @@
+[
+  {
+    "id": "i1",
+    "type": "multiple_choice",
+    "question": "Mi a C programok kötelező belépési pontja, ahonnan a végrehajtás elindul?",
+    "order": 1,
+    "options": ["start()", "init()", "main()", "Program()"],
+    "correct_index": 2
+  },
+  {
+    "id": "i2",
+    "type": "multiple_select",
+    "question": "Melyek a C nyelv alapvető, beépített adattípusai (a C89/C90 szabvány szerint)?",
+    "order": 2,
+    "options": ["int", "char", "string", "double", "boolean"],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "i3",
+    "type": "matching",
+    "question": "Párosítsd a C programok fordítási folyamatának (compilation process) lépéseit a feladatukkal!",
+    "order": 3,
+    "pairs": {
+      "Előfeldolgozó (Preprocessor)": "Feldolgozza a # direktívákat (pl. #include, #define).",
+      "Fordító (Compiler)": "A forráskódból assembly/tárgykódot (object code) generál.",
+      "Szerkesztő (Linker)": "Összefűzi a tárgykódokat és a külső könyvtárakat egy futtatható állománnyá."
+    }
+  },
+  {
+    "id": "i4",
+    "type": "short_answer",
+    "question": "Melyik (egykarakteres) operátorral kérhetjük le egy változó memóriacímét a C nyelvben?",
+    "order": 4,
+    "answers": ["&", "és", "ampersand"]
+  },
+  {
+    "id": "i5",
+    "type": "multiple_choice",
+    "question": "Hogyan deklarálunk helyesen egy egész számra (integer) mutató pointert C-ben?",
+    "order": 5,
+    "options": ["pointer int p;", "int &p;", "int *p;", "ref int p;"],
+    "correct_index": 2
+  },
+  {
+    "id": "i6",
+    "type": "multiple_choice",
+    "question": "Hogyan hivatkozhatunk egy 'A' tömb 'i'-edik elemére mutatóaritmetika segítségével?",
+    "order": 6,
+    "options": ["*(A + i)", "&(A + i)", "*A + i", "A + *i"],
+    "correct_index": 0
+  },
+  {
+    "id": "i7",
+    "type": "short_answer",
+    "question": "Milyen speciális karakterrel (escape szekvenciával) kell lezárni a karaktertömböket, hogy azok érvényes C-sztringként viselkedjenek?",
+    "order": 7,
+    "answers": ["\\0", "nulla karakter", "null karakter"]
+  },
+  {
+    "id": "i8",
+    "type": "matching",
+    "question": "Párosítsd a <string.h> könyvtár gyakori függvényeit a feladatukkal!",
+    "order": 8,
+    "pairs": {
+      "strlen()": "Visszaadja a sztring hosszát (a lezáró nulla nélkül).",
+      "strcpy()": "Átmásolja az egyik sztring tartalmát a másikba.",
+      "strcmp()": "Összehasonlít két sztringet lexikografikusan.",
+      "strcat()": "Hozzáfűzi az egyik sztringet a másik végéhez."
+    }
+  },
+  {
+    "id": "i9",
+    "type": "multiple_select",
+    "question": "Mely függvények szolgálnak dinamikus memóriafoglalásra a <stdlib.h> könyvtárban?",
+    "order": 9,
+    "options": ["malloc()", "alloc()", "calloc()", "realloc()", "new()"],
+    "correct": [0, 2, 3]
+  },
+  {
+    "id": "i10",
+    "type": "short_answer",
+    "question": "Melyik függvénnyel kell felszabadítani a dinamikusan lefoglalt memóriaterületet, hogy elkerüljük a memóriaszivárgást?",
+    "order": 10,
+    "answers": ["free", "free()"]
+  },
+  {
+    "id": "i11",
+    "type": "multiple_choice",
+    "question": "Mit ad vissza a malloc() függvény, ha elfogyott a memória és nem sikerült a foglalás?",
+    "order": 11,
+    "options": ["-1 értéket", "NULL mutatót", "Programösszeomlást (Segmentation fault) okoz", "0-t"],
+    "correct_index": 1
+  },
+  {
+    "id": "i12",
+    "type": "multiple_choice",
+    "question": "Milyen módon történik a függvények paraméterátadása alapértelmezetten a C nyelvben?",
+    "order": 12,
+    "options": ["Kizárólag érték szerint (by value).", "Kizárólag referencia szerint (by reference).", "Tömböknél érték szerint, változóknál referencia szerint.", "A programozó dönti el egy kulcsszóval (pl. ref)."],
+    "correct_index": 0
+  },
+  {
+    "id": "i13",
+    "type": "multiple_select",
+    "question": "Mely operátorokkal érhetjük el egy struktúra (struct) adattagjait C-ben?",
+    "order": 13,
+    "options": ["A . (pont) operátorral, ha maga a struktúra van meg.", "A :: (dupla kettőspont) operátorral.", "A -> (nyíl) operátorral, ha a struktúrára mutató pointerünk van.", "A [] (szögletes zárójel) operátorral."],
+    "correct": [0, 2]
+  },
+  {
+    "id": "i14",
+    "type": "matching",
+    "question": "Párosítsd a fájlmegnyitási módokat (fopen módok) a jelentésükkel!",
+    "order": 14,
+    "pairs": {
+      "\"r\"": "Megnyitás csak olvasásra.",
+      "\"w\"": "Megnyitás írásra (ha létezik, felülírja, ha nem, létrehozza).",
+      "\"a\"": "Megnyitás hozzáfűzésre (a fájl végére ír).",
+      "\"r+\"": "Megnyitás olvasásra és írásra (a fájlnak léteznie kell)."
+    }
+  },
+  {
+    "id": "i15",
+    "type": "multiple_choice",
+    "question": "Mi a legfőbb különbség a 'struct' (struktúra) és a 'union' (unió) között?",
+    "order": 15,
+    "options": ["Nincs különbség, csak más a nevük.", "A union minden adattagja ugyanazon a memóriaterületen osztozik, míg a struct tagjai egymás után helyezkednek el.", "A union csak számokat tartalmazhat, a struct bármit.", "A struct dinamikusan nőhet, a union fix méretű."],
+    "correct_index": 1
+  },
+  {
+    "id": "i16",
+    "type": "short_answer",
+    "question": "Hogy hívják azt a memóriaterületet, ahonnan a futtatókörnyezet a dinamikus memóriafoglalásokat (pl. malloc) kiszolgálja?",
+    "order": 16,
+    "answers": ["heap", "kupac"]
+  },
+  {
+    "id": "i17",
+    "type": "multiple_choice",
+    "question": "A main(int argc, char *argv[]) függvényfejlécben mit reprezentál az 'argc' paraméter?",
+    "order": 17,
+    "options": ["A lefoglalt memória méretét byte-okban.", "A visszatérési értékek számát.", "A parancssori argumentumok darabszámát (a program nevét is beleértve).", "A hibakódok listáját."],
+    "correct_index": 2
+  },
+  {
+    "id": "i18",
+    "type": "multiple_select",
+    "question": "Melyek a C nyelv bitműveleti (bitwise) operátorai az alábbiak közül?",
+    "order": 18,
+    "options": ["&& (Logikai ÉS)", "& (Bitonkénti ÉS)", "| (Bitonkénti VAGY)", "<< (Biteltolás balra)"],
+    "correct": [1, 2, 3]
+  },
+  {
+    "id": "i19",
+    "type": "matching",
+    "question": "Párosítsd a memóriakezelési hibákat a leírásukkal!",
+    "order": 19,
+    "pairs": {
+      "Memóriaszivárgás (Memory leak)": "Dinamikusan lefoglalt memória, amire már nem mutat pointer, de nem lett felszabadítva.",
+      "Lógó mutató (Dangling pointer)": "Olyan pointer, amely egy már felszabadított vagy megszűnt memóriaterületre mutat.",
+      "Puffertúlcsordulás (Buffer overflow)": "Egy tömb határain túlra történő írás, ami felülírhat más adatokat."
+    }
+  },
+  {
+    "id": "i20",
+    "type": "multiple_choice",
+    "question": "Mit hajt végre pontosan a '#include' előfeldolgozó (preprocessor) direktíva?",
+    "order": 20,
+    "options": ["Lefordítja a hivatkozott fájlt tárgykóddá.", "Lefuttatja a benne lévő kódot.", "Szövegesen beilleszti a hivatkozott fájl tartalmát az aktuális fájlba a fordítás tényleges megkezdése előtt.", "Dinamikusan betölt egy DLL-t (osztott könyvtárat)."],
+    "correct_index": 2
+  }
+]

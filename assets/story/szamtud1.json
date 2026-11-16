@@ -1,0 +1,173 @@
+[
+  {
+    "id": "szt1",
+    "type": "multiple_choice",
+    "question": "A Chomsky-hierarchiában melyik típusnak felelnek meg a reguláris nyelvek?",
+    "order": 1,
+    "options": ["0-s típusú nyelvek", "1-es típusú nyelvek", "2-es típusú nyelvek", "3-as típusú nyelvek"],
+    "correct_index": 3
+  },
+  {
+    "id": "szt2",
+    "type": "multiple_select",
+    "question": "Melyek egy Determinisztikus Véges Automata (DFA) formális definíciójának (5-ösének) elemei?",
+    "order": 2,
+    "options": ["Állapotok véges halmaza (Q)", "Bemeneti ábécé (Σ)", "Verem ábécé (Γ)", "Állapotátmenet-függvény (δ)", "Elfogadó állapotok halmaza (F)"],
+    "correct": [0, 1, 3, 4]
+  },
+  {
+    "id": "szt3",
+    "type": "short_answer",
+    "question": "Hogy hívjuk azt az algoritmust / eljárást, amellyel egy Nondeterminisztikus Véges Automata (NFA) átalakítható vele ekvivalens Determinisztikus Véges Automatába (DFA)?",
+    "order": 3,
+    "answers": ["Részhalmaz-konstrukció", "Részhalmaz konstrukció", "Hatványhalmaz-konstrukció", "subset construction"]
+  },
+  {
+    "id": "szt4",
+    "type": "matching",
+    "question": "Párosítsd a Chomsky-hierarchia nyelvosztályait az azokat felismerő automatákkal!",
+    "order": 4,
+    "pairs": {
+      "3-as típus (Reguláris nyelvek)": "Véges automata (DFA/NFA)",
+      "2-es típus (Környezetfüggetlen nyelvek)": "Veremautomata (PDA)",
+      "1-es típus (Környezetfüggő nyelvek)": "Lineárisan korlátos automata (LBA)",
+      "0-s típus (Rekurzívan felsorolható nyelvek)": "Turing-gép (TM)"
+    }
+  },
+  {
+    "id": "szt5",
+    "type": "multiple_choice",
+    "question": "Mi a különbség a DFA és az NFA felismerő ereje (kifejezőereje) között?",
+    "order": 5,
+    "options": ["Az NFA több nyelvet tud felismerni, mint a DFA.", "A DFA több nyelvet tud felismerni, mint az NFA.", "Felismerő erejük pontosan megegyezik (mindkettő a reguláris nyelveket ismeri fel).", "Az NFA csak véges nyelveket ismer fel."],
+    "correct_index": 2
+  },
+  {
+    "id": "szt6",
+    "type": "multiple_choice",
+    "question": "Mire használjuk leggyakrabban a reguláris nyelvekre vonatkozó Pumpáló lemmát (Pumping lemma)?",
+    "order": 6,
+    "options": ["Annak bizonyítására, hogy egy nyelv reguláris.", "Annak bizonyítására, hogy egy nyelv NEM reguláris (indirekt módon).", "Véges automaták minimalizálására.", "Reguláris kifejezések generálására."],
+    "correct_index": 1
+  },
+  {
+    "id": "szt7",
+    "type": "multiple_select",
+    "question": "Mely műveletekre ZÁRTAK a reguláris nyelvek az alábbiak közül?",
+    "order": 7,
+    "options": ["Unió", "Metszet", "Komplementerképzés", "Kleene-csillag (iteráció)"],
+    "correct": [0, 1, 2, 3]
+  },
+  {
+    "id": "szt8",
+    "type": "short_answer",
+    "question": "Melyik egyváltozós postfix operátor jelöli egy nyelv elemeinek tetszőleges (akár nulla) alkalommal történő egymás után fűzését?",
+    "order": 8,
+    "answers": ["*", "csillag", "Kleene-csillag", "Kleene csillag"]
+  },
+  {
+    "id": "szt9",
+    "type": "matching",
+    "question": "Párosítsd a formális nyelvek alapfogalmait a leírásukkal!",
+    "order": 9,
+    "pairs": {
+      "Ábécé (Σ)": "Szimbólumok (betűk) nem üres, véges halmaza.",
+      "Szó (Sztring)": "Az ábécé szimbólumaiból képzett véges sorozat.",
+      "Üres szó (ε vagy λ)": "A nulla hosszúságú (szimbólumot nem tartalmazó) szó.",
+      "Nyelv (L)": "A Σ* (összes lehetséges szó halmaza) egy tetszőleges részhalmaza."
+    }
+  },
+  {
+    "id": "szt10",
+    "type": "multiple_choice",
+    "question": "Mikor mondjuk egy környezetfüggetlen nyelvtanról (CFG), hogy egyértelmű (unambiguous)?",
+    "order": 10,
+    "options": ["Ha a nyelvtan által generált minden szóhoz pontosan egy baloldali levezetés (vagy egy levezetési fa) tartozik.", "Ha a nyelvtan csak egy szót tud generálni.", "Ha nincsenek benne epszilon-szabályok.", "Ha a generált nyelv véges."],
+    "correct_index": 0
+  },
+  {
+    "id": "szt11",
+    "type": "multiple_select",
+    "question": "Melyek a Környezetfüggetlen Nyelvtanok (CFG) 4-esének elemei (G = (V, Σ, R, S))?",
+    "order": 11,
+    "options": ["Nemterminális szimbólumok véges halmaza (V)", "Terminális szimbólumok (ábécé) véges halmaza (Σ)", "Helyettesítési szabályok / produkciók halmaza (R vagy P)", "Kezdőszimbólum (S)"],
+    "correct": [0, 1, 2, 3]
+  },
+  {
+    "id": "szt12",
+    "type": "short_answer",
+    "question": "Milyen adatszerkezetet / memóriát használ a véges automata kiegészítéseként a Környezetfüggetlen nyelveket felismerő Veremautomata (PDA)?",
+    "order": 12,
+    "answers": ["Verem", "stack"]
+  },
+  {
+    "id": "szt13",
+    "type": "multiple_choice",
+    "question": "Milyen alakúak a helyettesítési szabályok a Chomsky-féle normálformában (CNF)? (N: nemterminális, T: terminális)",
+    "order": 13,
+    "options": ["N -> N T vagy N -> T", "N -> N N vagy N -> T (és S -> ε megengedett)", "T -> N N", "Bármilyen hosszú szabály megengedett."],
+    "correct_index": 1
+  },
+  {
+    "id": "szt14",
+    "type": "matching",
+    "question": "Párosítsd a reguláris kifejezések (RegEx) műveleteit a hagyományos halmazműveleti megfelelőjükkel!",
+    "order": 14,
+    "pairs": {
+      "r1 | r2 (vagy r1 + r2)": "Két nyelv uniója (L1 ∪ L2)",
+      "r1 r2 (konkatenáció)": "Két nyelv szorzata (L1 ∘ L2)",
+      "r*": "Kleene-iteráció (L*)",
+      "r+": "Pozitív iteráció (L+ = L ∘ L*)"
+    }
+  },
+  {
+    "id": "szt15",
+    "type": "short_answer",
+    "question": "Mi a neve annak a híres tételnek, amely kimondja, hogy egy L nyelv akkor és csak akkor reguláris, ha a hozzá tartozó jobb invariáns ekvivalenciareláció indexe véges (ez adja a minimalizálás elméleti alapját)?",
+    "order": 15,
+    "answers": ["Myhill-Nerode tétel", "Myhill-Nerode"]
+  },
+  {
+    "id": "szt16",
+    "type": "multiple_select",
+    "question": "Mely állítások igazak a Turing-gépre?",
+    "order": 16,
+    "options": ["Végtelen memóriaszalaggal rendelkezik.", "A szalagon lévő olvasó/író fej mindkét irányba tud mozogni.", "Kizárólag véges nyelveket képes felismerni.", "Képes felismerni az úgynevezett rekurzívan felsorolható nyelveket."],
+    "correct": [0, 1, 3]
+  },
+  {
+    "id": "szt17",
+    "type": "multiple_choice",
+    "question": "A számítástudományban mit mond ki a Church-Turing tézis?",
+    "order": 17,
+    "options": ["Minden Turing-gép szimulálható véges automatával.", "Ami algoritmikusan kiszámítható (intuitív értelemben), az kiszámítható egy Turing-géppel is.", "A Turing-gépek sosem állnak meg.", "P = NP."],
+    "correct_index": 1
+  },
+  {
+    "id": "szt18",
+    "type": "short_answer",
+    "question": "Hogy nevezzük azt az eldönthetetlen (algoritmussal általánosan nem megoldható) problémát, amely arra keresi a választ, hogy egy tetszőleges Turing-gép egy adott bemenetre véges időn belül leáll-e?",
+    "order": 18,
+    "answers": ["Megállási probléma", "halting problem"]
+  },
+  {
+    "id": "szt19",
+    "type": "matching",
+    "question": "Párosítsd a nyelvi operátorokat a jelentésükkel!",
+    "order": 19,
+    "pairs": {
+      "L_1 ∪ L_2 (Unió)": "Azok a szavak, amelyek L_1-ben VAGY L_2-ben (esetleg mindkettőben) benne vannak.",
+      "L_1 ∩ L_2 (Metszet)": "Azok a szavak, amelyek L_1-ben ÉS L_2-ben is benne vannak.",
+      "L_1 ∘ L_2 (Konkatenáció)": "Két szó összetapasztása úgy, hogy az első fele L_1-ből, a második L_2-ből származik.",
+      "L^R (Tükrözés)": "A nyelv összes szavának megfordítása (hátulról előre olvasva)."
+    }
+  },
+  {
+    "id": "szt20",
+    "type": "multiple_choice",
+    "question": "Mit jelent egy NFA-ban az epszilon-átmenet (ε-átmenet)?",
+    "order": 20,
+    "options": ["A bemeneti szó vége jelet.", "Hibás állapotot.", "Az automata anélkül válthat állapotot, hogy a bemenetről bármilyen szimbólumot beolvasna.", "A verem kiürítését."],
+    "correct_index": 2
+  }
+]
